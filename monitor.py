@@ -89,6 +89,7 @@ def calculate_duration_hours(start_iso: str, end_dt: datetime) -> float:
     except: return 0.0
 
 def port_name(code: str) -> str:
+    # DEFINED HERE AT GLOBAL SCOPE
     return {"03": "Safi", "06": "Nador", "07": "Jorf Lasfar"}.get(str(code), f"Port {code}")
 
 # ==========================================
@@ -238,9 +239,7 @@ def send_email(to, sub, body):
             server.sendmail(EMAIL_USER, [to], msg.as_string())
     except Exception as e:
         print(f"[ERROR] Email Error: {e}")
-        
-def port_name(code: str) -> str:
-    return {"03": "Safi", "06": "Nador", "07": "Jorf Lasfar"}.get(str(code), f"Port {code}")
+
 # ==========================================
 # 🔄 MAIN PROCESS
 # ==========================================
@@ -257,10 +256,10 @@ def main():
         for h in history:
             p_name = h.get("port")
             if p_name in port_history: port_history[p_name].append(h)
-        for port_name, p_hist in port_history.items():
+        for port_name_check, p_hist in port_history.items():
             if p_hist:
-                print(f"[LOG] Sending report for {port_name} ({len(p_hist)} movements).")
-                send_monthly_report(p_hist, port_name)
+                print(f"[LOG] Sending report for {port_name_check} ({len(p_hist)} movements).")
+                send_monthly_report(p_hist, port_name_check)
         return
 
     # MONITOR MODE
@@ -334,8 +333,6 @@ def main():
     for v_id, live in live_vessels.items():
         if v_id not in active:
             # --- FIRST RUN CLEAN START ---
-            # If the state is empty (First Run), ignore vessels that are already in progress.
-            # Only track Scheduled (PREVU) vessels to ensure we track the full cycle.
             if len(active) == 0 and live["status"] != "PREVU":
                 print(f"[LOG] First Run: Ignoring existing active vessel {live['e'].get('nOM_NAVIREField')} ({live['status']})")
                 continue
