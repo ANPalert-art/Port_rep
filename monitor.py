@@ -238,7 +238,9 @@ def send_email(to, sub, body):
             server.sendmail(EMAIL_USER, [to], msg.as_string())
     except Exception as e:
         print(f"[ERROR] Email Error: {e}")
-
+        
+def port_name(code: str) -> str:
+    return {"03": "Safi", "06": "Nador", "07": "Jorf Lasfar"}.get(str(code), f"Port {code}")
 # ==========================================
 # 🔄 MAIN PROCESS
 # ==========================================
