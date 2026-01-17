@@ -225,9 +225,14 @@ def main():
                 send_monthly_report(p_hist, p_name)
         return
 
-    # MONITOR MODE Logic
+        # MONITOR MODE Logic
     try:
-        resp = requests.get(TARGET_URL, timeout=30)
+        # Define a Human Browser identity
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        }
+        # Use headers in the request
+        resp = requests.get(TARGET_URL, headers=headers, timeout=30)
         resp.raise_for_status()
         all_data = resp.json()
     except Exception as e:
