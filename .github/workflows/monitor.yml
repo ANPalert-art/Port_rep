@@ -1,0 +1,66 @@
+name: Vessel Monitor (Multi-Port)
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'       # Monitor mode: Every 30 minutes
+    - cron: '0 8 1 * *'          # Report mode: 1st of every month at 08:00
+  workflow_dispatch:             # Manual trigger button
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to commit state.json back to the repo
+    
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 📦 Install Dependencies
+        run: pip install requests
+
+      - name: 🚀 Run Script
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_ENABLED: "true"
+        run: |
+          # Determine the Mode based on the schedule trigger
+          RUN_MODE="monitor"
+          
+          if [[ "${{ github.event.schedule }}" == "0 8 1 * *" ]]; then
+            RUN_MODE="report"
+          fi
+          
+          echo "RUN_MODE=$RUN_MODE" >> $GITHUB_ENV
+          echo "Executing in MODE: $RUN_MODE"
+          
+          python monitor.py
+
+      - name: 💾 Commit and Push State
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          git add state.json
+          
+          if git diff --staged --quiet; then
+            echo "✅ No changes to state.json"
+          else
+            # Check mode from env var set in previous step
+            if [[ "$RUN_MODE" == "report" ]]; then
+              git commit -m "📊 Monthly report generated [skip ci]"
+            else
+              git commit -m "🤖 Vessel state update [skip ci]"
+            fi
+            git push
+            echo "✅ State committed"
+          fi
