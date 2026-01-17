@@ -1,16 +1,16 @@
-name: Vessel Monitor (Multi-Port)
+name: Vessel Monitor (Safi-Nador-Jorf)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'       # Monitor mode: Every 30 minutes
-    - cron: '0 8 1 * *'          # Report mode: 1st of every month at 08:00
-  workflow_dispatch:             # Manual trigger button
+    - cron: '*/30 * * * *'       # Every 30 minutes for tracking
+    - cron: '0 8 1 * *'          # Monthly report on the 1st at 08:00
+  workflow_dispatch:             # Manual run button
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Required to commit state.json back to the repo
+      contents: write            # Critical for saving state.json
     
     steps:
       - name: ⬇️ Checkout Repository
@@ -32,17 +32,9 @@ jobs:
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_ENABLED: "true"
+          RUN_MODE: ${{ github.event.schedule == '0 8 1 * *' && 'report' || 'monitor' }}
         run: |
-          # Determine the Mode based on the schedule trigger
-          RUN_MODE="monitor"
-          
-          if [[ "${{ github.event.schedule }}" == "0 8 1 * *" ]]; then
-            RUN_MODE="report"
-          fi
-          
-          echo "RUN_MODE=$RUN_MODE" >> $GITHUB_ENV
           echo "Executing in MODE: $RUN_MODE"
-          
           python monitor.py
 
       - name: 💾 Commit and Push State
@@ -52,11 +44,11 @@ jobs:
           
           git add state.json
           
+          # Only commit if state.json actually changed
           if git diff --staged --quiet; then
             echo "✅ No changes to state.json"
           else
-            # Check mode from env var set in previous step
-            if [[ "$RUN_MODE" == "report" ]]; then
+            if [[ "${{ env.RUN_MODE }}" == "report" ]]; then
               git commit -m "📊 Monthly report generated [skip ci]"
             else
               git commit -m "🤖 Vessel state update [skip ci]"
