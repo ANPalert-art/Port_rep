@@ -17,14 +17,14 @@ STATE_ENV_VAR = "VESSEL_STATE_DATA"
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
 EMAIL_TO = os.getenv("EMAIL_TO")
-# EMAIL_TO_COLLEAGUE REMOVED
+# EMAIL_TO_COLLEAGUE REMOVED AS REQUESTED
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_ENABLED = str(os.getenv("EMAIL_ENABLED", "true")).lower() == "true"
 RUN_MODE = os.getenv("RUN_MODE", "monitor") 
 
-# Ports Updated to: Jorf Lasfar, Safi, Nador
+# Ports: SAFI (03), NADOR (06), JORF LASFAR (07)
 ALLOWED_PORTS = {"03", "06", "07"} 
 
 # ==========================================
@@ -90,11 +90,10 @@ def calculate_duration_hours(start_iso: str, end_dt: datetime) -> float:
     except: return 0.0
 
 def port_name(code: str) -> str:
-    # Updated with Jorf Lasfar, Safi, Nador
     return {"03": "Safi", "06": "Nador", "07": "Jorf Lasfar"}.get(str(code), f"Port {code}")
 
 # ==========================================
-# 📧 EMAIL TEMPLATE (PREMIUM BLUE STYLE)
+# 📧 EMAIL TEMPLATES
 # ==========================================
 def format_vessel_details_premium(entry: dict) -> str:
     nom = entry.get("nOM_NAVIREField") or "INCONNU"
@@ -138,6 +137,69 @@ def format_vessel_details_premium(entry: dict) -> str:
         </table>
     </div>"""
 
+def send_monthly_report(history: list):
+    """Generates and sends an HTML email summary of past movements."""
+    if not history:
+        print("[LOG] No history to report.")
+        return
+
+    # Sort history by departure date (Newest first)
+    sorted_history = sorted(history, key=lambda x: x.get('departure', ''), reverse=True)
+
+    rows_html = ""
+    for h in sorted_history:
+        try:
+            dt = datetime.fromisoformat(h['departure'])
+            dt_local = dt.astimezone(timezone(timedelta(hours=1)))
+            date_str = dt_local.strftime("%d/%m/%Y %H:%M")
+        except:
+            date_str = "N/A"
+
+        rows_html += f"""
+        <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 10px; color: #333;">{h['vessel']}</td>
+            <td style="padding: 10px; color: #333;">{h['port']}</td>
+            <td style="padding: 10px; text-align: center; color: #333;">{h['duration']}h</td>
+            <td style="padding: 10px; color: #555; font-size: 13px;">{date_str}</td>
+        </tr>
+        """
+
+    subject = f"📊 Rapport Mensuel - {len(sorted_history)} Départs (Jorf/Safi/Nador)"
+    
+    body = f"""
+    <div style="font-family: Arial, sans-serif; max-width: 800px; margin: auto;">
+        <div style="background: #0a3d62; color: white; padding: 15px; border-radius: 8px 8px 0 0;">
+            <h2 style="margin: 0; font-size: 18px;">📊 Rapport d'Activité Mensuel</h2>
+        </div>
+        <div style="background: #f8f9fa; padding: 20px; border: 1px solid #d0d7e1; border-top: none; border-radius: 0 0 8px 8px;">
+            <p>Bonjour,</p>
+            <p>Voici le récapitulatif des départs enregistrés récemment pour les ports suivants : <b>Jorf Lasfar, Safi, Nador</b>.</p>
+            
+            <table style="width: 100%; border-collapse: collapse; background: white; margin-top: 15px; border-radius: 4px; overflow: hidden;">
+                <thead>
+                    <tr style="background: #e9ecef; text-align: left;">
+                        <th style="padding: 12px; font-size: 14px; color: #495057;">Navire</th>
+                        <th style="padding: 12px; font-size: 14px; color: #495057;">Port</th>
+                        <th style="padding: 12px; font-size: 14px; color: #495057; text-align: center;">Durée</th>
+                        <th style="padding: 12px; font-size: 14px; color: #495057;">Date Départ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows_html}
+                </tbody>
+            </table>
+
+            <div style='margin-top: 20px; border-top: 1px solid #e6e9ef; padding-top: 15px;'>
+                <p style='font-size:14px; color:#333;'>Cordialement,</p>
+                <p style='font-size:12px; color:#777777; font-style: italic;'>
+                    Ceci est un rapport automatique généré par le système de surveillance.
+                </p>
+            </div>
+        </div>
+    </div>
+    """
+    send_email(EMAIL_TO, subject, body)
+
 def send_email(to, sub, body):
     if not EMAIL_ENABLED or not EMAIL_USER: return
     msg = MIMEText(body, "html", "utf-8")
@@ -159,11 +221,13 @@ def main():
     active = state.get("active", {})
     history = state.get("history", [])
 
-    # REPORT MODE (Intact from original script)
+    # REPORT MODE LOGIC
     if RUN_MODE == "report":
-        print(f"[LOG] Generating report for {len(history)} past movements.")
+        print(f"[LOG] Generating monthly report for {len(history)} past movements.")
+        send_monthly_report(history)
         return
 
+    # MONITOR MODE LOGIC
     # 1. Fetch Data (Hardened)
     try:
         resp = requests.get(TARGET_URL, timeout=30)
@@ -246,7 +310,6 @@ def main():
             intro = f"<p style='font-family:Arial; font-size:15px;'>Bonjour,<br><br>Ci-dessous les mouvements prévus au <b>Port de {p}</b> :</p>"
             cards = "".join([format_vessel_details_premium(v) for v in vessels])
             
-            # RESTORED ORIGINAL PREMIUM FOOTER
             footer = f"""
             <div style='margin-top: 20px; border-top: 1px solid #e6e9ef; padding-top: 15px;'>
                 <p style='font-family:Arial; font-size:14px; color:#333;'>Cordialement,</p>
@@ -260,8 +323,6 @@ def main():
             
             send_email(EMAIL_TO, new_subject, full_body)
             print(f"[EMAIL] Sent to YOU for {p}: {v_names}")
-            
-            # COLLEAGUE EMAIL LOGIC REMOVED
     else:
         print("[LOG] No new PREVU vessels detected.")
 
