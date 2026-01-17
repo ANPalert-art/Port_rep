@@ -1,1 +1,2225 @@
-{}
+{
+  "active": {
+    "1030868-201466895": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "230714",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "TRANSPORTS MAROCAINS",
+        "dATE_SITUATIONField": "/Date(1769641200000+0100)/",
+        "date_SystemeField": "/Date(1768680961073+0100)/",
+        "hEURE_SITUATIONField": "/Date(60000+0100)/",
+        "nOM_NAVIREField": "PUNTA DEL CHILENO",
+        "nUMERO_ESCALEField": 201466895,
+        "nUMERO_LLOYDField": "1030868",
+        "oPERATEURField": "JLEC",
+        "pROVField": "DAVANT",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9685475-201466747": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1769382000000+0100)/",
+        "date_SystemeField": "/Date(1768680961073+0100)/",
+        "hEURE_SITUATIONField": "/Date(43260000+0100)/",
+        "nOM_NAVIREField": "STENA IMMORTAL",
+        "nUMERO_ESCALEField": 201466747,
+        "nUMERO_LLOYDField": "9685475",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "ANTWERPEN , MOHAMMEDIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9569499-201466987": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1769036400000+0100)/",
+        "date_SystemeField": "/Date(1768680961073+0100)/",
+        "hEURE_SITUATIONField": "/Date(64860000+0100)/",
+        "nOM_NAVIREField": "T PROCYON",
+        "nUMERO_ESCALEField": 201466987,
+        "nUMERO_LLOYDField": "9569499",
+        "oPERATEURField": "OCP",
+        "pROVField": "MARSAXLOKK",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9039391-201466899": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000178",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "FERRIMAROC",
+        "dATE_SITUATIONField": "/Date(1768950000000+0100)/",
+        "date_SystemeField": "/Date(1768680961073+0100)/",
+        "hEURE_SITUATIONField": "/Date(68460000+0100)/",
+        "nOM_NAVIREField": "JUAN J. SISTER",
+        "nUMERO_ESCALEField": 201466899,
+        "nUMERO_LLOYDField": "9039391",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9527776-201466986": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(72060000+0100)/",
+        "nOM_NAVIREField": "MED NORDIC",
+        "nUMERO_ESCALEField": 201466986,
+        "nUMERO_LLOYDField": "9527776",
+        "oPERATEURField": "OCP",
+        "pROVField": "CEUTA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9039391-201466898": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000178",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "FERRIMAROC",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(68460000+0100)/",
+        "nOM_NAVIREField": "JUAN J. SISTER",
+        "nUMERO_ESCALEField": 201466898,
+        "nUMERO_LLOYDField": "9039391",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9541813-201466932": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000016",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "GLOBE MARINE",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(57660000+0100)/",
+        "nOM_NAVIREField": "MAKRA",
+        "nUMERO_ESCALEField": 201466932,
+        "nUMERO_LLOYDField": "9541813",
+        "oPERATEURField": "OCP",
+        "pROVField": "MINA' AL AHMADI",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9612143-201466940": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000014",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(54060000+0100)/",
+        "nOM_NAVIREField": "EVDILOS",
+        "nUMERO_ESCALEField": 201466940,
+        "nUMERO_LLOYDField": "9612143",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "HAMBURG",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9729269-201466914": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000176",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "M S S",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(46860000+0100)/",
+        "nOM_NAVIREField": "PERMIAN LADY",
+        "nUMERO_ESCALEField": 201466914,
+        "nUMERO_LLOYDField": "9729269",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "BRAEFOOT BAY",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PETROLIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9441142-201466930": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000747",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "INTERCONA SARL",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(25260000+0100)/",
+        "nOM_NAVIREField": "BAHAMA MAMA",
+        "nUMERO_ESCALEField": 201466930,
+        "nUMERO_LLOYDField": "9441142",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9037305-201466893": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768863600000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(60000+0100)/",
+        "nOM_NAVIREField": "LUCKY",
+        "nUMERO_ESCALEField": 201466893,
+        "nUMERO_LLOYDField": "9037305",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9116814-201466876": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "885522",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "BABMARSA",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(82860000+0100)/",
+        "nOM_NAVIREField": "MARLEY",
+        "nUMERO_ESCALEField": 201466876,
+        "nUMERO_LLOYDField": "9116814",
+        "oPERATEURField": "SILO",
+        "pROVField": "ANTWERPEN",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9136864-201466934": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(72060000+0100)/",
+        "nOM_NAVIREField": "DERYA AYTEKIN",
+        "nUMERO_ESCALEField": 201466934,
+        "nUMERO_LLOYDField": "9136864",
+        "oPERATEURField": "OCP",
+        "pROVField": "NEWPORT",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9794771-201466870": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000669",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(57660000+0100)/",
+        "nOM_NAVIREField": "LILSTELLA",
+        "nUMERO_ESCALEField": 201466870,
+        "nUMERO_LLOYDField": "9794771",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "AGIO THEODOROI",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CHIMIQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "7529940-201466959": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000076",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "IDEA MAROC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(54060000+0100)/",
+        "nOM_NAVIREField": "NORLAND",
+        "nUMERO_ESCALEField": 201466959,
+        "nUMERO_LLOYDField": "7529940",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "SÈTE",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9473573-201466968": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000014",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(54060000+0100)/",
+        "nOM_NAVIREField": "GLOBAL HARMONY",
+        "nUMERO_ESCALEField": 201466968,
+        "nUMERO_LLOYDField": "9473573",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "MONTOIRE",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9791925-201466945": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000668",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "GLOBAL SEA SERVICES",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(46860000+0100)/",
+        "nOM_NAVIREField": "INDIAN BULKER",
+        "nUMERO_ESCALEField": 201466945,
+        "nUMERO_LLOYDField": "9791925",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "SETÚBAL",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9476941-201466951": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000413",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "NOBLE SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(43260000+0100)/",
+        "nOM_NAVIREField": "MODEST SW",
+        "nUMERO_ESCALEField": 201466951,
+        "nUMERO_LLOYDField": "9476941",
+        "oPERATEURField": "OCP",
+        "pROVField": "RUWAIS",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9507752-201466937": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "CRH50F",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "PEREZ Y CIA MAROC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(39660000+0100)/",
+        "nOM_NAVIREField": "GAS ESCO",
+        "nUMERO_ESCALEField": 201466937,
+        "nUMERO_LLOYDField": "9507752",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALGECIRAS , HUELVA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9421142-201466944": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000780",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "TRUST SHIPING AGENCY MOROCO SA",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(36060000+0100)/",
+        "nOM_NAVIREField": "BREB CUXHAVEN",
+        "nUMERO_ESCALEField": 201466944,
+        "nUMERO_LLOYDField": "9421142",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "BEJAIA (EX BOUGIE)",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9361201-201466916": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000056",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "CCCM",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(25260000+0100)/",
+        "nOM_NAVIREField": "STAR SOPHIA",
+        "nUMERO_ESCALEField": 201466916,
+        "nUMERO_LLOYDField": "9361201",
+        "oPERATEURField": "JLEC",
+        "pROVField": "NEWPORT NEWS",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9039391-201466897": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000178",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "FERRIMAROC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(25260000+0100)/",
+        "nOM_NAVIREField": "JUAN J. SISTER",
+        "nUMERO_ESCALEField": 201466897,
+        "nUMERO_LLOYDField": "9039391",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9956513-201466964": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000668",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "GLOBAL SEA SERVICES",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(21660000+0100)/",
+        "nOM_NAVIREField": "KATUXA NM",
+        "nUMERO_ESCALEField": 201466964,
+        "nUMERO_LLOYDField": "9956513",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "CARTAGENA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9342396-201466894": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000669",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(21660000+0100)/",
+        "nOM_NAVIREField": "HELENA KOSAN",
+        "nUMERO_ESCALEField": 201466894,
+        "nUMERO_LLOYDField": "9342396",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ZUEITINA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "GAZIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "8801113-201466961": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000449",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "BCMCC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(14460000+0100)/",
+        "nOM_NAVIREField": "LADY MINA",
+        "nUMERO_ESCALEField": 201466961,
+        "nUMERO_LLOYDField": "8801113",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "MISURATA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "8801113-201466921": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768777200000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(3660000+0100)/",
+        "nOM_NAVIREField": "LADY MINA",
+        "nUMERO_ESCALEField": 201466921,
+        "nUMERO_LLOYDField": "8801113",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "MISURATA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9903762-201466983": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768690800000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(61260000+0100)/",
+        "nOM_NAVIREField": "GAS BARBAROSSA",
+        "nUMERO_ESCALEField": 201466983,
+        "nUMERO_LLOYDField": "9903762",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "TANGER MED , NEDERLAND , HOUSTON",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "GAZIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9780952-201466925": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768690800000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(57660000+0100)/",
+        "nOM_NAVIREField": "ASL TRINITY",
+        "nUMERO_ESCALEField": 201466925,
+        "nUMERO_LLOYDField": "9780952",
+        "oPERATEURField": "OCP",
+        "pROVField": "SAFI",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9577070-201466877": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768690800000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(28860000+0100)/",
+        "nOM_NAVIREField": "ADVANTAGE PIONEER",
+        "nUMERO_ESCALEField": 201466877,
+        "nUMERO_LLOYDField": "9577070",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "TANGER MED , TUTUNCIFTLIK",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9652569-201466800": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000431",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "GLOBAL SEA SERVICES",
+        "dATE_SITUATIONField": "/Date(1768690800000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(25260000+0100)/",
+        "nOM_NAVIREField": "MAPLE ARROW",
+        "nUMERO_ESCALEField": 201466800,
+        "nUMERO_LLOYDField": "9652569",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "GROVES",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9441142-201466929": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000747",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "INTERCONA SARL",
+        "dATE_SITUATIONField": "/Date(1768690800000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(25260000+0100)/",
+        "nOM_NAVIREField": "BAHAMA MAMA",
+        "nUMERO_ESCALEField": 201466929,
+        "nUMERO_LLOYDField": "9441142",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9125267-201466827": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(77460000+0100)/",
+        "nOM_NAVIREField": "FERICEK",
+        "nUMERO_ESCALEField": 201466827,
+        "nUMERO_LLOYDField": "9125267",
+        "oPERATEURField": "OCP",
+        "pROVField": "HUELVA",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9757539-201466832": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000105",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(74280000+0100)/",
+        "nOM_NAVIREField": "LENA",
+        "nUMERO_ESCALEField": 201466832,
+        "nUMERO_LLOYDField": "9757539",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "LIVERPOOL",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9612131-201466235": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(69840000+0100)/",
+        "nOM_NAVIREField": "SIGMA VENTURE",
+        "nUMERO_ESCALEField": 201466235,
+        "nUMERO_LLOYDField": "9612131",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "BARCARENA",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9039391-201466859": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000178",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "FERRIMAROC",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(68700000+0100)/",
+        "nOM_NAVIREField": "JUAN J. SISTER",
+        "nUMERO_ESCALEField": 201466859,
+        "nUMERO_LLOYDField": "9039391",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9543081-201466848": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(65880000+0100)/",
+        "nOM_NAVIREField": "NOVA BREEZE",
+        "nUMERO_ESCALEField": 201466848,
+        "nUMERO_LLOYDField": "9543081",
+        "oPERATEURField": "OCP",
+        "pROVField": "NANJING , LIANYUNGANG",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9735012-201466918": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(43260000+0100)/",
+        "nOM_NAVIREField": "SPAR PAVO",
+        "nUMERO_ESCALEField": 201466918,
+        "nUMERO_LLOYDField": "9735012",
+        "oPERATEURField": "OCP",
+        "pROVField": "ALGECIRAS",
+        "sITUATIONField": "PREVU",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "PREVU",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9643879-201466565": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000411",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "ATLANTIC TRADING AND SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(39180000+0100)/",
+        "nOM_NAVIREField": "HARVEST FROST",
+        "nUMERO_ESCALEField": 201466565,
+        "nUMERO_LLOYDField": "9643879",
+        "oPERATEURField": "JLEC",
+        "pROVField": "RICHARDS BAY",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9377925-201466715": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(37080000+0100)/",
+        "nOM_NAVIREField": "CELTIC MARINER",
+        "nUMERO_ESCALEField": 201466715,
+        "nUMERO_LLOYDField": "9377925",
+        "oPERATEURField": "OCP",
+        "pROVField": "SEVILLA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9619749-201465918": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961077+0100)/",
+        "hEURE_SITUATIONField": "/Date(32760000+0100)/",
+        "nOM_NAVIREField": "JIN RUI 82 ",
+        "nUMERO_ESCALEField": 201465918,
+        "nUMERO_LLOYDField": "9619749",
+        "oPERATEURField": "OCP",
+        "pROVField": "DURRËS",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9591820-201466772": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000009",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "SOMASAF",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(24300000+0100)/",
+        "nOM_NAVIREField": "NERMIN KARABEKIR",
+        "nUMERO_ESCALEField": 201466772,
+        "nUMERO_LLOYDField": "9591820",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9590979-201466711": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000001",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "SOMATIME",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(23940000+0100)/",
+        "nOM_NAVIREField": "NAVI STAR",
+        "nUMERO_ESCALEField": 201466711,
+        "nUMERO_LLOYDField": "9590979",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "GRAMERCY",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "1018470-201466853": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000004",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "LASRY MAROC",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(17400000+0100)/",
+        "nOM_NAVIREField": "GREEN ENDEAVOUR",
+        "nUMERO_ESCALEField": 201466853,
+        "nUMERO_LLOYDField": "1018470",
+        "oPERATEURField": "OCP",
+        "pROVField": "TEXAS CITY",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9659139-201466685": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(15240000+0100)/",
+        "nOM_NAVIREField": "WARISOULX",
+        "nUMERO_ESCALEField": 201466685,
+        "nUMERO_LLOYDField": "9659139",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "HOUSTON",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "GAZIER"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9039391-201466858": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000178",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "FERRIMAROC",
+        "dATE_SITUATIONField": "/Date(1768604400000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(3660000+0100)/",
+        "nOM_NAVIREField": "JUAN J. SISTER",
+        "nUMERO_ESCALEField": 201466858,
+        "nUMERO_LLOYDField": "9039391",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ALMERIA",
+        "sITUATIONField": "APPAREILLAGE",
+        "tYP_NAVIREField": "PASSAGERS"
+      },
+      "status": "APPAREILLAGE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9304318-201466909": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(81360000+0100)/",
+        "nOM_NAVIREField": "NQ ROSA",
+        "nUMERO_ESCALEField": 201466909,
+        "nUMERO_LLOYDField": "9304318",
+        "oPERATEURField": "OCP",
+        "pROVField": "JORF LASFAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9497622-201466733": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000411",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "ATLANTIC TRADING AND SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(80700000+0100)/",
+        "nOM_NAVIREField": "NEW VENTURE",
+        "nUMERO_ESCALEField": 201466733,
+        "nUMERO_LLOYDField": "9497622",
+        "oPERATEURField": "JLEC",
+        "pROVField": "RICHARDS BAY",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9786798-201466413": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(73200000+0100)/",
+        "nOM_NAVIREField": "ALBUFERA TMA",
+        "nUMERO_ESCALEField": 201466413,
+        "nUMERO_LLOYDField": "9786798",
+        "oPERATEURField": "OCP",
+        "pROVField": "CARTAGENA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9972921-201466511": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(66600000+0100)/",
+        "nOM_NAVIREField": "ARTEAGA NM",
+        "nUMERO_ESCALEField": 201466511,
+        "nUMERO_LLOYDField": "9972921",
+        "oPERATEURField": "OCP",
+        "pROVField": "ALGECIRAS",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9306304-201466821": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000014",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(60960000+0100)/",
+        "nOM_NAVIREField": "MANISA SOLE",
+        "nUMERO_ESCALEField": 201466821,
+        "nUMERO_LLOYDField": "9306304",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ARINAGA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9659892-201466953": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(43200000+0100)/",
+        "nOM_NAVIREField": "OCEAN INNOVATION",
+        "nUMERO_ESCALEField": 201466953,
+        "nUMERO_LLOYDField": "9659892",
+        "oPERATEURField": "OCP",
+        "pROVField": "CADIZ",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9277383-201466907": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000749",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "NAVANTIA SARL",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(25800000+0100)/",
+        "nOM_NAVIREField": "TINA",
+        "nUMERO_ESCALEField": 201466907,
+        "nUMERO_LLOYDField": "9277383",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "VALENCIA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "PORTE CONTENEUR"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9772565-201466346": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(15600000+0100)/",
+        "nOM_NAVIREField": "ARKLOW VALOUR",
+        "nUMERO_ESCALEField": 201466346,
+        "nUMERO_LLOYDField": "9772565",
+        "oPERATEURField": "OCP",
+        "pROVField": "CEUTA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9282948-201466869": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(10440000+0100)/",
+        "nOM_NAVIREField": "NIMET TORLAK",
+        "nUMERO_ESCALEField": 201466869,
+        "nUMERO_LLOYDField": "9282948",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9314806-201466856": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(5640000+0100)/",
+        "nOM_NAVIREField": "ULUS",
+        "nUMERO_ESCALEField": 201466856,
+        "nUMERO_LLOYDField": "9314806",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "ALIAGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9210244-201466753": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000197",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "NAXCO SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768518000000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(5460000+0100)/",
+        "nOM_NAVIREField": "OPTIMA",
+        "nUMERO_ESCALEField": 201466753,
+        "nUMERO_LLOYDField": "9210244",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9594468-201466440": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000002",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "LASRY MAROC",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(77100000+0100)/",
+        "nOM_NAVIREField": "SEAPEARL",
+        "nUMERO_ESCALEField": 201466440,
+        "nUMERO_LLOYDField": "9594468",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "GDANSK",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9518141-201466661": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000411",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "ATLANTIC TRADING AND SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(74400000+0100)/",
+        "nOM_NAVIREField": "MARINA BLISS",
+        "nUMERO_ESCALEField": 201466661,
+        "nUMERO_LLOYDField": "9518141",
+        "oPERATEURField": "JLEC",
+        "pROVField": "MAPUTO",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9391036-201466896": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(66600000+0100)/",
+        "nOM_NAVIREField": "MANISA BALU",
+        "nUMERO_ESCALEField": 201466896,
+        "nUMERO_LLOYDField": "9391036",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "JORF LASFAR",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9478303-201466837": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000743",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "NAVIFRET MAROC SARL",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(66480000+0100)/",
+        "nOM_NAVIREField": "ALICE THERESA",
+        "nUMERO_ESCALEField": 201466837,
+        "nUMERO_LLOYDField": "9478303",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "CARTAGENA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "PETROLIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9529516-201466512": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000670",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING  SA",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(62100000+0100)/",
+        "nOM_NAVIREField": "OCEAN GLSR",
+        "nUMERO_ESCALEField": 201466512,
+        "nUMERO_LLOYDField": "9529516",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "LEBANON",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9709233-201466604": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(58500000+0100)/",
+        "nOM_NAVIREField": "GOLDEN ISLE",
+        "nUMERO_ESCALEField": 201466604,
+        "nUMERO_LLOYDField": "9709233",
+        "oPERATEURField": "OCP",
+        "pROVField": "BEJAIA (EX BOUGIE)",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9609249-201466087": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000105",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(56700000+0100)/",
+        "nOM_NAVIREField": "LUFFY",
+        "nUMERO_ESCALEField": 201466087,
+        "nUMERO_LLOYDField": "9609249",
+        "oPERATEURField": "OCP",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9742235-201466941": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(56460000+0100)/",
+        "nOM_NAVIREField": "YANGTZE JEWEL",
+        "nUMERO_ESCALEField": 201466941,
+        "nUMERO_LLOYDField": "9742235",
+        "oPERATEURField": "OCP",
+        "pROVField": "KOPER",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9310202-201466830": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000303",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "C O M A N A V",
+        "dATE_SITUATIONField": "/Date(1768431600000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(23580000+0100)/",
+        "nOM_NAVIREField": "NURI SONAY",
+        "nUMERO_ESCALEField": 201466830,
+        "nUMERO_LLOYDField": "9310202",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ZAANDAM , IJMUIDEN/VELSEN",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9780952-201466915": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(82800000+0100)/",
+        "nOM_NAVIREField": "ASL TRINITY",
+        "nUMERO_ESCALEField": 201466915,
+        "nUMERO_LLOYDField": "9780952",
+        "oPERATEURField": "OCP",
+        "pROVField": "BEJAIA (EX BOUGIE)",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9941300-201466901": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000176",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "M S S",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(79740000+0100)/",
+        "nOM_NAVIREField": "NORD MARINER",
+        "nUMERO_ESCALEField": 201466901,
+        "nUMERO_LLOYDField": "9941300",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "BEAUMONT",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9563380-201466668": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(73860000+0100)/",
+        "nOM_NAVIREField": " VISBY",
+        "nUMERO_ESCALEField": 201466668,
+        "nUMERO_LLOYDField": "9563380",
+        "oPERATEURField": "OCP",
+        "pROVField": "ALGECIRAS",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9147875-201466721": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000303",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "C O M A N A V",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(68400000+0100)/",
+        "nOM_NAVIREField": "LADY DEBORA",
+        "nUMERO_ESCALEField": 201466721,
+        "nUMERO_LLOYDField": "9147875",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "CARDIFF",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9313474-201466496": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(60000000+0100)/",
+        "nOM_NAVIREField": "MOSTAR",
+        "nUMERO_ESCALEField": 201466496,
+        "nUMERO_LLOYDField": "9313474",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "ALIAGA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9576129-201466861": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000668",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "GLOBAL SEA SERVICES",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(57000000+0100)/",
+        "nOM_NAVIREField": "TONAL",
+        "nUMERO_ESCALEField": 201466861,
+        "nUMERO_LLOYDField": "9576129",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "GRAO DE CASTELLON",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9400837-201466577": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000016",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "GLOBE MARINE",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(48900000+0100)/",
+        "nOM_NAVIREField": "KOBE",
+        "nUMERO_ESCALEField": 201466577,
+        "nUMERO_LLOYDField": "9400837",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "GIBRALTAR",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9473755-201466890": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(30600000+0100)/",
+        "nOM_NAVIREField": "CORESHIP OL",
+        "nUMERO_ESCALEField": 201466890,
+        "nUMERO_LLOYDField": "9473755",
+        "oPERATEURField": "OCP",
+        "pROVField": "GIBRALTAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9212448-201466878": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "11",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMANAV",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(6600000+0100)/",
+        "nOM_NAVIREField": "STORM I",
+        "nUMERO_ESCALEField": 201466878,
+        "nUMERO_LLOYDField": "9212448",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "ARINAGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9955612-201466184": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768345200000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(4320000+0100)/",
+        "nOM_NAVIREField": "YASA ROSE",
+        "nUMERO_ESCALEField": 201466184,
+        "nUMERO_LLOYDField": "9955612",
+        "oPERATEURField": "OCP",
+        "pROVField": "CASABLANCA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9615561-201466636": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(75960000+0100)/",
+        "nOM_NAVIREField": "NAJWA",
+        "nUMERO_ESCALEField": 201466636,
+        "nUMERO_LLOYDField": "9615561",
+        "oPERATEURField": "OCP",
+        "pROVField": "GIBRALTAR",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9401867-201466776": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(57600000+0100)/",
+        "nOM_NAVIREField": "SEA SILA",
+        "nUMERO_ESCALEField": 201466776,
+        "nUMERO_LLOYDField": "9401867",
+        "oPERATEURField": "OCP",
+        "pROVField": "DJEN-DJEN",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9875094-201466501": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(56820000+0100)/",
+        "nOM_NAVIREField": "BELNIKE",
+        "nUMERO_ESCALEField": 201466501,
+        "nUMERO_LLOYDField": "9875094",
+        "oPERATEURField": "OCP",
+        "pROVField": "GIBRALTAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9414462-201466506": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000009",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "SOMASAF",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961080+0100)/",
+        "hEURE_SITUATIONField": "/Date(49200000+0100)/",
+        "nOM_NAVIREField": "STADION II",
+        "nUMERO_ESCALEField": 201466506,
+        "nUMERO_LLOYDField": "9414462",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "LISBOA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9354052-201466805": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(15540000+0100)/",
+        "nOM_NAVIREField": "LADY DIVINA",
+        "nUMERO_ESCALEField": 201466805,
+        "nUMERO_LLOYDField": "9354052",
+        "oPERATEURField": "OCP",
+        "pROVField": "MOSTAGANEM",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9598282-201466751": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000441",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "TRADE NAV",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(12300000+0100)/",
+        "nOM_NAVIREField": "SEALION",
+        "nUMERO_ESCALEField": 201466751,
+        "nUMERO_LLOYDField": "9598282",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "ROSARIO",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9498236-201466191": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768258800000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(4440000+0100)/",
+        "nOM_NAVIREField": "SUNDA",
+        "nUMERO_ESCALEField": 201466191,
+        "nUMERO_LLOYDField": "9498236",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "LIEPAJA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9498262-201466803": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1768172400000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(44040000+0100)/",
+        "nOM_NAVIREField": "BELASITZA",
+        "nUMERO_ESCALEField": 201466803,
+        "nUMERO_LLOYDField": "9498262",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "RIGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "1044508-201466622": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1768172400000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(35520000+0100)/",
+        "nOM_NAVIREField": "JNS OCEAN",
+        "nUMERO_ESCALEField": 201466622,
+        "nUMERO_LLOYDField": "1044508",
+        "oPERATEURField": "OCP",
+        "pROVField": "LEIXÕES",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9883065-201466762": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000015",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768172400000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(12600000+0100)/",
+        "nOM_NAVIREField": "SSI PROVIDENCE",
+        "nUMERO_ESCALEField": 201466762,
+        "nUMERO_LLOYDField": "9883065",
+        "oPERATEURField": "SILO",
+        "pROVField": "ROUEN",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9607112-201466702": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000132",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "WAFA SHIPPING",
+        "dATE_SITUATIONField": "/Date(1768086000000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(47040000+0100)/",
+        "nOM_NAVIREField": "BORA",
+        "nUMERO_ESCALEField": 201466702,
+        "nUMERO_LLOYDField": "9607112",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "VANCOUVER",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9735842-201466722": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000016",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "GLOBE MARINE",
+        "dATE_SITUATIONField": "/Date(1768086000000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(34860000+0100)/",
+        "nOM_NAVIREField": "BBG FOREVER",
+        "nUMERO_ESCALEField": 201466722,
+        "nUMERO_LLOYDField": "9735842",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "SANTAREM",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9595383-201466315": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000016",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "GLOBE MARINE",
+        "dATE_SITUATIONField": "/Date(1767999600000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(81960000+0100)/",
+        "nOM_NAVIREField": "CHARLIE",
+        "nUMERO_ESCALEField": 201466315,
+        "nUMERO_LLOYDField": "9595383",
+        "oPERATEURField": "SONASID",
+        "pROVField": "LIVERPOOL",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9509475-201466808": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767999600000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(71700000+0100)/",
+        "nOM_NAVIREField": "ARKLOW MOOR",
+        "nUMERO_ESCALEField": 201466808,
+        "nUMERO_LLOYDField": "9509475",
+        "oPERATEURField": "OCP",
+        "pROVField": "CASABLANCA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9392107-201466810": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767999600000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(43200000+0100)/",
+        "nOM_NAVIREField": "ADAROSE",
+        "nUMERO_ESCALEField": 201466810,
+        "nUMERO_LLOYDField": "9392107",
+        "oPERATEURField": "OCP",
+        "pROVField": "NOUAKCHOTT",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9491915-201466508": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767913200000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(67320000+0100)/",
+        "nOM_NAVIREField": "BLUE NOTE",
+        "nUMERO_ESCALEField": 201466508,
+        "nUMERO_LLOYDField": "9491915",
+        "oPERATEURField": "OCP",
+        "pROVField": "CASABLANCA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9664160-201466806": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767913200000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(57540000+0100)/",
+        "nOM_NAVIREField": "ADALADY",
+        "nUMERO_ESCALEField": 201466806,
+        "nUMERO_LLOYDField": "9664160",
+        "oPERATEURField": "OCP",
+        "pROVField": "JORF LASFAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9229116-201466755": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1767913200000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(57180000+0100)/",
+        "nOM_NAVIREField": "ARISTO ",
+        "nUMERO_ESCALEField": 201466755,
+        "nUMERO_LLOYDField": "9229116",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9858072-201466741": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1767913200000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(6360000+0100)/",
+        "nOM_NAVIREField": "BULLDOG",
+        "nUMERO_ESCALEField": 201466741,
+        "nUMERO_LLOYDField": "9858072",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "TEXAS CITY",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9610092-201466558": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000197",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "NAXCO SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961083+0100)/",
+        "hEURE_SITUATIONField": "/Date(82680000+0100)/",
+        "nOM_NAVIREField": "COMMON FAITH",
+        "nUMERO_ESCALEField": 201466558,
+        "nUMERO_LLOYDField": "9610092",
+        "oPERATEURField": "OCP",
+        "pROVField": "JUBAIL",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9947225-201466267": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000413",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "NOBLE SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(62280000+0100)/",
+        "nOM_NAVIREField": "NAVIOS PRIMAVERA",
+        "nUMERO_ESCALEField": 201466267,
+        "nUMERO_LLOYDField": "9947225",
+        "oPERATEURField": "OCP",
+        "pROVField": "RUWAIS",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9505546-201466793": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000802",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(58200000+0100)/",
+        "nOM_NAVIREField": "WAALBORG",
+        "nUMERO_ESCALEField": 201466793,
+        "nUMERO_LLOYDField": "9505546",
+        "oPERATEURField": "OCP",
+        "pROVField": "SAFI",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9317341-201466777": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000756",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "03",
+        "cONSIGNATAIREField": "NOBLE SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(57900000+0100)/",
+        "nOM_NAVIREField": "THOR FEARLESS",
+        "nUMERO_ESCALEField": 201466777,
+        "nUMERO_LLOYDField": "9317341",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "JORF LASFAR , AR RUWAYS",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9612284-201466625": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000083",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "06",
+        "cONSIGNATAIREField": "SFAA SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(40380000+0100)/",
+        "nOM_NAVIREField": "PRIME STAR",
+        "nUMERO_ESCALEField": 201466625,
+        "nUMERO_LLOYDField": "9612284",
+        "oPERATEURField": "SOSIPO",
+        "pROVField": "NANTES",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9328572-201466742": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000105",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(30840000+0100)/",
+        "nOM_NAVIREField": "GLORY LOONG",
+        "nUMERO_ESCALEField": 201466742,
+        "nUMERO_LLOYDField": "9328572",
+        "oPERATEURField": "OCP",
+        "pROVField": "UST  LUGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "1029015-201466774": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(25740000+0100)/",
+        "nOM_NAVIREField": "SKY EAGLE",
+        "nUMERO_ESCALEField": 201466774,
+        "nUMERO_LLOYDField": "1029015",
+        "oPERATEURField": "OCP",
+        "pROVField": "CASABLANCA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9514042-201466669": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000413",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "NOBLE SHIPPING",
+        "dATE_SITUATIONField": "/Date(1767826800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(9480000+0100)/",
+        "nOM_NAVIREField": "K. RUBY",
+        "nUMERO_ESCALEField": 201466669,
+        "nUMERO_LLOYDField": "9514042",
+        "oPERATEURField": "OCP",
+        "pROVField": "RUWAIS",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "1029003-201466637": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767740400000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(38700000+0100)/",
+        "nOM_NAVIREField": "SKY LBS",
+        "nUMERO_ESCALEField": 201466637,
+        "nUMERO_LLOYDField": "1029003",
+        "oPERATEURField": "OCP",
+        "pROVField": "JORF LASFAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9251042-201466585": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000303",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "C O M A N A V",
+        "dATE_SITUATIONField": "/Date(1767740400000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(28320000+0100)/",
+        "nOM_NAVIREField": "MOHAC",
+        "nUMERO_ESCALEField": 201466585,
+        "nUMERO_LLOYDField": "9251042",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "CARONTE",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9274082-201466684": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000079",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "SEATRADE",
+        "dATE_SITUATIONField": "/Date(1767654000000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(40320000+0100)/",
+        "nOM_NAVIREField": "TM HAI HA 568",
+        "nUMERO_ESCALEField": 201466684,
+        "nUMERO_LLOYDField": "9274082",
+        "oPERATEURField": "HYDROCARB",
+        "pROVField": "TANGER MED",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "TANKER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9523964-201466480": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767222000000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(29520000+0100)/",
+        "nOM_NAVIREField": "KATE C",
+        "nUMERO_ESCALEField": 201466480,
+        "nUMERO_LLOYDField": "9523964",
+        "oPERATEURField": "OCP",
+        "pROVField": "JORF LASFAR",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9424807-201466291": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1767135600000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(24000000+0100)/",
+        "nOM_NAVIREField": "SELECTA",
+        "nUMERO_ESCALEField": 201466291,
+        "nUMERO_LLOYDField": "9424807",
+        "oPERATEURField": "OCP",
+        "pROVField": "LISBOA",
+        "sITUATIONField": "A QUAI",
+        "tYP_NAVIREField": "CONVENTIONEL"
+      },
+      "status": "A QUAI",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9865362-201466194": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1766530800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(65580000+0100)/",
+        "nOM_NAVIREField": "AMIS TREASURE",
+        "nUMERO_ESCALEField": 201466194,
+        "nUMERO_LLOYDField": "9865362",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "SANTAREM",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9646742-201466276": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000093",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "AGEMAFRIC",
+        "dATE_SITUATIONField": "/Date(1766444400000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(19080000+0100)/",
+        "nOM_NAVIREField": "AZTECA",
+        "nUMERO_ESCALEField": 201466276,
+        "nUMERO_LLOYDField": "9646742",
+        "oPERATEURField": "MARSA MAROC",
+        "pROVField": "RIGA",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9742651-201466345": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000105",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
+        "dATE_SITUATIONField": "/Date(1766358000000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(66300000+0100)/",
+        "nOM_NAVIREField": "GENCO FREEDOM",
+        "nUMERO_ESCALEField": 201466345,
+        "nUMERO_LLOYDField": "9742651",
+        "oPERATEURField": "MASS CEREALES",
+        "pROVField": "SÃO FRANCISCO DO SUL",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    },
+    "9470818-201466072": {
+      "entry": {
+        "cODE_CONSIGNATAIREField": "000483",
+        "cODE_PORTField": "",
+        "cODE_SOCIETEField": "07",
+        "cONSIGNATAIREField": "COMATAM",
+        "dATE_SITUATIONField": "/Date(1765666800000+0100)/",
+        "date_SystemeField": "/Date(1768680961087+0100)/",
+        "hEURE_SITUATIONField": "/Date(4560000+0100)/",
+        "nOM_NAVIREField": "AMALEA",
+        "nUMERO_ESCALEField": 201466072,
+        "nUMERO_LLOYDField": "9470818",
+        "oPERATEURField": "OCP",
+        "pROVField": "SFAX",
+        "sITUATIONField": "EN RADE",
+        "tYP_NAVIREField": "VRAQUIER"
+      },
+      "status": "EN RADE",
+      "last_seen": "2026-01-17T21:16:01.352103+00:00"
+    }
+  },
+  "history": []
+}
