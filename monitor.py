@@ -17,7 +17,6 @@ STATE_ENV_VAR = "VESSEL_STATE_DATA"
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
 EMAIL_TO = os.getenv("EMAIL_TO")
-# EMAIL_TO_COLLEAGUE REMOVED AS REQUESTED
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
@@ -137,16 +136,48 @@ def format_vessel_details_premium(entry: dict) -> str:
         </table>
     </div>"""
 
-def send_monthly_report(history: list):
-    """Generates and sends an HTML email summary of past movements."""
+def send_monthly_report(history: list, specific_port: str):
+    """Generates a performance report for a specific port."""
     if not history:
-        print("[LOG] No history to report.")
+        print(f"[LOG] No history to report for {specific_port}.")
         return
 
-    # Sort history by departure date (Newest first)
-    sorted_history = sorted(history, key=lambda x: x.get('departure', ''), reverse=True)
+    # 1. Process Data for Statistics
+    stats = {}
+    
+    for h in history:
+        agent = h.get('agent', 'Inconnu')
+        quay_dur = h.get('duration', 0)
+        anch_dur = h.get('anchorage_duration', 0)
+        
+        if agent not in stats:
+            stats[agent] = {"calls": 0, "quay_sum": 0.0, "anch_sum": 0.0}
+            
+        stats[agent]["calls"] += 1
+        stats[agent]["quay_sum"] += quay_dur
+        stats[agent]["anch_sum"] += anch_dur
 
-    rows_html = ""
+    # 2. Build Agent Stats Table
+    agent_rows = ""
+    sorted_agents = sorted(stats.items(), key=lambda x: x[1]['calls'], reverse=True)
+    
+    for agent, data in sorted_agents:
+        total_calls = data['calls']
+        avg_quay = round(data['quay_sum'] / total_calls, 1) if total_calls > 0 else 0
+        avg_anch = round(data['anch_sum'] / total_calls, 1) if total_calls > 0 else 0
+        
+        agent_rows += f"""
+        <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 10px; font-weight: bold; color: #333;">{agent}</td>
+            <td style="padding: 10px; text-align: center; color: #333;">{total_calls}</td>
+            <td style="padding: 10px; text-align: center; color: #333;">{avg_anch}h</td>
+            <td style="padding: 10px; text-align: center; color: #333;">{avg_quay}h</td>
+        </tr>"""
+
+    # 3. Build Detailed Vessel List
+    sorted_history = sorted(history, key=lambda x: x.get('departure', ''), reverse=True)
+    vessel_rows = ""
+    
     for h in sorted_history:
         try:
             dt = datetime.fromisoformat(h['departure'])
@@ -154,45 +185,67 @@ def send_monthly_report(history: list):
             date_str = dt_local.strftime("%d/%m/%Y %H:%M")
         except:
             date_str = "N/A"
+            
+        anch_val = h.get('anchorage_duration', 0)
+        anch_str = f"{anch_val:.1f}h" if anch_val > 0 else "-"
+        quay_str = f"{h.get('duration', 0):.1f}h"
 
-        rows_html += f"""
-        <tr style="border-bottom: 1px solid #e0e0e0;">
-            <td style="padding: 10px; color: #333;">{h['vessel']}</td>
-            <td style="padding: 10px; color: #333;">{h['port']}</td>
-            <td style="padding: 10px; text-align: center; color: #333;">{h['duration']}h</td>
-            <td style="padding: 10px; color: #555; font-size: 13px;">{date_str}</td>
+        vessel_rows += f"""
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+            <td style="padding: 8px; color: #333;">{h['vessel']}</td>
+            <td style="padding: 8px; color: #333; font-size: 13px;">{h.get('agent', '-')}</td>
+            <td style="padding: 8px; text-align: center; color: #555; font-size: 12px;">{anch_str}</td>
+            <td style="padding: 8px; text-align: center; color: #555; font-size: 12px;">{quay_str}</td>
+            <td style="padding: 8px; color: #555; font-size: 12px;">{date_str}</td>
         </tr>
         """
 
-    subject = f"📊 Rapport Mensuel - {len(sorted_history)} Départs (Jorf/Safi/Nador)"
+    subject = f"📊 Rapport Mensuel : Port de {specific_port} ({len(history)} Mouvements)"
     
     body = f"""
-    <div style="font-family: Arial, sans-serif; max-width: 800px; margin: auto;">
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
         <div style="background: #0a3d62; color: white; padding: 15px; border-radius: 8px 8px 0 0;">
-            <h2 style="margin: 0; font-size: 18px;">📊 Rapport d'Activité Mensuel</h2>
+            <h2 style="margin: 0; font-size: 20px;">📊 Rapport de Performance</h2>
+            <p style="margin: 5px 0 0; opacity: 0.9; font-size: 14px;">Port de {specific_port} - Statistiques Mensuelles</p>
         </div>
+        
         <div style="background: #f8f9fa; padding: 20px; border: 1px solid #d0d7e1; border-top: none; border-radius: 0 0 8px 8px;">
             <p>Bonjour,</p>
-            <p>Voici le récapitulatif des départs enregistrés récemment pour les ports suivants : <b>Jorf Lasfar, Safi, Nador</b>.</p>
+            <p>Voici le récapitulatif d'activité mensuel pour le <b>Port de {specific_port}</b>.</p>
             
-            <table style="width: 100%; border-collapse: collapse; background: white; margin-top: 15px; border-radius: 4px; overflow: hidden;">
+            <!-- AGENT STATISTICS TABLE -->
+            <h3 style="color: #0a3d62; margin-top: 0; border-bottom: 2px solid #0a3d62; padding-bottom: 10px;">🏢 Statistiques par Agent</h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; margin-bottom: 30px; border-radius: 4px; overflow: hidden;">
                 <thead>
                     <tr style="background: #e9ecef; text-align: left;">
-                        <th style="padding: 12px; font-size: 14px; color: #495057;">Navire</th>
-                        <th style="padding: 12px; font-size: 14px; color: #495057;">Port</th>
-                        <th style="padding: 12px; font-size: 14px; color: #495057; text-align: center;">Durée</th>
-                        <th style="padding: 12px; font-size: 14px; color: #495057;">Date Départ</th>
+                        <th style="padding: 12px; font-size: 13px; color: #495057;">Agent (Consignataire)</th>
+                        <th style="padding: 12px; font-size: 13px; color: #495057; text-align: center;">Total Escales</th>
+                        <th style="padding: 12px; font-size: 13px; color: #495057; text-align: center;">⚓ Moy. Attente (Poste)</th>
+                        <th style="padding: 12px; font-size: 13px; color: #495057; text-align: center;">🏗️ Moy. Quai (Séjour)</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {rows_html}
-                </tbody>
+                <tbody>{agent_rows}</tbody>
             </table>
 
-            <div style='margin-top: 20px; border-top: 1px solid #e6e9ef; padding-top: 15px;'>
+            <!-- DETAILED VESSEL LIST -->
+            <h3 style="color: #0a3d62; border-bottom: 2px solid #0a3d62; padding-bottom: 10px;">📋 Liste Détaillée des Mouvements</h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; font-size: 13px; border-radius: 4px; overflow: hidden;">
+                <thead>
+                    <tr style="background: #e9ecef; text-align: left;">
+                        <th style="padding: 10px; color: #495057;">Navire</th>
+                        <th style="padding: 10px; color: #495057;">Agent</th>
+                        <th style="padding: 10px; color: #495057; text-align: center;">⚓ Poste</th>
+                        <th style="padding: 10px; color: #495057; text-align: center;">🏗️ Quai</th>
+                        <th style="padding: 10px; color: #495057;">Date Départ</th>
+                    </tr>
+                </thead>
+                <tbody>{vessel_rows}</tbody>
+            </table>
+
+            <div style='margin-top: 30px; border-top: 1px solid #e6e9ef; padding-top: 15px;'>
                 <p style='font-size:14px; color:#333;'>Cordialement,</p>
                 <p style='font-size:12px; color:#777777; font-style: italic;'>
-                    Ceci est un rapport automatique généré par le système de surveillance.
+                    * Les temps de poste sont calculés sur la base des transitions de statut détectées.
                 </p>
             </div>
         </div>
@@ -223,12 +276,31 @@ def main():
 
     # REPORT MODE LOGIC
     if RUN_MODE == "report":
-        print(f"[LOG] Generating monthly report for {len(history)} past movements.")
-        send_monthly_report(history)
+        print(f"[LOG] Generating monthly reports.")
+        
+        # Split history by port
+        port_history = {
+            "Safi": [],
+            "Nador": [],
+            "Jorf Lasfar": []
+        }
+        
+        for h in history:
+            p_name = h.get("port")
+            if p_name in port_history:
+                port_history[p_name].append(h)
+        
+        # Send separate email for each port if data exists
+        for port_name, p_hist in port_history.items():
+            if p_hist:
+                print(f"[LOG] Sending report for {port_name} ({len(p_hist)} movements).")
+                send_monthly_report(p_hist, port_name)
+            else:
+                print(f"[LOG] No movements found for {port_name}.")
         return
 
     # MONITOR MODE LOGIC
-    # 1. Fetch Data (Hardened)
+    # 1. Fetch Data
     try:
         resp = requests.get(TARGET_URL, timeout=30)
         resp.raise_for_status()
@@ -244,7 +316,6 @@ def main():
     # Parse live data
     for e in all_data:
         if str(e.get("cODE_SOCIETEField")) in ALLOWED_PORTS:
-            # Safer ID generation to handle missing IMOs or Escales
             imo = e.get('nUMERO_LLOYDField') or "0000000"
             esc = e.get('nUMERO_ESCALEField') or "0"
             v_id = f"{imo}-{esc}"
@@ -260,21 +331,39 @@ def main():
             prev_status = stored["status"]
             new_status = live["status"]
             
+            # A. ANCHORAGE TRACKING
+            if new_status == "ANCRE" and prev_status != "ANCRE":
+                stored["anchored_at"] = now_utc.isoformat()
+                print(f"[LOG] Anchorage detected: {stored['entry'].get('nOM_NAVIREField')}")
+
+            # B. ARRIVAL TO QUAY
             if prev_status != "A QUAI" and new_status == "A QUAI":
                 stored["quai_at"] = now_utc.isoformat()
-                print(f"[LOG] Arrival detected: {stored['entry'].get('nOM_NAVIREField')}")
+                
+                anchorage_duration = 0.0
+                if "anchored_at" in stored:
+                    anchorage_duration = calculate_duration_hours(stored["anchored_at"], now_utc)
+                
+                stored["anchorage_duration"] = anchorage_duration
+                print(f"[LOG] Arrival at Quay: {stored['entry'].get('nOM_NAVIREField')} (Anchorage wait: {anchorage_duration}h)")
             
+            # C. DEPARTURE
             if prev_status == "A QUAI" and new_status == "APPAREILLAGE":
                 quai_time = stored.get("quai_at", stored["last_seen"])
-                dur = calculate_duration_hours(quai_time, now_utc)
+                quay_duration = calculate_duration_hours(quai_time, now_utc)
+                
+                anchorage_duration = stored.get("anchorage_duration", 0.0)
+                
                 history.append({
                     "vessel": stored["entry"].get('nOM_NAVIREField'),
+                    "agent": stored["entry"].get("cONSIGNATAIREField", "Inconnu"),
                     "port": port_name(stored["entry"].get('cODE_SOCIETEField')),
-                    "duration": round(dur, 2),
+                    "duration": round(quay_duration, 2),
+                    "anchorage_duration": round(anchorage_duration, 2),
                     "departure": now_utc.isoformat()
                 })
                 to_remove.append(v_id)
-                print(f"[LOG] Departure detected: {stored['entry'].get('nOM_NAVIREField')} (Stay: {round(dur,2)}h)")
+                print(f"[LOG] Departure detected: {stored['entry'].get('nOM_NAVIREField')} (Quay Stay: {quay_duration:.2f}h)")
             
             stored["status"] = new_status
             stored["last_seen"] = now_utc.isoformat()
@@ -294,7 +383,7 @@ def main():
                 p = port_name(live['e'].get("cODE_SOCIETEField"))
                 alerts.setdefault(p, []).append(live["e"])
 
-    # 5. Garbage Collection (Fixed Logic)
+    # 5. Garbage Collection
     cutoff = now_utc - timedelta(days=3)
     state["active"] = {
         k: v for k, v in active.items() 
