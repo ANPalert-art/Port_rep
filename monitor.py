@@ -3,6 +3,7 @@ import json
 import re
 import requests
 import smtplib
+import time
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta, timezone 
 from typing import Dict, List, Optional
@@ -12,11 +13,13 @@ from typing import Dict, List, Optional
 # ==========================================
 TARGET_URL = "https://www.anp.org.ma/_vti_bin/WS/Service.svc/mvmnv/all"
 STATE_FILE = "state.json" 
+HISTORY_FILE = "history.json"
 STATE_ENV_VAR = "VESSEL_STATE_DATA" 
 
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
 EMAIL_TO = os.getenv("EMAIL_TO")
+EMAIL_TO_COLLEAGUE = os.getenv("EMAIL_TO_COLLEAGUE")  # Keep optional
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
@@ -27,29 +30,195 @@ RUN_MODE = os.getenv("RUN_MODE", "monitor")
 ALLOWED_PORTS = {"03", "06", "07"} 
 
 # ==========================================
-# 💾 STATE MANAGEMENT
+# 🌐 NETWORK RESILIENCE
+# ==========================================
+def fetch_vessel_data_with_retry(max_retries=3, initial_delay=5):
+    """Fetch vessel data with exponential backoff retry"""
+    for attempt in range(max_retries):
+        try:
+            print(f"[INFO] Fetching vessel data (attempt {attempt + 1}/{max_retries})")
+            
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "application/json"
+            }
+            
+            # Different timeouts for connect vs read
+            resp = requests.get(
+                TARGET_URL, 
+                headers=headers,
+                timeout=(10, 60)  # 10s connect, 60s read
+            )
+            resp.raise_for_status()
+            
+            # Validate response is JSON
+            data = resp.json()
+            if not isinstance(data, list):
+                raise ValueError("API response is not a list")
+                
+            print(f"[SUCCESS] Fetched {len(data)} vessel records")
+            return data
+            
+        except requests.exceptions.Timeout as e:
+            print(f"[WARNING] Timeout on attempt {attempt + 1}: {e}")
+            if attempt < max_retries - 1:
+                wait_time = initial_delay * (2 ** attempt)  # Exponential backoff
+                print(f"[INFO] Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+            else:
+                print("[ERROR] All retries failed due to timeout")
+                raise
+                
+        except requests.exceptions.ConnectionError as e:
+            print(f"[WARNING] Connection error on attempt {attempt + 1}: {e}")
+            if attempt < max_retries - 1:
+                wait_time = initial_delay * (2 ** attempt)
+                print(f"[INFO] Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+            else:
+                print("[ERROR] All retries failed due to connection issues")
+                raise
+                
+        except requests.exceptions.RequestException as e:
+            print(f"[ERROR] Request failed: {e}")
+            raise
+        except ValueError as e:
+            print(f"[ERROR] Invalid response format: {e}")
+            raise
+        except Exception as e:
+            print(f"[ERROR] Unexpected error: {e}")
+            raise
+    
+    raise Exception("All retry attempts failed")
+
+# ==========================================
+# 💾 STATE MANAGEMENT (ENHANCED)
 # ==========================================
 def load_state() -> Dict:
+    """Load state with proper error handling"""
+    # Try file first
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception: pass
-
+                data = json.load(f)
+                # Validate structure
+                if isinstance(data, dict) and "active" in data and "history" in data:
+                    return data
+                else:
+                    print("[WARNING] State file has invalid structure, using default")
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"[WARNING] Failed to load state file: {e}")
+    
+    # Then try environment variable
     state_data = os.getenv(STATE_ENV_VAR)
-    if not state_data: return {"active": {}, "history": []}
-    try:
-        data = json.loads(state_data)
-        return data if "active" in data else {"active": {}, "history": []}
-    except (json.JSONDecodeError, TypeError):
-        return {"active": {}, "history": []}
+    if state_data:
+        try:
+            data = json.loads(state_data)
+            if isinstance(data, dict) and "active" in data and "history" in data:
+                return data
+        except (json.JSONDecodeError, TypeError) as e:
+            print(f"[WARNING] Invalid state data in env var: {e}")
+    
+    return {"active": {}, "history": []}
 
 def save_state(state: Dict):
+    """Save state with backup on failure"""
     try:
-        with open(STATE_FILE, "w", encoding="utf-8") as f:
+        # Create backup of current state
+        backup_file = None
+        if os.path.exists(STATE_FILE):
+            backup_file = f"{STATE_FILE}.backup"
+            try:
+                import shutil
+                shutil.copy2(STATE_FILE, backup_file)
+            except:
+                pass
+        
+        # Save to temp file first
+        temp_file = f"{STATE_FILE}.tmp"
+        with open(temp_file, "w", encoding="utf-8") as f:
             json.dump(state, f, indent=2, ensure_ascii=False)
-    except IOError as e:
-        print(f"[ERROR] Save failed: {e}")
+        
+        # Validate the saved file
+        with open(temp_file, "r", encoding="utf-8") as f:
+            json.load(f)  # Will raise if corrupted
+        
+        # Replace original
+        os.replace(temp_file, STATE_FILE)
+        
+        # Clean up backup if successful
+        if backup_file and os.path.exists(backup_file):
+            os.remove(backup_file)
+            
+    except Exception as e:
+        print(f"[CRITICAL] Save failed: {e}")
+        # Try to restore from backup
+        if backup_file and os.path.exists(backup_file):
+            try:
+                import shutil
+                shutil.copy2(backup_file, STATE_FILE)
+                print("[INFO] Restored state from backup")
+            except:
+                pass
+        raise  # Re-raise to fail the workflow
+
+def load_history_archive() -> List:
+    """Load history archive with error recovery"""
+    if not os.path.exists(HISTORY_FILE):
+        return []
+    
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                return data
+            else:
+                print("[WARNING] History file is not a list, starting fresh")
+                return []
+    except (json.JSONDecodeError, IOError) as e:
+        print(f"[ERROR] Failed to load history archive: {e}")
+        # Create backup of corrupted file
+        backup_name = f"{HISTORY_FILE}.corrupted.{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        try:
+            import shutil
+            shutil.copy2(HISTORY_FILE, backup_name)
+            print(f"[INFO] Backup of corrupted history saved as {backup_name}")
+        except:
+            pass
+        return []
+
+def save_history_archive(history: List):
+    """Save history archive with validation"""
+    try:
+        # Validate all entries have required fields
+        validated_history = []
+        for entry in history:
+            if isinstance(entry, dict) and 'vessel' in entry and 'departure' in entry:
+                validated_history.append(entry)
+            else:
+                print(f"[WARNING] Skipping invalid history entry: {entry}")
+        
+        # Save to temp file first
+        temp_file = f"{HISTORY_FILE}.tmp"
+        with open(temp_file, "w", encoding="utf-8") as f:
+            json.dump(validated_history, f, indent=2, ensure_ascii=False)
+        
+        # Validate the temp file
+        with open(temp_file, "r", encoding="utf-8") as f:
+            json.load(f)
+        
+        # Replace the original file
+        import shutil
+        shutil.move(temp_file, HISTORY_FILE)
+        
+        print(f"[INFO] Saved {len(validated_history)} entries to history archive")
+        
+    except Exception as e:
+        print(f"[CRITICAL] Failed to save history archive: {e}")
+        # Clean up temp file if it exists
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
+        raise
 
 # ==========================================
 # 📅 DATE & TIME HELPERS
@@ -198,7 +367,7 @@ def send_email(to, sub, body):
     msg = MIMEText(body, "html", "utf-8")
     msg["Subject"], msg["From"], msg["To"] = sub, EMAIL_USER, to
     try:
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=20) as server:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=30) as server:
             server.starttls()
             server.login(EMAIL_USER, EMAIL_PASS)
             server.sendmail(EMAIL_USER, [to], msg.as_string())
@@ -206,7 +375,7 @@ def send_email(to, sub, body):
         print(f"[ERROR] Email Error: {e}")
 
 # ==========================================
-# 🔄 MAIN PROCESS
+# 🔄 MAIN PROCESS WITH MOVE-ON-REPORT
 # ==========================================
 def main():
     print(f"{'='*30}\nMODE: {RUN_MODE.upper()}\n{'='*30}")
@@ -214,29 +383,52 @@ def main():
     active = state.get("active", {})
     history = state.get("history", [])
 
-    # REPORT MODE Logic
+    # REPORT MODE Logic with Move-on-Report
     if RUN_MODE == "report":
-        print(f"[LOG] Generating monthly reports for {len(history)} movements.")
+        print(f"[LOG] Generating monthly reports for {len(history)} completed movements.")
+        
+        # 1. Send reports for each port
         for p_code in ALLOWED_PORTS:
             p_name = port_name(p_code)
             p_hist = [h for h in history if h.get("port") == p_name]
             if p_hist:
                 print(f"[LOG] Sending report for {p_name}")
                 send_monthly_report(p_hist, p_name)
+        
+        # 2. MOVE reported vessels to history.json (the permanent archive)
+        existing_archive = load_history_archive()
+        
+        # Append current history to the permanent archive
+        existing_archive.extend(history)
+        
+        try:
+            save_history_archive(existing_archive)
+            print(f"[LOG] Moved {len(history)} completed movements to history.json")
+        except Exception as e:
+            print(f"[ERROR] Failed to save history archive: {e}")
+            return  # Don't clear history if we can't archive
+        
+        # 3. CLEAR the history from state.json so it's fresh for the new month
+        state["history"] = []
+        
+        # 4. Also clean up very old active vessels (older than 30 days)
+        now_utc = datetime.now(timezone.utc)
+        cutoff = now_utc - timedelta(days=30)
+        state["active"] = {
+            k: v for k, v in active.items() 
+            if datetime.fromisoformat(v["last_seen"]).replace(tzinfo=timezone.utc) > cutoff
+        }
+        
+        save_state(state)
+        print("[LOG] Monthly report completed. State history cleared, old active vessels cleaned.")
         return
 
-        # MONITOR MODE Logic
+    # MONITOR MODE Logic with retry
     try:
-        # Define a Human Browser identity
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        }
-        # Use headers in the request
-        resp = requests.get(TARGET_URL, headers=headers, timeout=30)
-        resp.raise_for_status()
-        all_data = resp.json()
+        all_data = fetch_vessel_data_with_retry(max_retries=3, initial_delay=5)
     except Exception as e:
-        print(f"[CRITICAL] API Error: {e}"); return
+        print(f"[CRITICAL] API Error after retries: {e}")
+        return
 
     now_utc = datetime.now(timezone.utc)
     live_vessels = {}
@@ -254,7 +446,6 @@ def main():
             prev, new = stored["status"], live["status"]
             
             if new == "EN RADE" and prev != "EN RADE":
-                
                 stored["anchored_at"] = now_utc.isoformat()
                 
             if prev != "A QUAI" and new == "A QUAI":
@@ -264,13 +455,21 @@ def main():
                 
             if prev == "A QUAI" and new == "APPAREILLAGE":
                 q_start = stored.get("quai_at", stored["last_seen"])
+                # Calculate total duration from first_seen
+                total_duration = 0.0
+                if "first_seen" in stored:
+                    total_duration = round(calculate_duration_hours(stored["first_seen"], now_utc), 2)
+                
                 history.append({
                     "vessel": stored["entry"].get('nOM_NAVIREField'),
                     "agent": stored["entry"].get("cONSIGNATAIREField", "Inconnu"),
                     "port": port_name(stored["entry"].get('cODE_SOCIETEField')),
+                    "port_code": stored["entry"].get('cODE_SOCIETEField'),
                     "duration": round(calculate_duration_hours(q_start, now_utc), 2),
                     "anchorage_duration": stored.get("anchorage_duration", 0.0),
-                    "departure": now_utc.isoformat()
+                    "arrival": stored.get("first_seen", now_utc.isoformat()),
+                    "departure": now_utc.isoformat(),
+                    "total_duration": total_duration
                 })
                 to_remove.append(v_id)
                 
@@ -284,7 +483,12 @@ def main():
             # First run check: ignore non-PREVU to avoid false alerts on existing ships
             if len(active) == 0 and live["status"] != "PREVU": continue
             
-            active[v_id] = {"entry": live["e"], "status": live["status"], "last_seen": now_utc.isoformat()}
+            active[v_id] = {
+                "entry": live["e"], 
+                "status": live["status"], 
+                "first_seen": now_utc.isoformat(),  # Track when first seen
+                "last_seen": now_utc.isoformat()
+            }
             if live["status"] == "PREVU":
                 p = port_name(live['e'].get("cODE_SOCIETEField"))
                 alerts.setdefault(p, []).append(live["e"])
@@ -308,6 +512,11 @@ def main():
             
             send_email(EMAIL_TO, subject, full_body)
             print(f"[EMAIL] Sent for {p}: {v_names}")
+            
+            # Optional: Send to colleague for specific ports
+            if p == "Nador" and EMAIL_TO_COLLEAGUE:  # Or any port you want
+                send_email(EMAIL_TO_COLLEAGUE, subject, full_body)
+                print(f"[EMAIL] Also sent to colleague for {p}")
     else:
         print("[LOG] No new PREVU vessels detected.")
 
