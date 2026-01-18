@@ -253,7 +253,8 @@ def main():
         if live:
             prev, new = stored["status"], live["status"]
             
-            if new == "ANCRE" and prev != "ANCRE":
+            if new == "EN RADE" and prev != "EN RADE":
+                
                 stored["anchored_at"] = now_utc.isoformat()
                 
             if prev != "A QUAI" and new == "A QUAI":
