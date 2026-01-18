@@ -5,10 +5,25 @@ on:
     - cron: '*/30 * * * *'       # Every 30 minutes for tracking
     - cron: '0 8 1 * *'          # Monthly report on the 1st at 08:00
   workflow_dispatch:             # Manual run button
+    inputs:
+      mode:
+        description: 'Select run mode'
+        required: true
+        default: 'monitor'
+        type: choice
+        options:
+          - monitor
+          - report
+
+# Prevent overlapping runs
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write            # Critical for saving state.json
     
@@ -17,42 +32,199 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: 📦 Install Dependencies
-        run: pip install requests
+        run: |
+          pip install requests
+          # Create requirements.txt for reproducibility
+          echo "requests>=2.31.0" > requirements.txt
 
       - name: 🚀 Run Script
+        id: run_script
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_TO_COLLEAGUE: ${{ secrets.EMAIL_TO_COLLEAGUE }}
           EMAIL_ENABLED: "true"
-          RUN_MODE: ${{ github.event.schedule == '0 8 1 * *' && 'report' || 'monitor' }}
         run: |
-          echo "Executing in MODE: $RUN_MODE"
-          python monitor.py
+          # Determine mode from input or schedule
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            RUN_MODE="${{ github.event.inputs.mode }}"
+          elif [[ "${{ github.event.schedule }}" == "0 8 1 * *" ]]; then
+            RUN_MODE="report"
+          else
+            RUN_MODE="monitor"
+          fi
+          
+          echo "🚀 Executing in MODE: $RUN_MODE"
+          echo "RUN_MODE=$RUN_MODE" >> $GITHUB_ENV
+          
+          # Set RUN_MODE as environment variable for Python
+          export RUN_MODE="$RUN_MODE"
+          
+          # Run with error handling
+          if python monitor.py; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failed" >> $GITHUB_OUTPUT
+            echo "SCRIPT_EXIT_CODE=$?" >> $GITHUB_ENV
+            echo "❌ Script failed"
+            exit 1
+          fi
 
-      - name: 💾 Commit and Push State
+      - name: 💾 Commit and Push State and History
+        # Always try to commit unless cancelled
+        if: always() && steps.run_script.outcome != 'cancelled'
+        env:
+          RUN_MODE: ${{ env.RUN_MODE }}
         run: |
+          echo "📊 Checking for changes (Mode: $RUN_MODE)"
+          
+          # Check if state files exist
+          if [[ ! -f "state.json" ]]; then
+            echo "❌ state.json does not exist, skipping commit"
+            exit 0
+          fi
+          
+          if [[ ! -f "history.json" ]]; then
+            echo "⚠️ history.json does not exist, creating empty file"
+            echo "[]" > history.json
+          fi
+          
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           
-          git add state.json
-          
-          # Only commit if state.json actually changed
-          if git diff --staged --quiet; then
-            echo "✅ No changes to state.json"
+          # Validate state.json is valid JSON
+          echo "🔍 Validating state.json..."
+          if python -c "import json; json.load(open('state.json'))"; then
+            echo "✅ state.json is valid JSON"
           else
-            if [[ "${{ env.RUN_MODE }}" == "report" ]]; then
-              git commit -m "📊 Monthly report generated [skip ci]"
+            echo "❌ state.json is corrupted! Attempting recovery..."
+            
+            # Try to restore from backup if it exists
+            if [[ -f "state.json.backup" ]]; then
+              echo "🔄 Restoring from backup..."
+              cp state.json.backup state.json
             else
-              git commit -m "🤖 Vessel state update [skip ci]"
+              echo "⚠️ No backup found, keeping corrupted file"
+              exit 1  # Don't commit corrupted state
             fi
-            git push
-            echo "✅ State committed"
           fi
+          
+          # Validate history.json too
+          echo "🔍 Validating history.json..."
+          if python -c "import json; json.load(open('history.json'))"; then
+            echo "✅ history.json is valid JSON"
+          else
+            echo "❌ history.json is corrupted! Recreating..."
+            echo "[]" > history.json
+          fi
+          
+          # Track files
+          git add state.json history.json
+          
+          if git diff --staged --quiet; then
+            echo "✅ No changes to data files"
+          else
+            TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+            if [[ "$RUN_MODE" == "report" ]]; then
+              git commit -m "📊 Monthly report & History Archive - $TIMESTAMP [skip ci]"
+              echo "✅ Committed monthly report and archive"
+            else
+              git commit -m "🤖 Vessel state update - $TIMESTAMP [skip ci]"
+              echo "✅ Committed vessel state update"
+            fi
+            
+            echo "🚀 Pushing changes..."
+            # Retry logic for robustness
+            MAX_RETRIES=3
+            for i in $(seq 1 $MAX_RETRIES); do
+              if git push origin main; then
+                echo "✅ Data pushed successfully"
+                break
+              else
+                echo "⚠️ Push attempt $i/$MAX_RETRIES failed"
+                if [[ $i -lt $MAX_RETRIES ]]; then
+                  echo "🔄 Pulling latest changes and retrying..."
+                  sleep 3
+                  git pull --rebase origin main
+                else
+                  echo "❌ Failed to push after $MAX_RETRIES attempts"
+                  # Create backup files
+                  cp state.json "state.json.backup"
+                  cp history.json "history.json.backup"
+                  echo "💾 Created local backups"
+                fi
+              fi
+            done
+          fi
+
+      - name: 📤 Upload Data Backup as Artifact
+        if: always() && steps.run_script.outcome != 'cancelled'
+        uses: actions/upload-artifact@v4
+        with:
+          name: vessel-data-backup-${{ github.run_id }}
+          path: |
+            state.json
+            history.json
+            state.json.backup
+          retention-days: 7
+
+      - name: 🔔 Create Issue on Script Failure
+        if: steps.run_script.outcome == 'failure'
+        uses: actions/github-script@v7
+        env:
+          RUN_MODE: ${{ env.RUN_MODE }}
+        with:
+          script: |
+            const mode = process.env.RUN_MODE || 'unknown';
+            const runId = context.runId;
+            const repo = context.repo;
+            const serverUrl = context.serverUrl;
+            
+            const issueBody = `
+            ## 🚨 Vessel Monitor Script Failed (Safi-Nador-Jorf)
+            
+            **Details:**
+            - Workflow Run: [${runId}](${serverUrl}/${repo.owner}/${repo.name}/actions/runs/${runId})
+            - Mode: ${mode}
+            - Timestamp: ${new Date().toISOString()}
+            - Ports: Safi (03), Nador (06), Jorf Lasfar (07)
+            
+            **Next Steps:**
+            1. Check the workflow logs for error details
+            2. Verify ANP API availability
+            3. Check email credentials if in monitor mode
+            
+            **State Files:**
+            - State backup available as artifact in run ${runId}
+            `;
+            
+            github.rest.issues.create({
+              owner: repo.owner,
+              repo: repo.name,
+              title: `🚨 Vessel Monitor ${mode.toUpperCase()} Failed - Run ${runId}`,
+              body: issueBody,
+              labels: ['monitor-failure', 'automated', 'safi-nador-jorf']
+            });
+
+      - name: 📊 Final Status Report
+        if: always()
+        run: |
+          echo "========================================"
+          echo "🏁 Vessel Monitor (Safi-Nador-Jorf) - Execution Summary"
+          echo "========================================"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Mode: ${{ env.RUN_MODE || 'N/A' }}"
+          echo "Run Outcome: ${{ steps.run_script.outcome }}"
+          echo "Trigger: ${{ github.event_name }}"
+          echo "Schedule: ${{ github.event.schedule || 'N/A' }}"
+          echo "Target Ports: Safi (03), Nador (06), Jorf Lasfar (07)"
+          echo "========================================"
