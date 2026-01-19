@@ -7,6 +7,7 @@ import time
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta, timezone 
 from typing import Dict, List, Optional
+from collections import defaultdict
 
 # ==========================================
 # ⚙️ CONFIGURATION & CONSTANTS
@@ -28,6 +29,11 @@ RUN_MODE = os.getenv("RUN_MODE", "monitor")
 
 # Target Ports: Safi (03), Nador (06), Jorf Lasfar (07)
 ALLOWED_PORTS = {"03", "06", "07"} 
+
+# Status categories for time tracking (BI UPGRADE - Based on actual API statuses)
+ANCHORAGE_STATUSES = {"EN RADE"}  # Only this status exists in API
+BERTH_STATUSES = {"A QUAI"}       # Only this status exists in API
+COMPLETED_STATUSES = {"APPAREILLAGE", "TERMINE"}  # TERMINE might not appear but included
 
 # ==========================================
 # 🌐 NETWORK RESILIENCE
@@ -162,64 +168,6 @@ def save_state(state: Dict):
                 pass
         raise  # Re-raise to fail the workflow
 
-def load_history_archive() -> List:
-    """Load history archive with error recovery"""
-    if not os.path.exists(HISTORY_FILE):
-        return []
-    
-    try:
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if isinstance(data, list):
-                return data
-            else:
-                print("[WARNING] History file is not a list, starting fresh")
-                return []
-    except (json.JSONDecodeError, IOError) as e:
-        print(f"[ERROR] Failed to load history archive: {e}")
-        # Create backup of corrupted file
-        backup_name = f"{HISTORY_FILE}.corrupted.{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        try:
-            import shutil
-            shutil.copy2(HISTORY_FILE, backup_name)
-            print(f"[INFO] Backup of corrupted history saved as {backup_name}")
-        except:
-            pass
-        return []
-
-def save_history_archive(history: List):
-    """Save history archive with validation"""
-    try:
-        # Validate all entries have required fields
-        validated_history = []
-        for entry in history:
-            if isinstance(entry, dict) and 'vessel' in entry and 'departure' in entry:
-                validated_history.append(entry)
-            else:
-                print(f"[WARNING] Skipping invalid history entry: {entry}")
-        
-        # Save to temp file first
-        temp_file = f"{HISTORY_FILE}.tmp"
-        with open(temp_file, "w", encoding="utf-8") as f:
-            json.dump(validated_history, f, indent=2, ensure_ascii=False)
-        
-        # Validate the temp file
-        with open(temp_file, "r", encoding="utf-8") as f:
-            json.load(f)
-        
-        # Replace the original file
-        import shutil
-        shutil.move(temp_file, HISTORY_FILE)
-        
-        print(f"[INFO] Saved {len(validated_history)} entries to history archive")
-        
-    except Exception as e:
-        print(f"[CRITICAL] Failed to save history archive: {e}")
-        # Clean up temp file if it exists
-        if os.path.exists(temp_file):
-            os.remove(temp_file)
-        raise
-
 # ==========================================
 # 📅 DATE & TIME HELPERS
 # ==========================================
@@ -255,7 +203,51 @@ def port_name(code: str) -> str:
     return {"03": "Safi", "06": "Nador", "07": "Jorf Lasfar"}.get(str(code), f"Port {code}")
 
 # ==========================================
-# 📧 EMAIL TEMPLATES (PREMIUM STYLE)
+# 📊 ANALYTICS ENGINE (BI UPGRADE)
+# ==========================================
+def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime) -> Dict:
+    """
+    Update time accumulators based on status changes
+    Returns updated vessel data
+    """
+    current_status = active_vessel.get("current_status", "UNKNOWN")
+    last_updated_str = active_vessel.get("last_updated")
+    
+    # Only track time if we have a previous timestamp
+    if last_updated_str:
+        try:
+            last_updated = datetime.fromisoformat(last_updated_str)
+            # Calculate elapsed time since last update (in hours)
+            elapsed_hours = (now_utc - last_updated).total_seconds() / 3600.0
+            
+            # Add elapsed time to appropriate accumulator
+            if current_status in ANCHORAGE_STATUSES:
+                active_vessel["anchorage_hours"] = active_vessel.get("anchorage_hours", 0.0) + elapsed_hours
+            elif current_status in BERTH_STATUSES:
+                active_vessel["berth_hours"] = active_vessel.get("berth_hours", 0.0) + elapsed_hours
+        except:
+            pass  # If timestamp parsing fails, skip time tracking
+    
+    # Update status and timestamp
+    active_vessel["current_status"] = new_status
+    active_vessel["last_updated"] = now_utc.isoformat()
+    active_vessel["last_seen"] = now_utc.isoformat()
+    
+    return active_vessel
+
+def calculate_performance_note(avg_anchorage: float, avg_berth: float) -> str:
+    """Generate human-readable performance note"""
+    if avg_anchorage < 5 and avg_berth < 24:
+        return "⭐ Excellent - Fast operations"
+    elif avg_anchorage < 10 and avg_berth < 36:
+        return "✅ Good - Efficient"
+    elif avg_anchorage < 24:
+        return "⚠️ Moderate - Some waiting time"
+    else:
+        return "🐌 Slow - Long waiting periods"
+
+# ==========================================
+# 📧 EMAIL TEMPLATES (BI UPGRADE)
 # ==========================================
 def format_vessel_details_premium(entry: dict) -> str:
     nom = entry.get("nOM_NAVIREField") or "INCONNU"
@@ -282,136 +274,217 @@ def format_vessel_details_premium(entry: dict) -> str:
     </div>"""
 
 def send_monthly_report(history: list, specific_port: str):
-    if not history: return
+    if not history: 
+        print(f"[INFO] No history data for {specific_port}")
+        return
 
-    # 1. Process Stats
-    stats = {}
+    # 1. Group history by agent for performance analytics
+    agent_stats = defaultdict(lambda: {"calls": 0, "total_anchorage": 0.0, "total_berth": 0.0})
+    
     for h in history:
         agent = h.get('agent', 'Inconnu')
-        if agent not in stats: stats[agent] = {"calls": 0, "quay_sum": 0.0, "anch_sum": 0.0}
-        stats[agent]["calls"] += 1
-        stats[agent]["quay_sum"] += h.get('duration', 0)
-        stats[agent]["anch_sum"] += h.get('anchorage_duration', 0)
+        agent_stats[agent]["calls"] += 1
+        agent_stats[agent]["total_anchorage"] += h.get('anchorage_hours', 0)
+        agent_stats[agent]["total_berth"] += h.get('berth_hours', 0)
 
-    # 2. Build Agent Statistics Table
+    # 2. Build Agent Performance Summary Table
     agent_rows = ""
-    sorted_agents = sorted(stats.items(), key=lambda x: x[1]['calls'], reverse=True)
+    sorted_agents = sorted(agent_stats.items(), key=lambda x: x[1]['calls'], reverse=True)
+    
     for agent, data in sorted_agents:
-        total_calls = data['calls']
+        avg_anchorage = round(data['total_anchorage'] / data['calls'], 1) if data['calls'] > 0 else 0
+        avg_berth = round(data['total_berth'] / data['calls'], 1) if data['calls'] > 0 else 0
+        performance_note = calculate_performance_note(avg_anchorage, avg_berth)
+        
         agent_rows += f"""
         <tr style="border-bottom: 1px solid #e0e0e0;">
-            <td style="padding: 10px; font-weight: bold; color: #333;">{agent}</td>
-            <td style="padding: 10px; text-align: center;">{total_calls}</td>
-            <td style="padding: 10px; text-align: center;">{round(data['anch_sum']/total_calls, 1)}h</td>
-            <td style="padding: 10px; text-align: center;">{round(data['quay_sum']/total_calls, 1)}h</td>
+            <td style="padding: 10px; font-weight: bold; color: #2c3e50;">{agent}</td>
+            <td style="padding: 10px; text-align: center; font-weight: bold;">{data['calls']}</td>
+            <td style="padding: 10px; text-align: center; color: {'#e74c3c' if avg_anchorage > 12 else '#27ae60'}">{avg_anchorage} Hrs</td>
+            <td style="padding: 10px; text-align: center; color: {'#f39c12' if avg_berth > 36 else '#27ae60'}">{avg_berth} Hrs</td>
+            <td style="padding: 10px; text-align: center; font-size: 12px;">{performance_note}</td>
         </tr>"""
 
-    # 3. Build Detailed Vessel History Table
+    # 3. Build Detailed Vessel Statistics Table
     vessel_rows = ""
     sorted_history = sorted(history, key=lambda x: x.get('departure', ''), reverse=True)
+    
     for h in sorted_history:
         try:
             dt_obj = datetime.fromisoformat(h['departure'])
             date_str = dt_obj.astimezone(timezone(timedelta(hours=1))).strftime("%d/%m/%Y %H:%M")
-        except: date_str = "N/A"
+        except: 
+            date_str = "N/A"
+        
+        total_hours = h.get('anchorage_hours', 0) + h.get('berth_hours', 0)
         
         vessel_rows += f"""
         <tr style="border-bottom: 1px solid #f0f0f0;">
-            <td style="padding: 8px; color: #333;">{h['vessel']}</td>
-            <td style="padding: 8px; font-size: 12px;">{h.get('agent', '-')}</td>
-            <td style="padding: 8px; text-align: center;">{h.get('anchorage_duration', 0)}h</td>
-            <td style="padding: 8px; text-align: center;">{h.get('duration', 0)}h</td>
+            <td style="padding: 8px; color: #2c3e50; font-weight: bold;">{h['vessel']}</td>
+            <td style="padding: 8px; font-size: 13px;">{h.get('agent', '-')}</td>
+            <td style="padding: 8px; text-align: center; color: {'#e74c3c' if h.get('anchorage_hours', 0) > 12 else '#27ae60'}">{round(h.get('anchorage_hours', 0), 1)} Hrs</td>
+            <td style="padding: 8px; text-align: center; color: {'#f39c12' if h.get('berth_hours', 0) > 36 else '#27ae60'}">{round(h.get('berth_hours', 0), 1)} Hrs</td>
+            <td style="padding: 8px; text-align: center; font-weight: bold;">{round(total_hours, 1)} Hrs</td>
             <td style="padding: 8px; font-size: 12px;">{date_str}</td>
         </tr>"""
 
-    subject = f"📊 Rapport Mensuel : Port de {specific_port} ({len(history)} Mouvements)"
+    subject = f"📊 Rapport Mensuel BI : Port de {specific_port} ({len(history)} Escales)"
+    
     body = f"""
-    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
-        <div style="background: #0a3d62; color: white; padding: 15px; border-radius: 8px 8px 0 0;">
-            <h2 style="margin: 0; font-size: 20px;">📊 Rapport de Performance</h2>
-            <p style="margin: 5px 0 0; opacity: 0.9; font-size: 14px;">Port de {specific_port} - Statistiques Mensuelles</p>
+    <div style="font-family: Arial, sans-serif; max-width: 1100px; margin: auto;">
+        <div style="background: linear-gradient(135deg, #0a3d62 0%, #1e5799 100%); color: white; padding: 20px; border-radius: 10px 10px 0 0;">
+            <h2 style="margin: 0; font-size: 24px;">📊 Business Intelligence Report - {specific_port}</h2>
+            <p style="margin: 10px 0 0; opacity: 0.95; font-size: 16px;">Analyse des Performances Mensuelles</p>
+            <p style="margin: 5px 0 0; opacity: 0.85; font-size: 14px;">{len(history)} escales complétées | Données au {datetime.now().strftime('%d/%m/%Y')}</p>
         </div>
-        <div style="background: #f8f9fa; padding: 20px; border: 1px solid #d0d7e1; border-top: none; border-radius: 0 0 8px 8px;">
+        
+        <div style="background: #f8f9fa; padding: 25px; border: 1px solid #d0d7e1; border-top: none; border-radius: 0 0 10px 10px;">
             <p>Bonjour,</p>
-            <p>Voici le récapitulatif d'activité mensuel pour le <b>Port de {specific_port}</b>.</p>
+            <p>Voici le rapport d'analyse d'activité mensuel pour le <b>Port de {specific_port}</b> avec les nouvelles métriques Business Intelligence.</p>
             
-            <h3 style="color: #0a3d62; border-bottom: 2px solid #0a3d62; padding-bottom: 10px;">🏢 Statistiques par Agent</h3>
-            <table style="width: 100%; border-collapse: collapse; background: white; margin-bottom: 30px; border-radius: 4px; overflow: hidden;">
-                <thead><tr style="background: #e9ecef; text-align: left;">
-                    <th style="padding: 12px;">Agent</th><th style="padding: 12px; text-align: center;">Escales</th>
-                    <th style="padding: 12px; text-align: center;">⚓ Attente</th><th style="padding: 12px; text-align: center;">🏗️ Quai</th>
-                </tr></thead>
+            <div style="margin: 30px 0; padding: 15px; background: #e8f4fc; border-radius: 8px; border-left: 4px solid #3498db;">
+                <h3 style="margin: 0 0 10px 0; color: #2980b9;">📈 KPIs Clés du Port</h3>
+                <p style="margin: 5px 0; font-size: 14px;">
+                    <strong>Escales totales:</strong> {len(history)} |
+                    <strong>Temps d'attente moyen:</strong> {round(sum(h.get('anchorage_hours', 0) for h in history)/len(history), 1)}h |
+                    <strong>Temps à quai moyen:</strong> {round(sum(h.get('berth_hours', 0) for h in history)/len(history), 1)}h |
+                    <strong>Durée totale moyenne:</strong> {round(sum(h.get('anchorage_hours', 0) + h.get('berth_hours', 0) for h in history)/len(history), 1)}h
+                </p>
+            </div>
+
+            <h3 style="color: #0a3d62; border-bottom: 3px solid #0a3d62; padding-bottom: 12px; margin-top: 30px;">
+                🏢 Tableau 1 : Performance des Agents Maritimes
+            </h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; margin-bottom: 40px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <thead>
+                    <tr style="background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%); color: white; text-align: left;">
+                        <th style="padding: 15px; font-weight: bold;">Agent Maritime</th>
+                        <th style="padding: 15px; text-align: center; font-weight: bold;">Escales</th>
+                        <th style="padding: 15px; text-align: center; font-weight: bold;">⏳ Attente Moy.</th>
+                        <th style="padding: 15px; text-align: center; font-weight: bold;">🏗️ Quai Moy.</th>
+                        <th style="padding: 15px; text-align: center; font-weight: bold;">📝 Performance</th>
+                    </tr>
+                </thead>
                 <tbody>{agent_rows}</tbody>
             </table>
 
-            <h3 style="color: #0a3d62; border-bottom: 2px solid #0a3d62; padding-bottom: 10px;">📋 Liste Détaillée</h3>
-            <table style="width: 100%; border-collapse: collapse; background: white; font-size: 13px; border-radius: 4px; overflow: hidden;">
-                <thead><tr style="background: #e9ecef; text-align: left;">
-                    <th style="padding: 10px;">Navire</th><th style="padding: 10px;">Agent</th>
-                    <th style="padding: 10px; text-align: center;">⚓ Poste</th><th style="padding: 10px; text-align: center;">🏗️ Quai</th>
-                    <th style="padding: 10px;">Date</th>
-                </tr></thead>
+            <h3 style="color: #0a3d62; border-bottom: 3px solid #0a3d62; padding-bottom: 12px;">
+                📋 Tableau 2 : Statistiques Détailées par Navire
+            </h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; font-size: 13px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <thead>
+                    <tr style="background: #ecf0f1; text-align: left; color: #2c3e50;">
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7;">Navire</th>
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7;">Agent</th>
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7; text-align: center;">⏳ Attente</th>
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7; text-align: center;">🏗️ Quai</th>
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7; text-align: center;">⌛ Total</th>
+                        <th style="padding: 12px; border-bottom: 2px solid #bdc3c7;">Date Départ</th>
+                    </tr>
+                </thead>
                 <tbody>{vessel_rows}</tbody>
             </table>
             
-            <div style='margin-top: 30px; border-top: 1px solid #e6e9ef; padding-top: 15px;'>
-                <p style='font-size:14px; color:#333;'>Cordialement,</p>
-                <p style='font-size:12px; color:#777777; font-style: italic;'>Ceci est une génération automatique par le système de surveillance.</p>
+            <div style='margin-top: 40px; padding-top: 20px; border-top: 2px solid #e6e9ef;'>
+                <h4 style='color: #2c3e50; margin-bottom: 15px;'>🔍 Insights Clés pour {specific_port}</h4>
+                <ul style='font-size: 14px; color: #34495e; line-height: 1.6;'>
+                    <li><strong>Négociation:</strong> Utilisez ces données pour les négociations de tarifs portuaires avec les agents</li>
+                    <li><strong>Planification:</strong> Prévoyez les ressources en fonction des temps d'attente moyens</li>
+                    <li><strong>Benchmarking:</strong> Comparez les performances entre agents pour identifier les meilleures pratiques</li>
+                    <li><strong>Optimisation:</strong> Ciblez les agents avec les plus longs temps d'attente pour amélioration</li>
+                </ul>
+                
+                <div style='background: #f9f9f9; padding: 15px; border-radius: 6px; margin-top: 20px;'>
+                    <p style='font-size:14px; color:#333; margin: 0;'><strong>Cordialement,</strong></p>
+                    <p style='font-size:12px; color:#777777; font-style: italic; margin: 5px 0 0 0;'>
+                        Rapport BI généré automatiquement par le système de surveillance ANP.<br>
+                        Surveillance en temps réel | Métriques calculées toutes les 30 minutes
+                    </p>
+                </div>
             </div>
         </div>
     </div>"""
+    
     send_email(EMAIL_TO, subject, body)
+    
+    # Send duplicate to colleague for specific ports if needed
+    if specific_port == "Nador" and EMAIL_TO_COLLEAGUE:
+        send_email(EMAIL_TO_COLLEAGUE, subject, body)
+        print(f"[INFO] Also sent BI report for {specific_port} to colleague")
 
 def send_email(to, sub, body):
-    if not EMAIL_ENABLED or not EMAIL_USER: return
+    if not EMAIL_ENABLED or not EMAIL_USER: 
+        print(f"[INFO] Email sending disabled or no email user configured")
+        return
+    
     msg = MIMEText(body, "html", "utf-8")
     msg["Subject"], msg["From"], msg["To"] = sub, EMAIL_USER, to
+    
     try:
+        print(f"[INFO] Sending email to {to}")
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=30) as server:
             server.starttls()
             server.login(EMAIL_USER, EMAIL_PASS)
             server.sendmail(EMAIL_USER, [to], msg.as_string())
+        print(f"[SUCCESS] Email sent successfully to {to}")
+    except smtplib.SMTPAuthenticationError as e:
+        print(f"[ERROR] Email authentication failed: {e}")
+    except smtplib.SMTPException as e:
+        print(f"[ERROR] SMTP error: {e}")
     except Exception as e:
-        print(f"[ERROR] Email Error: {e}")
+        print(f"[ERROR] Email sending failed: {e}")
 
 # ==========================================
-# 🔄 MAIN PROCESS WITH MOVE-ON-REPORT
+# 🔄 MAIN PROCESS WITH BI UPGRADE
 # ==========================================
 def main():
-    print(f"{'='*30}\nMODE: {RUN_MODE.upper()}\n{'='*30}")
+    print(f"{'='*50}\n🚢 VESSEL MONITOR - Business Intelligence Edition\n{'='*50}")
+    print(f"MODE: {RUN_MODE.upper()}\nPorts: Safi (03), Nador (06), Jorf Lasfar (07)")
+    print(f"{'='*50}")
+    
     state = load_state()
     active = state.get("active", {})
     history = state.get("history", [])
 
-    # REPORT MODE Logic with Move-on-Report
+    # REPORT MODE Logic with BI reporting
     if RUN_MODE == "report":
-        print(f"[LOG] Generating monthly reports for {len(history)} completed movements.")
+        print(f"[BI] Generating monthly BI reports for {len(history)} movements.")
         
-        # 1. Send reports for each port
+        # Send reports for each port with BI tables
         for p_code in ALLOWED_PORTS:
             p_name = port_name(p_code)
             p_hist = [h for h in history if h.get("port") == p_name]
             if p_hist:
-                print(f"[LOG] Sending report for {p_name}")
+                print(f"[BI] Sending BI report for {p_name} ({len(p_hist)} escales)")
                 send_monthly_report(p_hist, p_name)
+            else:
+                print(f"[BI] No data for {p_name}")
         
-        # 2. MOVE reported vessels to history.json (the permanent archive)
-        existing_archive = load_history_archive()
+        # Load existing history archive
+        existing_archive = []
+        if os.path.exists(HISTORY_FILE):
+            try:
+                with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                    existing_archive = json.load(f)
+                    if not isinstance(existing_archive, list):
+                        existing_archive = []
+            except Exception as e:
+                print(f"[WARNING] Failed to load history archive: {e}")
         
-        # Append current history to the permanent archive
+        # Append current history to permanent archive
         existing_archive.extend(history)
         
+        # Save to permanent archive
         try:
-            save_history_archive(existing_archive)
-            print(f"[LOG] Moved {len(history)} completed movements to history.json")
+            with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+                json.dump(existing_archive, f, indent=2, ensure_ascii=False)
+            print(f"[LOG] Archived {len(history)} movements to history.json")
         except Exception as e:
             print(f"[ERROR] Failed to save history archive: {e}")
             return  # Don't clear history if we can't archive
         
-        # 3. CLEAR the history from state.json so it's fresh for the new month
+        # Clear state history and clean up old active vessels
         state["history"] = []
-        
-        # 4. Also clean up very old active vessels (older than 30 days)
         now_utc = datetime.now(timezone.utc)
         cutoff = now_utc - timedelta(days=30)
         state["active"] = {
@@ -420,10 +493,10 @@ def main():
         }
         
         save_state(state)
-        print("[LOG] Monthly report completed. State history cleared, old active vessels cleaned.")
+        print("[LOG] Monthly BI reports completed. State history cleared, old active vessels cleaned.")
         return
 
-    # MONITOR MODE Logic with retry
+    # MONITOR MODE Logic with BI tracking
     try:
         all_data = fetch_vessel_data_with_retry(max_retries=3, initial_delay=5)
     except Exception as e:
@@ -432,72 +505,103 @@ def main():
 
     now_utc = datetime.now(timezone.utc)
     live_vessels = {}
+    
+    # Process live data
     for e in all_data:
         if str(e.get("cODE_SOCIETEField")) in ALLOWED_PORTS:
             v_id = f"{e.get('nUMERO_LLOYDField','0')}-{e.get('nUMERO_ESCALEField','0')}"
-            live_vessels[v_id] = {"e": e, "status": (e.get("sITUATIONField") or "").upper()}
+            live_vessels[v_id] = {
+                "e": e, 
+                "status": (e.get("sITUATIONField") or "").upper()
+            }
 
     alerts, to_remove = {}, []
-
-    # Transitions & Tracking
+    
+    # Update active vessels with BI tracking
     for v_id, stored in active.items():
         live = live_vessels.get(v_id)
+        
         if live:
-            prev, new = stored["status"], live["status"]
+            new_status = live["status"]
+            prev_status = stored.get("current_status", stored.get("status", "UNKNOWN"))
             
-            if new == "EN RADE" and prev != "EN RADE":
-                stored["anchored_at"] = now_utc.isoformat()
-                
-            if prev != "A QUAI" and new == "A QUAI":
-                stored["quai_at"] = now_utc.isoformat()
-                anch_start = stored.get("anchored_at", now_utc.isoformat())
-                stored["anchorage_duration"] = round(calculate_duration_hours(anch_start, now_utc), 2)
-                
-            if prev == "A QUAI" and new == "APPAREILLAGE":
-                q_start = stored.get("quai_at", stored["last_seen"])
-                # Calculate total duration from first_seen
-                total_duration = 0.0
-                if "first_seen" in stored:
-                    total_duration = round(calculate_duration_hours(stored["first_seen"], now_utc), 2)
-                
+            # Update time accumulators based on status change
+            stored = update_vessel_timers(stored, new_status, now_utc)
+            
+            # Check for state transitions
+            if prev_status == "A QUAI" and new_status == "APPAREILLAGE":
+                # Vessel completed its stay - add to history with BI metrics
                 history.append({
-                    "vessel": stored["entry"].get('nOM_NAVIREField'),
+                    "vessel": stored["entry"].get('nOM_NAVIREField', 'Unknown'),
                     "agent": stored["entry"].get("cONSIGNATAIREField", "Inconnu"),
                     "port": port_name(stored["entry"].get('cODE_SOCIETEField')),
                     "port_code": stored["entry"].get('cODE_SOCIETEField'),
-                    "duration": round(calculate_duration_hours(q_start, now_utc), 2),
-                    "anchorage_duration": stored.get("anchorage_duration", 0.0),
+                    "anchorage_hours": round(stored.get("anchorage_hours", 0.0), 1),
+                    "berth_hours": round(stored.get("berth_hours", 0.0), 1),
                     "arrival": stored.get("first_seen", now_utc.isoformat()),
                     "departure": now_utc.isoformat(),
-                    "total_duration": total_duration
+                    "total_duration": round(stored.get("anchorage_hours", 0.0) + stored.get("berth_hours", 0.0), 1)
                 })
                 to_remove.append(v_id)
-                
-            stored.update({"status": new, "last_seen": now_utc.isoformat()})
-
-    for vid in to_remove: active.pop(vid, None)
+                print(f"[BI] Vessel {stored['entry'].get('nOM_NAVIREField')} completed. Anchorage: {stored.get('anchorage_hours', 0):.1f}h, Berth: {stored.get('berth_hours', 0):.1f}h")
+            
+            # Update entry data
+            stored["entry"] = live["e"]
+            
+        else:
+            # Vessel not in live data - keep tracking time if in a tracked status
+            current_status = stored.get("current_status", "UNKNOWN")
+            if current_status in ANCHORAGE_STATUSES.union(BERTH_STATUSES):
+                stored = update_vessel_timers(stored, current_status, now_utc)
+    
+    # Remove completed vessels
+    for vid in to_remove: 
+        active.pop(vid, None)
 
     # New Vessels (PREVU Alerts)
     for v_id, live in live_vessels.items():
         if v_id not in active:
             # First run check: ignore non-PREVU to avoid false alerts on existing ships
-            if len(active) == 0 and live["status"] != "PREVU": continue
+            if len(active) == 0 and live["status"] != "PREVU": 
+                continue
             
+            # Initialize new vessel with BI tracking structure
             active[v_id] = {
-                "entry": live["e"], 
-                "status": live["status"], 
-                "first_seen": now_utc.isoformat(),  # Track when first seen
+                "entry": live["e"],
+                "current_status": live["status"],
+                "anchorage_hours": 0.0,
+                "berth_hours": 0.0,
+                "first_seen": now_utc.isoformat(),
+                "last_updated": now_utc.isoformat(),
                 "last_seen": now_utc.isoformat()
             }
+            
             if live["status"] == "PREVU":
                 p = port_name(live['e'].get("cODE_SOCIETEField"))
                 alerts.setdefault(p, []).append(live["e"])
+                print(f"[ALERT] New PREVU vessel: {live['e'].get('nOM_NAVIREField')} at {p}")
 
-    # State Cleanup & Save
+    # State Cleanup (3 days for vanished vessels)
     cutoff = now_utc - timedelta(days=3)
-    state["active"] = {k: v for k, v in active.items() if datetime.fromisoformat(v["last_seen"]).replace(tzinfo=timezone.utc) > cutoff}
-    state["history"] = history[-1000:]
+    active_cleaned = {}
+    for k, v in active.items():
+        last_seen_str = v.get("last_seen", now_utc.isoformat())
+        try:
+            last_seen = datetime.fromisoformat(last_seen_str)
+            if last_seen.replace(tzinfo=timezone.utc) > cutoff:
+                active_cleaned[k] = v
+            else:
+                print(f"[CLEANUP] Removed vanished vessel: {v['entry'].get('nOM_NAVIREField')}")
+        except:
+            active_cleaned[k] = v  # Keep if we can't parse timestamp
+    
+    state["active"] = active_cleaned
+    state["history"] = history[-1000:]  # Keep last 1000 history entries
     save_state(state)
+    
+    # Print current tracking stats
+    print(f"[STATS] Tracking {len(active_cleaned)} active vessels")
+    print(f"[STATS] Total history entries: {len(history)}")
 
     # Send Arrival Alerts
     if alerts:
@@ -505,7 +609,7 @@ def main():
             v_names = ", ".join([v.get('nOM_NAVIREField', 'Unknown') for v in vessels])
             intro = f"<p style='font-family:Arial; font-size:15px;'>Bonjour,<br><br>Ci-dessous les mouvements prévus au <b>Port de {p}</b> :</p>"
             cards = "".join([format_vessel_details_premium(v) for v in vessels])
-            footer = "<p style='font-size:12px; color:#777; font-style:italic;'>Rapport automatique par le système de surveillance.</p>"
+            footer = "<p style='font-size:12px; color:#777; font-style:italic;'>Rapport automatique par le système de surveillance BI.</p>"
             
             full_body = intro + cards + footer
             subject = f"🔔 NOUVELLE ARRIVÉE PRÉVUE | {v_names} au Port de {p}"
@@ -514,7 +618,7 @@ def main():
             print(f"[EMAIL] Sent for {p}: {v_names}")
             
             # Optional: Send to colleague for specific ports
-            if p == "Nador" and EMAIL_TO_COLLEAGUE:  # Or any port you want
+            if p == "Nador" and EMAIL_TO_COLLEAGUE:  
                 send_email(EMAIL_TO_COLLEAGUE, subject, full_body)
                 print(f"[EMAIL] Also sent to colleague for {p}")
     else:
