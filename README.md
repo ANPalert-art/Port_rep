@@ -1,92 +1,72 @@
+# 🚢 Vessel Monitor (Safi-Nador-Jorf)
 
-🚢 Vessel Monitor (Safi-Nador-Jorf)
-A specialized Business Intelligence (BI) tool and automated tracking system for monitoring maritime traffic at the Moroccan ports of Safi (03), Nador (06), and Jorf Lasfar (07).
+An automated Business Intelligence (BI) and monitoring system for maritime traffic at the Moroccan ports of **Safi (03)**, **Nador (06)**, and **Jorf Lasfar (07)**. This tool tracks vessel turnaround times, provides real-time arrival alerts, and generates monthly performance analytics using the ANP API.
 
-This system tracks vessel turnaround times (anchorage vs. berth), provides real-time arrival alerts, and generates monthly performance reports—all powered by GitHub Actions and the ANP (Agence Nationale des Ports) API.
+---
 
-✨ Key Features
-🔄 Automated Monitoring: Runs every 30 minutes to track vessel status changes.
+## ✨ Key Features
 
-📊 KPI Tracking: Automatically calculates:
+* **🔄 Automated Monitoring**: Scans the port situation every 30 minutes via GitHub Actions.
+* **📊 KPI Tracking**: Automatically calculates hours spent at **Anchorage** (waiting) vs. **Berth** (docked).
+* **🔔 Premium Alerts**: Sends detailed HTML emails for new vessels appearing with "PREVU" status.
+* **📈 Monthly BI Reports**: Automatically generates performance summaries on the 1st of every month.
+* **🛠️ Fault Tolerance**: Features "battle-ready" headers for API resilience, automated state backups, and JSON validation.
 
-Anchorage Time: Hours spent waiting in the roads.
+---
 
-Berth Time: Hours spent docked for operations.
+## ⚙️ How It Works
 
-Agent Performance: Comparison of shipping agents' efficiency.
+The system operates as a serverless state machine within GitHub Actions:
 
-🔔 Premium Alerts: HTML-formatted email notifications for new vessel arrivals (PREVU status).
+1. **Extraction**: Pulls live JSON data from the ANP API.
+2. **Comparison**: Matches live data against `state.json` to detect changes.
+3. **Detection**:
+* **New Vessel**: Triggers an arrival alert email.
+* **Status Change**: Updates internal timers for anchorage or berth.
+* **Departure**: Calculates final durations and moves the record to `history.json`.
 
-📈 Monthly BI Reports: Automated summaries sent on the 1st of every month featuring performance grades (⭐ Excellent to 🐌 Lent).
 
-🛠️ Fault Tolerance: Includes automated state backups, JSON validation, and retry logic to handle API instability.
+4. **Reporting**: Triggers a performance audit if the run mode is set to "report".
 
-🏗️ Architecture
-Workflow (monitor.yml): Orchestrates the environment, manages secrets, and handles data persistence by committing state.json and history.json back to the repository.
+---
 
-Engine (monitor.py):
+## 🚀 Installation & Setup
 
-Fetches data using a "battle-ready" header configuration to ensure API connectivity.
+### 1. Repository Configuration
 
-Manages vessel state transitions.
+* Ensure `monitor.py` and the `.github/workflows/monitor.yml` files are in your repository.
+* Enable **Read and write permissions** for the GitHub Actions Bot under **Settings > Actions > General** to allow the system to save data.
 
-Calculates elapsed time using UTC timestamps to prevent inflation during API downtime.
+### 2. Configure GitHub Secrets
 
-Data Storage:
+Add the following secrets under **Settings > Secrets and variables > Actions**:
 
-state.json: Current active vessels and timers.
+| Secret | Description |
+| --- | --- |
+| `EMAIL_USER` | Your Gmail address (the sender). |
+| `EMAIL_PASS` | Your Gmail App Password (16-digit code). |
+| `EMAIL_TO` | The primary recipient for alerts and reports. |
+| `EMAIL_TO_COLLEAGUE` | (Optional) Secondary recipient for Nador-specific alerts. |
 
-history.json: Archived records of completed port calls.
+---
 
-🚀 Setup & Deployment
-1. Prerequisites
-A private or public GitHub Repository.
+## 📈 Performance Grading
 
-A Gmail account (or other SMTP service) for sending reports.
+The system evaluates every port call using the following logic:
 
-2. GitHub Secrets
-Go to Settings > Secrets and variables > Actions and add the following:
+* **⭐ Excellent**: Anchorage < 5h and Berth < 24h.
+* **✅ Bon**: Anchorage < 10h and Berth < 36h.
+* **⚠️ Modéré**: Waiting time (anchorage) exceeds 10h.
+* **🐌 Lent**: Significant delays in anchorage or operations.
 
-Secret	Description
-EMAIL_USER	Your email address (e.g., sender@gmail.com).
-EMAIL_PASS	Your App Password (for Gmail, use App Passwords).
-EMAIL_TO	Primary recipient of alerts and reports.
-EMAIL_TO_COLLEAGUE	(Optional) Secondary recipient for Nador-specific alerts.
-3. Permissions
-Ensure the GitHub Actions Bot has write access to your repository:
+---
 
-Go to Settings > Actions > General.
+## 🛡️ Resilience Features
 
-Under Workflow permissions, select Read and write permissions.
+* **Auto-Recovery**: Restores from `state.json.backup` if the primary state file is corrupted.
+* **Ghost Ship Protection**: Keeps vessels in the system for 3 days if they disappear from the API without a "Completed" status, preventing data loss during API glitches.
+* **Manual Triggers**: Use the **Actions** tab to manually run a `monitor` check or force a `report` generation at any time.
 
-📈 Monitoring & Reports
-Performance Grading
-The system automatically evaluates port calls based on the following logic:
+---
 
-⭐ Excellent: Anchorage < 5h AND Berth < 24h.
-
-✅ Bon: Anchorage < 10h AND Berth < 36h.
-
-⚠️ Modéré: Waiting time exceeds 10h.
-
-🐌 Lent: Significant delays in anchorage or operations.
-
-Manual Triggers
-You can manually trigger the script via the Actions tab:
-
-Select Vessel Monitor.
-
-Click Run workflow.
-
-Choose Mode:
-
-monitor: Standard check for new arrivals and timer updates.
-
-report: Force generate the monthly BI report immediately.
-
-🛡️ Resilience Features
-Auto-Recovery: If state.json is corrupted, the system attempts to restore from state.json.backup.
-
-Conflict Handling: Uses git pull --rebase to handle concurrent workflow runs.
-
-Ghost Ship Protection: Vessels that disappear from the API without a "Completed" status are kept in state for 3 days before cleanup to account for temporary API glitches.
+**Would you like me to help you configure the port codes for a different region, such as the Southern ports?**
