@@ -30,10 +30,10 @@ RUN_MODE = os.getenv("RUN_MODE", "monitor")
 # Target Ports: Safi (03), Nador (06), Jorf Lasfar (07)
 ALLOWED_PORTS = {"03", "06", "07"} 
 
-# Status categories for time tracking (BI UPGRADE - Based on actual API statuses)
-ANCHORAGE_STATUSES = {"EN RADE"}  # Only this status exists in API
-BERTH_STATUSES = {"A QUAI"}       # Only this status exists in API
-COMPLETED_STATUSES = {"APPAREILLAGE", "TERMINE"}  # TERMINE might not appear but included
+# Status categories for time tracking (BI UPGRADE)
+ANCHORAGE_STATUSES = {"EN RADE"}
+BERTH_STATUSES = {"A QUAI"}
+COMPLETED_STATUSES = {"APPAREILLAGE", "TERMINE"}
 
 # ==========================================
 # 🌐 NETWORK RESILIENCE
@@ -49,15 +49,13 @@ def fetch_vessel_data_with_retry(max_retries=3, initial_delay=5):
                 "Accept": "application/json"
             }
             
-            # Different timeouts for connect vs read
             resp = requests.get(
                 TARGET_URL, 
                 headers=headers,
-                timeout=(10, 60)  # 10s connect, 60s read
+                timeout=(10, 60)
             )
             resp.raise_for_status()
             
-            # Validate response is JSON
             data = resp.json()
             if not isinstance(data, list):
                 raise ValueError("API response is not a list")
@@ -68,7 +66,7 @@ def fetch_vessel_data_with_retry(max_retries=3, initial_delay=5):
         except requests.exceptions.Timeout as e:
             print(f"[WARNING] Timeout on attempt {attempt + 1}: {e}")
             if attempt < max_retries - 1:
-                wait_time = initial_delay * (2 ** attempt)  # Exponential backoff
+                wait_time = initial_delay * (2 ** attempt)
                 print(f"[INFO] Waiting {wait_time}s before retry...")
                 time.sleep(wait_time)
             else:
@@ -102,12 +100,10 @@ def fetch_vessel_data_with_retry(max_retries=3, initial_delay=5):
 # ==========================================
 def load_state() -> Dict:
     """Load state with proper error handling"""
-    # Try file first
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                # Validate structure
                 if isinstance(data, dict) and "active" in data and "history" in data:
                     return data
                 else:
@@ -115,7 +111,6 @@ def load_state() -> Dict:
         except (json.JSONDecodeError, IOError) as e:
             print(f"[WARNING] Failed to load state file: {e}")
     
-    # Then try environment variable
     state_data = os.getenv(STATE_ENV_VAR)
     if state_data:
         try:
@@ -130,7 +125,6 @@ def load_state() -> Dict:
 def save_state(state: Dict):
     """Save state with backup on failure"""
     try:
-        # Create backup of current state
         backup_file = None
         if os.path.exists(STATE_FILE):
             backup_file = f"{STATE_FILE}.backup"
@@ -140,25 +134,20 @@ def save_state(state: Dict):
             except:
                 pass
         
-        # Save to temp file first
         temp_file = f"{STATE_FILE}.tmp"
         with open(temp_file, "w", encoding="utf-8") as f:
             json.dump(state, f, indent=2, ensure_ascii=False)
         
-        # Validate the saved file
         with open(temp_file, "r", encoding="utf-8") as f:
-            json.load(f)  # Will raise if corrupted
+            json.load(f)
         
-        # Replace original
         os.replace(temp_file, STATE_FILE)
         
-        # Clean up backup if successful
         if backup_file and os.path.exists(backup_file):
             os.remove(backup_file)
             
     except Exception as e:
         print(f"[CRITICAL] Save failed: {e}")
-        # Try to restore from backup
         if backup_file and os.path.exists(backup_file):
             try:
                 import shutil
@@ -166,7 +155,7 @@ def save_state(state: Dict):
                 print("[INFO] Restored state from backup")
             except:
                 pass
-        raise  # Re-raise to fail the workflow
+        raise 
 
 # ==========================================
 # 📅 DATE & TIME HELPERS
@@ -207,8 +196,8 @@ def port_name(code: str) -> str:
 # ==========================================
 def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime) -> Dict:
     """
-    Update time accumulators based on status changes
-    Returns updated vessel data
+    Update time accumulators based on status changes (Stopwatch Logic)
+    This accumulates time based on polling intervals (every 30m)
     """
     current_status = active_vessel.get("current_status", "UNKNOWN")
     last_updated_str = active_vessel.get("last_updated")
@@ -217,7 +206,6 @@ def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime
     if last_updated_str:
         try:
             last_updated = datetime.fromisoformat(last_updated_str)
-            # Calculate elapsed time since last update (in hours)
             elapsed_hours = (now_utc - last_updated).total_seconds() / 3600.0
             
             # Add elapsed time to appropriate accumulator
@@ -225,8 +213,8 @@ def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime
                 active_vessel["anchorage_hours"] = active_vessel.get("anchorage_hours", 0.0) + elapsed_hours
             elif current_status in BERTH_STATUSES:
                 active_vessel["berth_hours"] = active_vessel.get("berth_hours", 0.0) + elapsed_hours
-        except:
-            pass  # If timestamp parsing fails, skip time tracking
+        except Exception:
+            pass  # If timestamp parsing fails, skip time tracking for this interval
     
     # Update status and timestamp
     active_vessel["current_status"] = new_status
@@ -238,13 +226,13 @@ def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime
 def calculate_performance_note(avg_anchorage: float, avg_berth: float) -> str:
     """Generate human-readable performance note"""
     if avg_anchorage < 5 and avg_berth < 24:
-        return "⭐ Excellent - Fast operations"
+        return "⭐ Excellent - Opérations rapides"
     elif avg_anchorage < 10 and avg_berth < 36:
-        return "✅ Good - Efficient"
+        return "✅ Bon - Efficace"
     elif avg_anchorage < 24:
-        return "⚠️ Moderate - Some waiting time"
+        return "⚠️ Modéré - Certaines attentes"
     else:
-        return "🐌 Slow - Long waiting periods"
+        return "🐌 Lent - Longues périodes d'attente"
 
 # ==========================================
 # 📧 EMAIL TEMPLATES (BI UPGRADE)
@@ -278,7 +266,16 @@ def send_monthly_report(history: list, specific_port: str):
         print(f"[INFO] No history data for {specific_port}")
         return
 
-    # 1. Group history by agent for performance analytics
+    # 1. Calculate KPIs first to avoid repeated loops
+    total_calls = len(history)
+    total_anchorage = sum(h.get('anchorage_hours', 0) for h in history)
+    total_berth = sum(h.get('berth_hours', 0) for h in history)
+    
+    avg_anchorage = round(total_anchorage / total_calls, 1) if total_calls > 0 else 0
+    avg_berth = round(total_berth / total_calls, 1) if total_calls > 0 else 0
+    avg_total = round(avg_anchorage + avg_berth, 1)
+
+    # 2. Group history by agent for performance analytics
     agent_stats = defaultdict(lambda: {"calls": 0, "total_anchorage": 0.0, "total_berth": 0.0})
     
     for h in history:
@@ -287,25 +284,29 @@ def send_monthly_report(history: list, specific_port: str):
         agent_stats[agent]["total_anchorage"] += h.get('anchorage_hours', 0)
         agent_stats[agent]["total_berth"] += h.get('berth_hours', 0)
 
-    # 2. Build Agent Performance Summary Table
+    # 3. Build Agent Performance Summary Table
     agent_rows = ""
     sorted_agents = sorted(agent_stats.items(), key=lambda x: x[1]['calls'], reverse=True)
     
     for agent, data in sorted_agents:
-        avg_anchorage = round(data['total_anchorage'] / data['calls'], 1) if data['calls'] > 0 else 0
-        avg_berth = round(data['total_berth'] / data['calls'], 1) if data['calls'] > 0 else 0
-        performance_note = calculate_performance_note(avg_anchorage, avg_berth)
+        avg_agent_anchorage = round(data['total_anchorage'] / data['calls'], 1) if data['calls'] > 0 else 0
+        avg_agent_berth = round(data['total_berth'] / data['calls'], 1) if data['calls'] > 0 else 0
+        performance_note = calculate_performance_note(avg_agent_anchorage, avg_agent_berth)
+        
+        # Color coding
+        anch_color = "#e74c3c" if avg_agent_anchorage > 12 else "#27ae60"
+        berth_color = "#f39c12" if avg_agent_berth > 36 else "#27ae60"
         
         agent_rows += f"""
         <tr style="border-bottom: 1px solid #e0e0e0;">
             <td style="padding: 10px; font-weight: bold; color: #2c3e50;">{agent}</td>
             <td style="padding: 10px; text-align: center; font-weight: bold;">{data['calls']}</td>
-            <td style="padding: 10px; text-align: center; color: {'#e74c3c' if avg_anchorage > 12 else '#27ae60'}">{avg_anchorage} Hrs</td>
-            <td style="padding: 10px; text-align: center; color: {'#f39c12' if avg_berth > 36 else '#27ae60'}">{avg_berth} Hrs</td>
+            <td style="padding: 10px; text-align: center; color: {anch_color};">{avg_agent_anchorage} Hrs</td>
+            <td style="padding: 10px; text-align: center; color: {berth_color};">{avg_agent_berth} Hrs</td>
             <td style="padding: 10px; text-align: center; font-size: 12px;">{performance_note}</td>
         </tr>"""
 
-    # 3. Build Detailed Vessel Statistics Table
+    # 4. Build Detailed Vessel Statistics Table
     vessel_rows = ""
     sorted_history = sorted(history, key=lambda x: x.get('departure', ''), reverse=True)
     
@@ -316,26 +317,31 @@ def send_monthly_report(history: list, specific_port: str):
         except: 
             date_str = "N/A"
         
-        total_hours = h.get('anchorage_hours', 0) + h.get('berth_hours', 0)
+        anch = round(h.get('anchorage_hours', 0), 1)
+        berth = round(h.get('berth_hours', 0), 1)
+        total = round(anch + berth, 1)
+        
+        anch_color = "#e74c3c" if anch > 12 else "#27ae60"
+        berth_color = "#f39c12" if berth > 36 else "#27ae60"
         
         vessel_rows += f"""
         <tr style="border-bottom: 1px solid #f0f0f0;">
             <td style="padding: 8px; color: #2c3e50; font-weight: bold;">{h['vessel']}</td>
             <td style="padding: 8px; font-size: 13px;">{h.get('agent', '-')}</td>
-            <td style="padding: 8px; text-align: center; color: {'#e74c3c' if h.get('anchorage_hours', 0) > 12 else '#27ae60'}">{round(h.get('anchorage_hours', 0), 1)} Hrs</td>
-            <td style="padding: 8px; text-align: center; color: {'#f39c12' if h.get('berth_hours', 0) > 36 else '#27ae60'}">{round(h.get('berth_hours', 0), 1)} Hrs</td>
-            <td style="padding: 8px; text-align: center; font-weight: bold;">{round(total_hours, 1)} Hrs</td>
+            <td style="padding: 8px; text-align: center; color: {anch_color};">{anch} Hrs</td>
+            <td style="padding: 8px; text-align: center; color: {berth_color};">{berth} Hrs</td>
+            <td style="padding: 8px; text-align: center; font-weight: bold;">{total} Hrs</td>
             <td style="padding: 8px; font-size: 12px;">{date_str}</td>
         </tr>"""
 
-    subject = f"📊 Rapport Mensuel BI : Port de {specific_port} ({len(history)} Escales)"
+    subject = f"📊 Rapport Mensuel BI : Port de {specific_port} ({total_calls} Escales)"
     
     body = f"""
     <div style="font-family: Arial, sans-serif; max-width: 1100px; margin: auto;">
         <div style="background: linear-gradient(135deg, #0a3d62 0%, #1e5799 100%); color: white; padding: 20px; border-radius: 10px 10px 0 0;">
             <h2 style="margin: 0; font-size: 24px;">📊 Business Intelligence Report - {specific_port}</h2>
             <p style="margin: 10px 0 0; opacity: 0.95; font-size: 16px;">Analyse des Performances Mensuelles</p>
-            <p style="margin: 5px 0 0; opacity: 0.85; font-size: 14px;">{len(history)} escales complétées | Données au {datetime.now().strftime('%d/%m/%Y')}</p>
+            <p style="margin: 5px 0 0; opacity: 0.85; font-size: 14px;">{total_calls} escales complétées | Données au {datetime.now().strftime('%d/%m/%Y')}</p>
         </div>
         
         <div style="background: #f8f9fa; padding: 25px; border: 1px solid #d0d7e1; border-top: none; border-radius: 0 0 10px 10px;">
@@ -345,10 +351,10 @@ def send_monthly_report(history: list, specific_port: str):
             <div style="margin: 30px 0; padding: 15px; background: #e8f4fc; border-radius: 8px; border-left: 4px solid #3498db;">
                 <h3 style="margin: 0 0 10px 0; color: #2980b9;">📈 KPIs Clés du Port</h3>
                 <p style="margin: 5px 0; font-size: 14px;">
-                    <strong>Escales totales:</strong> {len(history)} |
-                    <strong>Temps d'attente moyen:</strong> {round(sum(h.get('anchorage_hours', 0) for h in history)/len(history), 1)}h |
-                    <strong>Temps à quai moyen:</strong> {round(sum(h.get('berth_hours', 0) for h in history)/len(history), 1)}h |
-                    <strong>Durée totale moyenne:</strong> {round(sum(h.get('anchorage_hours', 0) + h.get('berth_hours', 0) for h in history)/len(history), 1)}h
+                    <strong>Escales totales:</strong> {total_calls} |
+                    <strong>Temps d'attente moyen:</strong> {avg_anchorage}h |
+                    <strong>Temps à quai moyen:</strong> {avg_berth}h |
+                    <strong>Durée totale moyenne:</strong> {avg_total}h
                 </p>
             </div>
 
@@ -387,7 +393,7 @@ def send_monthly_report(history: list, specific_port: str):
             
             <div style='margin-top: 40px; padding-top: 20px; border-top: 2px solid #e6e9ef;'>
                 <h4 style='color: #2c3e50; margin-bottom: 15px;'>🔍 Insights Clés pour {specific_port}</h4>
-                <ul style='font-size: 14px; color: #34495e; line-height: 1.6;'>
+                <ul style='font-size: 14px; color: #34495e; line-height:1.6;'>
                     <li><strong>Négociation:</strong> Utilisez ces données pour les négociations de tarifs portuaires avec les agents</li>
                     <li><strong>Planification:</strong> Prévoyez les ressources en fonction des temps d'attente moyens</li>
                     <li><strong>Benchmarking:</strong> Comparez les performances entre agents pour identifier les meilleures pratiques</li>
@@ -428,7 +434,7 @@ def send_email(to, sub, body):
             server.sendmail(EMAIL_USER, [to], msg.as_string())
         print(f"[SUCCESS] Email sent successfully to {to}")
     except smtplib.SMTPAuthenticationError as e:
-        print(f"[ERROR] Email authentication failed: {e}")
+        print(f"[ERROR] Email authentication failed. Check EMAIL_USER/PASS. {e}")
     except smtplib.SMTPException as e:
         print(f"[ERROR] SMTP error: {e}")
     except Exception as e:
@@ -525,7 +531,7 @@ def main():
             new_status = live["status"]
             prev_status = stored.get("current_status", stored.get("status", "UNKNOWN"))
             
-            # Update time accumulators based on status change
+            # Update time accumulators based on status change (Stopwatch Logic)
             stored = update_vessel_timers(stored, new_status, now_utc)
             
             # Check for state transitions
