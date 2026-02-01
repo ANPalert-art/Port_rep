@@ -1,1 +1,6588 @@
-{}
+[
+  {
+    "vessel": "MANISA SOLE",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "duration": 0.68,
+    "anchorage_duration": 0.0,
+    "departure": "2026-01-17T22:41:22.543180+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "duration": 0.65,
+    "anchorage_duration": 0.0,
+    "departure": "2026-01-18T07:36:07.986110+00:00"
+  },
+  {
+    "vessel": "LADY DEBORA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "duration": 1.91,
+    "anchorage_duration": 0.0,
+    "departure": "2026-01-18T07:36:07.986110+00:00"
+  },
+  {
+    "vessel": "SUNDA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "duration": 2.68,
+    "anchorage_duration": 0.0,
+    "departure": "2026-01-18T21:32:59.196001+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "port_code": "07",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T04:19:13.824270+00:00",
+    "departure": "2026-01-19T04:19:13.824270+00:00",
+    "total_duration": 0.0
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T16:03:08.729183+00:00",
+    "departure": "2026-01-19T16:03:08.729183+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T04:19:13.824270+00:00",
+    "departure": "2026-01-19T16:03:08.729183+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T16:03:08.729183+00:00",
+    "departure": "2026-01-19T17:00:14.088791+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T16:03:08.729183+00:00",
+    "departure": "2026-01-19T17:00:14.088791+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T17:00:14.088791+00:00",
+    "departure": "2026-01-19T17:55:26.662169+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T17:00:14.088791+00:00",
+    "departure": "2026-01-19T17:55:26.662169+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T17:55:26.662169+00:00",
+    "departure": "2026-01-19T18:59:36.200896+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T17:55:26.662169+00:00",
+    "departure": "2026-01-19T18:59:36.200896+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T18:59:36.200896+00:00",
+    "departure": "2026-01-19T19:34:12.867866+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T18:59:36.200896+00:00",
+    "departure": "2026-01-19T19:34:12.867866+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T19:34:12.867866+00:00",
+    "departure": "2026-01-19T20:46:38.964401+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T19:34:12.867866+00:00",
+    "departure": "2026-01-19T20:46:38.964401+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T20:46:38.964401+00:00",
+    "departure": "2026-01-19T21:38:32.256341+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T20:46:38.964401+00:00",
+    "departure": "2026-01-19T21:38:32.256341+00:00"
+  },
+  {
+    "vessel": "YASA ROSE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 18.5,
+    "arrival": "2026-01-19T22:47:44.701000+00:00",
+    "departure": "2026-01-19T22:47:44.701000+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T21:38:32.256341+00:00",
+    "departure": "2026-01-19T22:47:44.701000+00:00"
+  },
+  {
+    "vessel": "TM HAI HA 568",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T21:38:32.256341+00:00",
+    "departure": "2026-01-19T22:47:44.701000+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 6.7,
+    "berth_hours": 17.2,
+    "arrival": "2026-01-20T04:11:53.048486+00:00",
+    "departure": "2026-01-20T04:11:53.048486+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 6.7,
+    "berth_hours": 17.2,
+    "arrival": "2026-01-20T04:11:53.048486+00:00",
+    "departure": "2026-01-20T04:11:53.048486+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T04:11:53.048486+00:00",
+    "departure": "2026-01-20T05:49:44.134008+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T04:11:53.048486+00:00",
+    "departure": "2026-01-20T05:49:44.134008+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T05:49:44.134008+00:00",
+    "departure": "2026-01-20T07:05:15.655728+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T05:49:44.134008+00:00",
+    "departure": "2026-01-20T07:05:15.655728+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T07:05:15.655728+00:00",
+    "departure": "2026-01-20T07:56:00.815022+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T07:05:15.655728+00:00",
+    "departure": "2026-01-20T07:56:00.815022+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 28.8,
+    "arrival": "2026-01-20T09:05:17.557928+00:00",
+    "departure": "2026-01-20T09:05:17.557928+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T07:56:00.815022+00:00",
+    "departure": "2026-01-20T09:05:17.557928+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T07:56:00.815022+00:00",
+    "departure": "2026-01-20T09:05:17.557928+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T09:05:17.557928+00:00",
+    "departure": "2026-01-20T10:01:07.063643+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T09:05:17.557928+00:00",
+    "departure": "2026-01-20T10:01:07.063643+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T09:05:17.557928+00:00",
+    "departure": "2026-01-20T10:01:07.063643+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T10:01:07.063643+00:00",
+    "departure": "2026-01-20T11:02:18.553583+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T10:01:07.063643+00:00",
+    "departure": "2026-01-20T11:02:18.553583+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T10:01:07.063643+00:00",
+    "departure": "2026-01-20T11:02:18.553583+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:02:18.553583+00:00",
+    "departure": "2026-01-20T11:54:22.177342+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:02:18.553583+00:00",
+    "departure": "2026-01-20T11:54:22.177342+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:02:18.553583+00:00",
+    "departure": "2026-01-20T11:54:22.177342+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T13:59:22.576335+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 4.7,
+    "berth_hours": 28.9,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T13:59:22.576335+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:54:22.177342+00:00",
+    "departure": "2026-01-20T13:59:22.576335+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:54:22.177342+00:00",
+    "departure": "2026-01-20T13:59:22.576335+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T11:54:22.177342+00:00",
+    "departure": "2026-01-20T13:59:22.576335+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T15:02:44.841206+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T15:02:44.841206+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T15:02:44.841206+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T15:02:44.841206+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T13:59:22.576335+00:00",
+    "departure": "2026-01-20T15:02:44.841206+00:00"
+  },
+  {
+    "vessel": "NAVIOS PRIMAVERA",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 36.7,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T15:02:44.841206+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T15:02:44.841206+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T15:02:44.841206+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T15:02:44.841206+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T15:02:44.841206+00:00",
+    "departure": "2026-01-20T17:02:12.936999+00:00"
+  },
+  {
+    "vessel": "NAVIOS PRIMAVERA",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-20T18:00:33.671360+00:00"
+  },
+  {
+    "vessel": "NAVIOS PRIMAVERA",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T18:00:33.671360+00:00",
+    "departure": "2026-01-20T20:47:13.223200+00:00"
+  },
+  {
+    "vessel": "NAVIOS PRIMAVERA",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T20:47:13.223200+00:00",
+    "departure": "2026-01-20T21:41:32.821360+00:00"
+  },
+  {
+    "vessel": "MANISA BALU",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 42.4,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T22:43:29.357887+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "NAVIOS PRIMAVERA",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "NORLAND",
+    "agent": "IDEA MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "CHARLIE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "MARLEY",
+    "agent": "BABMARSA",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "NERMIN KARABEKIR",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T21:41:32.821360+00:00",
+    "departure": "2026-01-20T22:43:29.357887+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T04:06:29.767653+00:00",
+    "departure": "2026-01-21T05:48:28.232045+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T05:48:28.232045+00:00",
+    "departure": "2026-01-21T07:05:29.343482+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 23.9,
+    "berth_hours": 27.8,
+    "arrival": "2026-01-21T07:57:20.525729+00:00",
+    "departure": "2026-01-21T07:57:20.525729+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T07:05:29.343482+00:00",
+    "departure": "2026-01-21T07:57:20.525729+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T09:02:42.026621+00:00",
+    "departure": "2026-01-21T09:02:42.026621+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T07:57:20.525729+00:00",
+    "departure": "2026-01-21T09:02:42.026621+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T07:57:20.525729+00:00",
+    "departure": "2026-01-21T09:02:42.026621+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T09:02:42.026621+00:00",
+    "departure": "2026-01-21T10:01:15.940075+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T09:02:42.026621+00:00",
+    "departure": "2026-01-21T10:01:15.940075+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T09:02:42.026621+00:00",
+    "departure": "2026-01-21T10:01:15.940075+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T10:01:15.940075+00:00",
+    "departure": "2026-01-21T11:02:55.271862+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T10:01:15.940075+00:00",
+    "departure": "2026-01-21T11:02:55.271862+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T10:01:15.940075+00:00",
+    "departure": "2026-01-21T11:02:55.271862+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:02:55.271862+00:00",
+    "departure": "2026-01-21T11:53:41.435725+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:02:55.271862+00:00",
+    "departure": "2026-01-21T11:53:41.435725+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:02:55.271862+00:00",
+    "departure": "2026-01-21T11:53:41.435725+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 43.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T13:59:18.830342+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T13:59:18.830342+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:53:41.435725+00:00",
+    "departure": "2026-01-21T13:59:18.830342+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:53:41.435725+00:00",
+    "departure": "2026-01-21T13:59:18.830342+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:53:41.435725+00:00",
+    "departure": "2026-01-21T13:59:18.830342+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T15:02:37.945568+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T15:02:37.945568+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T15:02:37.945568+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T15:02:37.945568+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T13:59:18.830342+00:00",
+    "departure": "2026-01-21T15:02:37.945568+00:00"
+  },
+  {
+    "vessel": "HELENA KOSAN",
+    "agent": "SEATRADE",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 56.1,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T15:02:37.945568+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T15:02:37.945568+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T15:02:37.945568+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T15:02:37.945568+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T15:02:37.945568+00:00",
+    "departure": "2026-01-21T18:08:35.277012+00:00"
+  },
+  {
+    "vessel": "OCEAN GLSR",
+    "agent": "UNIVERSAL SHIPPING  SA",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 63.4,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "STADION II",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 63.4,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "LADY DIVINA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 63.4,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "JNS OCEAN",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 63.4,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "HELENA KOSAN",
+    "agent": "SEATRADE",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-21T19:45:19.116963+00:00"
+  },
+  {
+    "vessel": "OCEAN GLSR",
+    "agent": "UNIVERSAL SHIPPING  SA",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "LADY DIVINA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "STADION II",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "JNS OCEAN",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "HELENA KOSAN",
+    "agent": "SEATRADE",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T19:45:19.116963+00:00",
+    "departure": "2026-01-21T21:01:53.882610+00:00"
+  },
+  {
+    "vessel": "OCEAN GLSR",
+    "agent": "UNIVERSAL SHIPPING  SA",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "LADY DIVINA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "STADION II",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "JNS OCEAN",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "HELENA KOSAN",
+    "agent": "SEATRADE",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:01:53.882610+00:00",
+    "departure": "2026-01-21T21:59:02.986167+00:00"
+  },
+  {
+    "vessel": "OCEAN GLSR",
+    "agent": "UNIVERSAL SHIPPING  SA",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "LADY DIVINA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "STADION II",
+    "agent": "SOMASAF",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "JNS OCEAN",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "HELENA KOSAN",
+    "agent": "SEATRADE",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "SELANGOR PARK",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "MARINA BLISS",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "STORM I",
+    "agent": "COMANAV",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "TALA WEALTH",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T21:59:02.986167+00:00",
+    "departure": "2026-01-21T22:56:56.429483+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 72.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T04:16:15.378905+00:00",
+    "departure": "2026-01-22T04:16:15.378905+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T04:16:15.378905+00:00",
+    "departure": "2026-01-22T05:49:56.231221+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T05:49:56.231221+00:00",
+    "departure": "2026-01-22T07:04:11.375474+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T07:04:11.375474+00:00",
+    "departure": "2026-01-22T07:55:03.411633+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 70.0,
+    "arrival": "2026-01-19T11:01:44.195795+00:00",
+    "departure": "2026-01-22T09:04:40.244678+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T07:55:03.411633+00:00",
+    "departure": "2026-01-22T09:04:40.244678+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T09:04:40.244678+00:00",
+    "departure": "2026-01-22T10:00:51.818015+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T09:04:40.244678+00:00",
+    "departure": "2026-01-22T10:00:51.818015+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T10:00:51.818015+00:00",
+    "departure": "2026-01-22T11:02:19.215639+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T10:00:51.818015+00:00",
+    "departure": "2026-01-22T11:02:19.215639+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 24.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:53:41.435725+00:00",
+    "departure": "2026-01-22T11:54:28.279941+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T11:02:19.215639+00:00",
+    "departure": "2026-01-22T11:54:28.279941+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T11:02:19.215639+00:00",
+    "departure": "2026-01-22T11:54:28.279941+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T11:54:28.279941+00:00",
+    "departure": "2026-01-22T13:59:07.193448+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T11:54:28.279941+00:00",
+    "departure": "2026-01-22T13:59:07.193448+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T11:54:28.279941+00:00",
+    "departure": "2026-01-22T13:59:07.193448+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 70.0,
+    "berth_hours": 12.7,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T15:02:19.193538+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 82.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T15:02:19.193538+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T13:59:07.193448+00:00",
+    "departure": "2026-01-22T15:02:19.193538+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T13:59:07.193448+00:00",
+    "departure": "2026-01-22T15:02:19.193538+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T13:59:07.193448+00:00",
+    "departure": "2026-01-22T15:02:19.193538+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 84.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 84.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "SHARP ISLAND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T15:02:19.193538+00:00",
+    "departure": "2026-01-22T17:02:39.159272+00:00"
+  },
+  {
+    "vessel": "GREEN ENDEAVOUR",
+    "agent": "LASRY MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 23.9,
+    "berth_hours": 61.8,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "ARKLOW MOOR",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 85.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "BULLDOG",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 85.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "IONIC UNICORN",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 69.2,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T11:01:44.195795+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "ARKLOW VIKING",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 79.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T11:01:44.195795+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "MANISA KATE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 56.9,
+    "arrival": "2026-01-20T09:05:17.557928+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T17:02:39.159272+00:00",
+    "departure": "2026-01-22T18:00:17.329882+00:00"
+  },
+  {
+    "vessel": "OCEAN INNOVATION",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 87.3,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "NIMET TORLAK",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 87.3,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "BLUE NOTE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 87.3,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "ARKLOW MOOR",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "IONIC UNICORN",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "ARKLOW VIKING",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "BULLDOG",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "MANISA KATE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "GREEN ENDEAVOUR",
+    "agent": "LASRY MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T18:00:17.329882+00:00",
+    "departure": "2026-01-22T19:35:55.244510+00:00"
+  },
+  {
+    "vessel": "BOND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 81.9,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T11:01:44.195795+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "OCEAN INNOVATION",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "BLUE NOTE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "NIMET TORLAK",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "ARKLOW MOOR",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "IONIC UNICORN",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "ARKLOW VIKING",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "BULLDOG",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "MANISA KATE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "GREEN ENDEAVOUR",
+    "agent": "LASRY MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-22T20:54:30.000443+00:00"
+  },
+  {
+    "vessel": "AZTECA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 89.5,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "BOND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "OCEAN INNOVATION",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "BLUE NOTE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "NIMET TORLAK",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "ARKLOW MOOR",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "IONIC UNICORN",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "ARKLOW VIKING",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "BULLDOG",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "MANISA KATE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "GREEN ENDEAVOUR",
+    "agent": "LASRY MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T20:54:30.000443+00:00",
+    "departure": "2026-01-22T21:48:20.113030+00:00"
+  },
+  {
+    "vessel": "NQ ROSA",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 9.6,
+    "berth_hours": 80.9,
+    "arrival": "2026-01-22T22:51:28.778582+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "AZTECA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "BOND",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "OCEAN INNOVATION",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "BLUE NOTE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "NIMET TORLAK",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "ARKLOW MOOR",
+    "agent": "COMATAM",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "IONIC UNICORN",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "ARKLOW VIKING",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "BULLDOG",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "NORD MARINER",
+    "agent": "M S S",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "MANISA KATE",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "SKY EAGLE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "ARTEAGA NM",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "ALBUFERA TMA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "GREEN ENDEAVOUR",
+    "agent": "LASRY MAROC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "CORESHIP OL",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T21:48:20.113030+00:00",
+    "departure": "2026-01-22T22:51:28.778582+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 22.7,
+    "berth_hours": 73.0,
+    "arrival": "2026-01-23T03:59:05.955827+00:00",
+    "departure": "2026-01-23T03:59:05.955827+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T03:59:05.955827+00:00",
+    "departure": "2026-01-23T05:45:16.375552+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T05:45:16.375552+00:00",
+    "departure": "2026-01-23T07:02:52.525555+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T07:02:52.525555+00:00",
+    "departure": "2026-01-23T07:52:14.650953+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T07:52:14.650953+00:00",
+    "departure": "2026-01-23T09:00:00.123031+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 101.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T09:54:42.092125+00:00",
+    "departure": "2026-01-23T09:54:42.092125+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T09:00:00.123031+00:00",
+    "departure": "2026-01-23T09:54:42.092125+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 102.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T10:55:36.736011+00:00",
+    "departure": "2026-01-23T10:55:36.736011+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T09:54:42.092125+00:00",
+    "departure": "2026-01-23T10:55:36.736011+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T09:54:42.092125+00:00",
+    "departure": "2026-01-23T10:55:36.736011+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T10:55:36.736011+00:00",
+    "departure": "2026-01-23T11:41:07.431585+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T10:55:36.736011+00:00",
+    "departure": "2026-01-23T11:41:07.431585+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T10:55:36.736011+00:00",
+    "departure": "2026-01-23T11:41:07.431585+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 95.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 105.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 9.9,
+    "berth_hours": 95.7,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T11:41:07.431585+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T11:41:07.431585+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T11:41:07.431585+00:00",
+    "departure": "2026-01-23T13:55:19.859800+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 106.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T13:55:19.859800+00:00",
+    "departure": "2026-01-23T14:56:37.751808+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T14:56:37.751808+00:00",
+    "departure": "2026-01-23T15:53:59.500197+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T15:53:59.500197+00:00",
+    "departure": "2026-01-23T17:02:12.488290+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 47.8,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-21T11:02:55.271862+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:02:12.488290+00:00",
+    "departure": "2026-01-23T17:54:04.540502+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "POLSTEAM KOPROWO",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T17:54:04.540502+00:00",
+    "departure": "2026-01-23T19:02:45.439083+00:00"
+  },
+  {
+    "vessel": "NOVA BREEZE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 111.5,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "TOP MARINE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "POLSTEAM KOPROWO",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-23T19:46:24.798398+00:00"
+  },
+  {
+    "vessel": "BBG FOREVER",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 112.5,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "NOVA BREEZE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "TOP MARINE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "POLSTEAM KOPROWO",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:46:24.798398+00:00",
+    "departure": "2026-01-23T20:51:02.482245+00:00"
+  },
+  {
+    "vessel": "BBG FOREVER",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "NOVA BREEZE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "TOP MARINE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "POLSTEAM KOPROWO",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T20:51:02.482245+00:00",
+    "departure": "2026-01-23T21:40:33.024102+00:00"
+  },
+  {
+    "vessel": "ANTWERP",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "BBG FOREVER",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "NOVA BREEZE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "TOP MARINE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "LUBIE",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "POLSTEAM KOPROWO",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "AMIS TREASURE",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "STAR SOPHIA",
+    "agent": "CCCM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "OPTIMA",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "SELECTA",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "BORA",
+    "agent": "WAFA SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": " VISBY",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "GLORY LOONG",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T21:40:33.024102+00:00",
+    "departure": "2026-01-23T22:43:01.666323+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 119.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T03:52:50.394118+00:00",
+    "departure": "2026-01-24T03:52:50.394118+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 120.7,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T04:58:45.187813+00:00",
+    "departure": "2026-01-24T04:58:45.187813+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T03:52:50.394118+00:00",
+    "departure": "2026-01-24T04:58:45.187813+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T03:52:50.394118+00:00",
+    "departure": "2026-01-24T04:58:45.187813+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 121.4,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T05:45:50.568465+00:00",
+    "departure": "2026-01-24T05:45:50.568465+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T04:58:45.187813+00:00",
+    "departure": "2026-01-24T05:45:50.568465+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T04:58:45.187813+00:00",
+    "departure": "2026-01-24T05:45:50.568465+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T04:58:45.187813+00:00",
+    "departure": "2026-01-24T05:45:50.568465+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 122.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T06:57:15.297156+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T05:45:50.568465+00:00",
+    "departure": "2026-01-24T06:57:15.297156+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T05:45:50.568465+00:00",
+    "departure": "2026-01-24T06:57:15.297156+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T05:45:50.568465+00:00",
+    "departure": "2026-01-24T06:57:15.297156+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T05:45:50.568465+00:00",
+    "departure": "2026-01-24T06:57:15.297156+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T07:36:31.964329+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T07:36:31.964329+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T07:36:31.964329+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T07:36:31.964329+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T06:57:15.297156+00:00",
+    "departure": "2026-01-24T07:36:31.964329+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 124.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T07:36:31.964329+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T07:36:31.964329+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T07:36:31.964329+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T07:36:31.964329+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T07:36:31.964329+00:00",
+    "departure": "2026-01-24T08:52:57.323155+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T08:52:57.323155+00:00",
+    "departure": "2026-01-24T09:38:59.857770+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T09:38:59.857770+00:00",
+    "departure": "2026-01-24T10:45:23.056714+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T10:45:23.056714+00:00",
+    "departure": "2026-01-24T11:31:23.124060+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T11:31:23.124060+00:00",
+    "departure": "2026-01-24T13:42:32.055060+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T13:42:32.055060+00:00",
+    "departure": "2026-01-24T14:41:28.869999+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 88.9,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-19T11:51:52.768101+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T14:41:28.869999+00:00",
+    "departure": "2026-01-24T15:38:49.573568+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T15:38:49.573568+00:00",
+    "departure": "2026-01-24T16:50:39.119520+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 133.3,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T16:50:39.119520+00:00",
+    "departure": "2026-01-24T17:38:45.926071+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T17:38:45.926071+00:00",
+    "departure": "2026-01-24T18:55:30.865451+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-24T19:29:28.470289+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:29:28.470289+00:00",
+    "departure": "2026-01-24T19:43:15.831043+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T19:43:15.831043+00:00",
+    "departure": "2026-01-24T20:40:16.651055+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T20:40:16.651055+00:00",
+    "departure": "2026-01-24T21:33:04.908003+00:00"
+  },
+  {
+    "vessel": "LM DEMETER",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "GAS BARBAROSSA",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "BELASITZA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "SEALION",
+    "agent": "TRADE NAV",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "COMMON FAITH",
+    "agent": "NAXCO SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "ULUS",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "SAVA",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T21:33:04.908003+00:00",
+    "departure": "2026-01-24T22:41:41.869740+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 23.4,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T04:58:45.187813+00:00",
+    "departure": "2026-01-25T04:21:46.698381+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T04:21:46.698381+00:00",
+    "departure": "2026-01-25T05:46:54.707827+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T05:46:54.707827+00:00",
+    "departure": "2026-01-25T06:58:59.162582+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T06:58:59.162582+00:00",
+    "departure": "2026-01-25T07:39:53.041364+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T07:39:53.041364+00:00",
+    "departure": "2026-01-25T08:53:12.220639+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T08:53:12.220639+00:00",
+    "departure": "2026-01-25T09:41:01.872664+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T09:41:01.872664+00:00",
+    "departure": "2026-01-25T10:48:07.676822+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 74.9,
+    "berth_hours": 45.6,
+    "arrival": "2026-01-25T11:31:43.022097+00:00",
+    "departure": "2026-01-25T11:31:43.022097+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T10:48:07.676822+00:00",
+    "departure": "2026-01-25T11:31:43.022097+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 42.8,
+    "berth_hours": 86.8,
+    "arrival": "2026-01-25T13:44:49.357846+00:00",
+    "departure": "2026-01-25T13:44:49.357846+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T11:31:43.022097+00:00",
+    "departure": "2026-01-25T13:44:49.357846+00:00"
+  },
+  {
+    "vessel": "PAN TOPAZ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T11:31:43.022097+00:00",
+    "departure": "2026-01-25T13:44:49.357846+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 93.0,
+    "berth_hours": 51.8,
+    "arrival": "2026-01-25T14:42:00.839017+00:00",
+    "departure": "2026-01-25T14:42:00.839017+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T13:44:49.357846+00:00",
+    "departure": "2026-01-25T14:42:00.839017+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T13:44:49.357846+00:00",
+    "departure": "2026-01-25T14:42:00.839017+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T14:42:00.839017+00:00",
+    "departure": "2026-01-25T15:39:09.487330+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T14:42:00.839017+00:00",
+    "departure": "2026-01-25T15:39:09.487330+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T14:42:00.839017+00:00",
+    "departure": "2026-01-25T15:39:09.487330+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T15:39:09.487330+00:00",
+    "departure": "2026-01-25T16:52:11.030395+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T15:39:09.487330+00:00",
+    "departure": "2026-01-25T16:52:11.030395+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T15:39:09.487330+00:00",
+    "departure": "2026-01-25T16:52:11.030395+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T16:52:11.030395+00:00",
+    "departure": "2026-01-25T17:39:50.697058+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T16:52:11.030395+00:00",
+    "departure": "2026-01-25T17:39:50.697058+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T16:52:11.030395+00:00",
+    "departure": "2026-01-25T17:39:50.697058+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T17:39:50.697058+00:00",
+    "departure": "2026-01-25T18:55:27.404649+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T17:39:50.697058+00:00",
+    "departure": "2026-01-25T18:55:27.404649+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T17:39:50.697058+00:00",
+    "departure": "2026-01-25T18:55:27.404649+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T18:55:27.404649+00:00",
+    "departure": "2026-01-25T19:31:10.498469+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T18:55:27.404649+00:00",
+    "departure": "2026-01-25T19:31:10.498469+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T18:55:27.404649+00:00",
+    "departure": "2026-01-25T19:31:10.498469+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T19:31:10.498469+00:00",
+    "departure": "2026-01-25T20:46:17.496562+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T19:31:10.498469+00:00",
+    "departure": "2026-01-25T20:46:17.496562+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T19:31:10.498469+00:00",
+    "departure": "2026-01-25T20:46:17.496562+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T21:35:43.394084+00:00",
+    "departure": "2026-01-25T21:35:43.394084+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T20:46:17.496562+00:00",
+    "departure": "2026-01-25T21:35:43.394084+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T20:46:17.496562+00:00",
+    "departure": "2026-01-25T21:35:43.394084+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T20:46:17.496562+00:00",
+    "departure": "2026-01-25T21:35:43.394084+00:00"
+  },
+  {
+    "vessel": "LADY MINA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T21:35:43.394084+00:00",
+    "departure": "2026-01-25T22:44:53.932640+00:00"
+  },
+  {
+    "vessel": "KATUXA NM",
+    "agent": "GLOBAL SEA SERVICES",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T21:35:43.394084+00:00",
+    "departure": "2026-01-25T22:44:53.932640+00:00"
+  },
+  {
+    "vessel": "GAS ESCO",
+    "agent": "PEREZ Y CIA MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T21:35:43.394084+00:00",
+    "departure": "2026-01-25T22:44:53.932640+00:00"
+  },
+  {
+    "vessel": "EVDILOS",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-25T21:35:43.394084+00:00",
+    "departure": "2026-01-25T22:44:53.932640+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 12.3,
+    "arrival": "2026-01-23T10:55:36.736011+00:00",
+    "departure": "2026-01-26T09:03:45.071613+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T09:03:45.071613+00:00",
+    "departure": "2026-01-26T10:01:29.058557+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 39.5,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-26T11:00:56.056846+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T10:01:29.058557+00:00",
+    "departure": "2026-01-26T11:00:56.056846+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T11:00:56.056846+00:00",
+    "departure": "2026-01-26T11:51:15.454215+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T11:00:56.056846+00:00",
+    "departure": "2026-01-26T11:51:15.454215+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T11:51:15.454215+00:00",
+    "departure": "2026-01-26T13:57:07.671902+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T11:51:15.454215+00:00",
+    "departure": "2026-01-26T13:57:07.671902+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T13:57:07.671902+00:00",
+    "departure": "2026-01-26T15:00:10.129125+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T13:57:07.671902+00:00",
+    "departure": "2026-01-26T15:00:10.129125+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T15:00:10.129125+00:00",
+    "departure": "2026-01-26T15:57:17.009332+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T15:00:10.129125+00:00",
+    "departure": "2026-01-26T15:57:17.009332+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 81.9,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T10:01:07.063643+00:00",
+    "departure": "2026-01-26T17:46:32.294822+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T15:57:17.009332+00:00",
+    "departure": "2026-01-26T17:46:32.294822+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T17:46:32.294822+00:00",
+    "departure": "2026-01-26T19:04:55.253556+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T17:46:32.294822+00:00",
+    "departure": "2026-01-26T19:04:55.253556+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T19:04:55.253556+00:00",
+    "departure": "2026-01-26T19:53:25.872871+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T19:04:55.253556+00:00",
+    "departure": "2026-01-26T19:53:25.872871+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T19:53:25.872871+00:00",
+    "departure": "2026-01-26T20:54:07.727172+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T19:53:25.872871+00:00",
+    "departure": "2026-01-26T20:54:07.727172+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T20:54:07.727172+00:00",
+    "departure": "2026-01-26T21:48:44.433555+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T20:54:07.727172+00:00",
+    "departure": "2026-01-26T21:48:44.433555+00:00"
+  },
+  {
+    "vessel": "SANDRA",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T21:48:44.433555+00:00",
+    "departure": "2026-01-26T22:50:32.248173+00:00"
+  },
+  {
+    "vessel": "FANTASTIC",
+    "agent": "GRANDI NAVI VELOCI MAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-26T21:48:44.433555+00:00",
+    "departure": "2026-01-26T22:50:32.248173+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 60.4,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-24T18:55:30.865451+00:00",
+    "departure": "2026-01-27T07:55:26.689029+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 134.9,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T09:04:01.384588+00:00",
+    "departure": "2026-01-27T09:04:01.384588+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T07:55:26.689029+00:00",
+    "departure": "2026-01-27T09:04:01.384588+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T09:04:01.384588+00:00",
+    "departure": "2026-01-27T10:01:09.887495+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T09:04:01.384588+00:00",
+    "departure": "2026-01-27T10:01:09.887495+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T10:01:09.887495+00:00",
+    "departure": "2026-01-27T11:02:46.499746+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T10:01:09.887495+00:00",
+    "departure": "2026-01-27T11:02:46.499746+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 108.2,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-20T17:02:12.936999+00:00",
+    "departure": "2026-01-27T11:55:35.626342+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T11:02:46.499746+00:00",
+    "departure": "2026-01-27T11:55:35.626342+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T11:02:46.499746+00:00",
+    "departure": "2026-01-27T11:55:35.626342+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T11:55:35.626342+00:00",
+    "departure": "2026-01-27T14:00:53.525734+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T11:55:35.626342+00:00",
+    "departure": "2026-01-27T14:00:53.525734+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T11:55:35.626342+00:00",
+    "departure": "2026-01-27T14:00:53.525734+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T14:00:53.525734+00:00",
+    "departure": "2026-01-27T15:47:37.493960+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T14:00:53.525734+00:00",
+    "departure": "2026-01-27T15:47:37.493960+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T14:00:53.525734+00:00",
+    "departure": "2026-01-27T15:47:37.493960+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 22.0,
+    "arrival": "2026-01-21T18:08:35.277012+00:00",
+    "departure": "2026-01-27T17:03:06.869288+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 12.8,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-23T19:02:45.439083+00:00",
+    "departure": "2026-01-27T17:03:06.869288+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T15:47:37.493960+00:00",
+    "departure": "2026-01-27T17:03:06.869288+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T15:47:37.493960+00:00",
+    "departure": "2026-01-27T17:03:06.869288+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T15:47:37.493960+00:00",
+    "departure": "2026-01-27T17:03:06.869288+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T17:03:06.869288+00:00",
+    "departure": "2026-01-27T18:00:26.966216+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T17:03:06.869288+00:00",
+    "departure": "2026-01-27T18:00:26.966216+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T17:03:06.869288+00:00",
+    "departure": "2026-01-27T18:00:26.966216+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T17:03:06.869288+00:00",
+    "departure": "2026-01-27T18:00:26.966216+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T17:03:06.869288+00:00",
+    "departure": "2026-01-27T18:00:26.966216+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T18:00:26.966216+00:00",
+    "departure": "2026-01-27T19:43:27.033689+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T18:00:26.966216+00:00",
+    "departure": "2026-01-27T19:43:27.033689+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T18:00:26.966216+00:00",
+    "departure": "2026-01-27T19:43:27.033689+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T18:00:26.966216+00:00",
+    "departure": "2026-01-27T19:43:27.033689+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T18:00:26.966216+00:00",
+    "departure": "2026-01-27T19:43:27.033689+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T19:43:27.033689+00:00",
+    "departure": "2026-01-27T20:50:03.741110+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T19:43:27.033689+00:00",
+    "departure": "2026-01-27T20:50:03.741110+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T19:43:27.033689+00:00",
+    "departure": "2026-01-27T20:50:03.741110+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T19:43:27.033689+00:00",
+    "departure": "2026-01-27T20:50:03.741110+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T19:43:27.033689+00:00",
+    "departure": "2026-01-27T20:50:03.741110+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T20:50:03.741110+00:00",
+    "departure": "2026-01-27T21:39:12.215403+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T20:50:03.741110+00:00",
+    "departure": "2026-01-27T21:39:12.215403+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T20:50:03.741110+00:00",
+    "departure": "2026-01-27T21:39:12.215403+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T20:50:03.741110+00:00",
+    "departure": "2026-01-27T21:39:12.215403+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T20:50:03.741110+00:00",
+    "departure": "2026-01-27T21:39:12.215403+00:00"
+  },
+  {
+    "vessel": "ANMARE",
+    "agent": "BCMCC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T21:39:12.215403+00:00",
+    "departure": "2026-01-27T22:48:30.286176+00:00"
+  },
+  {
+    "vessel": "PRECIOUS ADELAIDE",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T21:39:12.215403+00:00",
+    "departure": "2026-01-27T22:48:30.286176+00:00"
+  },
+  {
+    "vessel": "BBC CERES",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T21:39:12.215403+00:00",
+    "departure": "2026-01-27T22:48:30.286176+00:00"
+  },
+  {
+    "vessel": "LUCKY",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T21:39:12.215403+00:00",
+    "departure": "2026-01-27T22:48:30.286176+00:00"
+  },
+  {
+    "vessel": "NEW VENTURE",
+    "agent": "ATLANTIC TRADING AND SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-27T21:39:12.215403+00:00",
+    "departure": "2026-01-27T22:48:30.286176+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T22:51:28.778582+00:00",
+    "departure": "2026-01-28T04:11:27.734378+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T04:11:27.734378+00:00",
+    "departure": "2026-01-28T05:48:33.681054+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T05:48:33.681054+00:00",
+    "departure": "2026-01-28T07:03:44.076679+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T07:03:44.076679+00:00",
+    "departure": "2026-01-28T07:54:40.930531+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T07:54:40.930531+00:00",
+    "departure": "2026-01-28T09:04:17.036815+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T09:04:17.036815+00:00",
+    "departure": "2026-01-28T10:01:46.834769+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T10:01:46.834769+00:00",
+    "departure": "2026-01-28T11:02:59.587198+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T11:02:59.587198+00:00",
+    "departure": "2026-01-28T11:53:55.143956+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T11:53:55.143956+00:00",
+    "departure": "2026-01-28T14:00:10.962347+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T14:00:10.962347+00:00",
+    "departure": "2026-01-28T15:03:16.020117+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T15:03:16.020117+00:00",
+    "departure": "2026-01-28T17:08:37.542342+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T17:08:37.542342+00:00",
+    "departure": "2026-01-28T18:02:44.799358+00:00"
+  },
+  {
+    "vessel": "ARISTO ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 53.8,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T19:47:03.829311+00:00",
+    "departure": "2026-01-28T19:47:03.829311+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T18:02:44.799358+00:00",
+    "departure": "2026-01-28T19:47:03.829311+00:00"
+  },
+  {
+    "vessel": "ARISTO ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T19:47:03.829311+00:00",
+    "departure": "2026-01-28T21:02:47.780719+00:00"
+  },
+  {
+    "vessel": "HAFNIA LEOPARD",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T19:47:03.829311+00:00",
+    "departure": "2026-01-28T21:02:47.780719+00:00"
+  },
+  {
+    "vessel": "ARISTO ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T21:02:47.780719+00:00",
+    "departure": "2026-01-28T22:01:42.175025+00:00"
+  },
+  {
+    "vessel": "ARISTO ",
+    "agent": "AGEMAFRIC",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-28T22:01:42.175025+00:00",
+    "departure": "2026-01-28T23:02:48.095860+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 168.2,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T14:11:33.427225+00:00",
+    "departure": "2026-01-29T14:11:33.427225+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T14:11:33.427225+00:00",
+    "departure": "2026-01-29T16:05:16.499271+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T16:05:16.499271+00:00",
+    "departure": "2026-01-29T18:04:26.228146+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T18:04:26.228146+00:00",
+    "departure": "2026-01-29T19:47:55.360771+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T19:47:55.360771+00:00",
+    "departure": "2026-01-29T20:57:24.931884+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T20:57:24.931884+00:00",
+    "departure": "2026-01-29T21:55:59.669455+00:00"
+  },
+  {
+    "vessel": "MAKRA",
+    "agent": "GLOBE MARINE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-29T21:55:59.669455+00:00",
+    "departure": "2026-01-29T22:59:11.961446+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 101.6,
+    "berth_hours": 167.5,
+    "arrival": "2026-01-30T09:25:05.220850+00:00",
+    "departure": "2026-01-30T09:25:05.220850+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 15.3,
+    "arrival": "2026-01-22T19:35:55.244510+00:00",
+    "departure": "2026-01-30T09:25:05.220850+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 1.7,
+    "arrival": "2026-01-22T11:02:19.215639+00:00",
+    "departure": "2026-01-30T11:05:03.650697+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T09:25:05.220850+00:00",
+    "departure": "2026-01-30T11:05:03.650697+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T09:25:05.220850+00:00",
+    "departure": "2026-01-30T11:05:03.650697+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T11:05:03.650697+00:00",
+    "departure": "2026-01-30T12:00:18.572857+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T11:05:03.650697+00:00",
+    "departure": "2026-01-30T12:00:18.572857+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T11:05:03.650697+00:00",
+    "departure": "2026-01-30T12:00:18.572857+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 55.1,
+    "berth_hours": 209.4,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T14:23:50.806261+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 274.1,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T14:23:50.806261+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T12:00:18.572857+00:00",
+    "departure": "2026-01-30T14:23:50.806261+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T12:00:18.572857+00:00",
+    "departure": "2026-01-30T14:23:50.806261+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T12:00:18.572857+00:00",
+    "departure": "2026-01-30T14:23:50.806261+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T16:01:49.407104+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T16:01:49.407104+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T16:01:49.407104+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T16:01:49.407104+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T14:23:50.806261+00:00",
+    "departure": "2026-01-30T16:01:49.407104+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T16:01:49.407104+00:00",
+    "departure": "2026-01-30T18:00:57.338100+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T16:01:49.407104+00:00",
+    "departure": "2026-01-30T18:00:57.338100+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T16:01:49.407104+00:00",
+    "departure": "2026-01-30T18:00:57.338100+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T16:01:49.407104+00:00",
+    "departure": "2026-01-30T18:00:57.338100+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T16:01:49.407104+00:00",
+    "departure": "2026-01-30T18:00:57.338100+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T18:00:57.338100+00:00",
+    "departure": "2026-01-30T19:51:44.141321+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T18:00:57.338100+00:00",
+    "departure": "2026-01-30T19:51:44.141321+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T18:00:57.338100+00:00",
+    "departure": "2026-01-30T19:51:44.141321+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T18:00:57.338100+00:00",
+    "departure": "2026-01-30T19:51:44.141321+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T18:00:57.338100+00:00",
+    "departure": "2026-01-30T19:51:44.141321+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T19:51:44.141321+00:00",
+    "departure": "2026-01-30T21:00:29.126919+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T19:51:44.141321+00:00",
+    "departure": "2026-01-30T21:00:29.126919+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T19:51:44.141321+00:00",
+    "departure": "2026-01-30T21:00:29.126919+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T19:51:44.141321+00:00",
+    "departure": "2026-01-30T21:00:29.126919+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T19:51:44.141321+00:00",
+    "departure": "2026-01-30T21:00:29.126919+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:00:29.126919+00:00",
+    "departure": "2026-01-30T21:55:22.135052+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:00:29.126919+00:00",
+    "departure": "2026-01-30T21:55:22.135052+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:00:29.126919+00:00",
+    "departure": "2026-01-30T21:55:22.135052+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:00:29.126919+00:00",
+    "departure": "2026-01-30T21:55:22.135052+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:00:29.126919+00:00",
+    "departure": "2026-01-30T21:55:22.135052+00:00"
+  },
+  {
+    "vessel": "THUN VETTERN",
+    "agent": "SEATRADE",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 32.8,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-22T22:51:28.778582+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "GLOBAL HARMONY",
+    "agent": "AGEMAFRIC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:55:22.135052+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "PRIME STAR",
+    "agent": "SFAA SHIPPING",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:55:22.135052+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "BAHAMA MAMA",
+    "agent": "INTERCONA SARL",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:55:22.135052+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "NAVI STAR",
+    "agent": "SOMATIME",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:55:22.135052+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "JUAN J. SISTER",
+    "agent": "FERRIMAROC",
+    "port": "Nador",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-30T21:55:22.135052+00:00",
+    "departure": "2026-01-30T22:58:27.231858+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 107.1,
+    "arrival": "2026-01-19T22:47:44.701000+00:00",
+    "departure": "2026-01-31T04:49:35.341138+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T04:49:35.341138+00:00",
+    "departure": "2026-01-31T06:04:14.391289+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T06:04:14.391289+00:00",
+    "departure": "2026-01-31T07:43:47.036635+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T07:43:47.036635+00:00",
+    "departure": "2026-01-31T08:59:39.423981+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T08:59:39.423981+00:00",
+    "departure": "2026-01-31T09:54:02.009826+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T09:54:02.009826+00:00",
+    "departure": "2026-01-31T10:54:44.609892+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 295.3,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T11:40:11.580692+00:00",
+    "departure": "2026-01-31T11:40:11.580692+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T10:54:44.609892+00:00",
+    "departure": "2026-01-31T11:40:11.580692+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 31.6,
+    "berth_hours": 266.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T13:53:31.259186+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 297.6,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T13:53:31.259186+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T11:40:11.580692+00:00",
+    "departure": "2026-01-31T13:53:31.259186+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T11:40:11.580692+00:00",
+    "departure": "2026-01-31T13:53:31.259186+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T14:54:35.009901+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T14:54:35.009901+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T14:54:35.009901+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T13:53:31.259186+00:00",
+    "departure": "2026-01-31T14:54:35.009901+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T14:54:35.009901+00:00",
+    "departure": "2026-01-31T15:48:44.591648+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T14:54:35.009901+00:00",
+    "departure": "2026-01-31T15:48:44.591648+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T14:54:35.009901+00:00",
+    "departure": "2026-01-31T15:48:44.591648+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T14:54:35.009901+00:00",
+    "departure": "2026-01-31T15:48:44.591648+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T15:48:44.591648+00:00",
+    "departure": "2026-01-31T16:58:49.323678+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T15:48:44.591648+00:00",
+    "departure": "2026-01-31T16:58:49.323678+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T15:48:44.591648+00:00",
+    "departure": "2026-01-31T16:58:49.323678+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T15:48:44.591648+00:00",
+    "departure": "2026-01-31T16:58:49.323678+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T16:58:49.323678+00:00",
+    "departure": "2026-01-31T17:52:13.604547+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T16:58:49.323678+00:00",
+    "departure": "2026-01-31T17:52:13.604547+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T16:58:49.323678+00:00",
+    "departure": "2026-01-31T17:52:13.604547+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T16:58:49.323678+00:00",
+    "departure": "2026-01-31T17:52:13.604547+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T17:52:13.604547+00:00",
+    "departure": "2026-01-31T19:00:52.505725+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T17:52:13.604547+00:00",
+    "departure": "2026-01-31T19:00:52.505725+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T17:52:13.604547+00:00",
+    "departure": "2026-01-31T19:00:52.505725+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T17:52:13.604547+00:00",
+    "departure": "2026-01-31T19:00:52.505725+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:00:52.505725+00:00",
+    "departure": "2026-01-31T19:48:50.776847+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:00:52.505725+00:00",
+    "departure": "2026-01-31T19:48:50.776847+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:00:52.505725+00:00",
+    "departure": "2026-01-31T19:48:50.776847+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:00:52.505725+00:00",
+    "departure": "2026-01-31T19:48:50.776847+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:48:50.776847+00:00",
+    "departure": "2026-01-31T20:52:09.811905+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:48:50.776847+00:00",
+    "departure": "2026-01-31T20:52:09.811905+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:48:50.776847+00:00",
+    "departure": "2026-01-31T20:52:09.811905+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T19:48:50.776847+00:00",
+    "departure": "2026-01-31T20:52:09.811905+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T20:52:09.811905+00:00",
+    "departure": "2026-01-31T21:42:50.898057+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T20:52:09.811905+00:00",
+    "departure": "2026-01-31T21:42:50.898057+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T20:52:09.811905+00:00",
+    "departure": "2026-01-31T21:42:50.898057+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T20:52:09.811905+00:00",
+    "departure": "2026-01-31T21:42:50.898057+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T21:42:50.898057+00:00",
+    "departure": "2026-01-31T22:52:26.850792+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T21:42:50.898057+00:00",
+    "departure": "2026-01-31T22:52:26.850792+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T21:42:50.898057+00:00",
+    "departure": "2026-01-31T22:52:26.850792+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T21:42:50.898057+00:00",
+    "departure": "2026-01-31T22:52:26.850792+00:00"
+  },
+  {
+    "vessel": "SSI PROVIDENCE",
+    "agent": "UNIVERSAL SHIPPING",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T22:52:26.850792+00:00",
+    "departure": "2026-01-31T23:46:24.736024+00:00"
+  },
+  {
+    "vessel": "K. RUBY",
+    "agent": "NOBLE SHIPPING",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T22:52:26.850792+00:00",
+    "departure": "2026-01-31T23:46:24.736024+00:00"
+  },
+  {
+    "vessel": "SEAPEARL",
+    "agent": "LASRY MAROC",
+    "port": "Safi",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T22:52:26.850792+00:00",
+    "departure": "2026-01-31T23:46:24.736024+00:00"
+  },
+  {
+    "vessel": "CELTIC MARINER",
+    "agent": "COMATAM",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-01-31T22:52:26.850792+00:00",
+    "departure": "2026-01-31T23:46:24.736024+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 131.5,
+    "arrival": "2026-01-26T15:57:17.009332+00:00",
+    "departure": "2026-02-01T05:18:44.085980+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-02-01T05:18:44.085980+00:00",
+    "departure": "2026-02-01T07:28:25.929945+00:00"
+  },
+  {
+    "vessel": "MOHAC",
+    "agent": "C O M A N A V",
+    "port": "Jorf Lasfar",
+    "anchorage_hours": 0.0,
+    "berth_hours": 0.0,
+    "arrival": "2026-02-01T07:28:25.929945+00:00",
+    "departure": "2026-02-01T08:01:19.927548+00:00"
+  }
+]
