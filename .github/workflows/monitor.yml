@@ -53,6 +53,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_TO_COLLEAGUE: ${{ secrets.EMAIL_TO_COLLEAGUE }}
           EMAIL_ENABLED: "true"
+          COLLEAGUE_REPORT_ENABLED: "false"
         run: |
           # Determine mode from input or schedule
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
