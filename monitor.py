@@ -196,25 +196,67 @@ def calculate_performance_note(avg_anchorage: float, avg_berth: float) -> str:
 # 📧 EMAIL TEMPLATES (PREMIUM UI)
 # ==========================================
 def format_vessel_details_premium(entry: dict) -> str:
-    nom = entry.get("nOM_NAVIREField") or "INCONNU"
-    imo = entry.get("nUMERO_LLOYDField") or "N/A"
-    cons = entry.get("cONSIGNATAIREField") or "N/A"
-    escale = entry.get("nUMERO_ESCALEField") or "N/A"
-    eta_line = f"{fmt_dt(entry.get('dATE_SITUATIONField'))} {fmt_time_only(entry.get('hEURE_SITUATIONField'))}"
-    prov = entry.get("pROVField") or "Inconnue"
-    type_nav = entry.get("tYP_NAVIREField") or "N/A"
+    nom      = entry.get("nOM_NAVIREField")      or "INCONNU"
+    imo      = entry.get("nUMERO_LLOYDField")    or "N/A"
+    cons     = entry.get("cONSIGNATAIREField")   or "N/A"
+    escale   = entry.get("nUMERO_ESCALEField")   or "N/A"
+    eta_line = f"{fmt_dt(entry.get('dATE_SITUATIONField'))} · {fmt_time_only(entry.get('hEURE_SITUATIONField'))}"
+    prov     = entry.get("pROVField")            or "Inconnue"
+    type_nav = entry.get("tYP_NAVIREField")      or "N/A"
+
+    def _row(label: str, value: str, alt: bool) -> str:
+        bg = "#f8fafc" if alt else "#ffffff"
+        return (
+            f'<tr style="background:{bg};">'
+            f'<td style="padding:10px 20px;color:#5d6d7e;width:38%;font-size:13px;">{label}</td>'
+            f'<td style="padding:10px 20px;color:#1a252f;font-weight:600;font-size:13px;">{value}</td>'
+            f'</tr>'
+        )
 
     return f"""
-    <div style="font-family: Arial, sans-serif; margin: 15px 0; border:1px solid #d0d7e1; border-radius: 8px; overflow: hidden;">
-        <div style="background: #0a3d62; color: white; padding: 12px; font-size: 16px;">🚢 <b>{nom}</b></div>
-        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-            <tr><td style="padding: 10px; border-bottom:1px solid #eeeeee; width: 30%;"><b>🕒 ETA</b></td><td style="padding: 10px; border-bottom:1px solid #eeeeee;">{eta_line}</td></tr>
-            <tr><td style="padding: 10px; border-bottom:1px solid #eeeeee;"><b>🆔 IMO</b></td><td style="padding: 10px; border-bottom:1px solid #eeeeee;">{imo}</td></tr>
-            <tr><td style="padding: 10px; border-bottom:1px solid #eeeeee;"><b>⚓ Escale</b></td><td style="padding: 10px; border-bottom:1px solid #eeeeee;">{escale}</td></tr>
-            <tr><td style="padding: 10px; border-bottom:1px solid #eeeeee;"><b>🛳️ Type</b></td><td style="padding: 10px; border-bottom:1px solid #eeeeee;">{type_nav}</td></tr>
-            <tr><td style="padding: 10px; border-bottom:1px solid #eeeeee;"><b>🏢 Agent</b></td><td style="padding: 10px; border-bottom:1px solid #eeeeee;">{cons}</td></tr>
-            <tr><td style="padding: 10px;"><b>🌍 Prov.</b></td><td style="padding: 10px;">{prov}</td></tr>
+    <div style="font-family:Arial,sans-serif;margin:15px 0;max-width:560px;
+                border:1px solid #d0d7e1;border-radius:10px;overflow:hidden;
+                box-shadow:0 2px 12px rgba(0,0,0,.10);">
+
+        <!-- ── Header ── -->
+        <div style="background:linear-gradient(135deg,#0a3d62 0%,#1e5799 100%);padding:16px 20px;">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <span style="font-size:26px;">🚢</span>
+                <div>
+                    <div style="color:#7ec8e3;font-size:10px;letter-spacing:.12em;
+                                text-transform:uppercase;margin-bottom:2px;">
+                        Nouvelle Arrivée Prévue
+                    </div>
+                    <div style="color:#ffffff;font-size:19px;font-weight:bold;
+                                letter-spacing:.02em;">{nom}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Status bar ── -->
+        <div style="background:#e8f4fc;padding:8px 20px;border-bottom:1px solid #d0e6f5;
+                    display:flex;align-items:center;gap:10px;">
+            <span style="background:#1e5799;color:#ffffff;font-size:10px;font-weight:700;
+                         padding:2px 10px;border-radius:100px;letter-spacing:.08em;">PRÉVU</span>
+            <span style="font-size:12px;color:#1a5276;">
+                ETA : <b>{eta_line}</b>
+            </span>
+        </div>
+
+        <!-- ── Data table ── -->
+        <table style="width:100%;border-collapse:collapse;">
+            {_row("🆔 Numéro IMO",  imo,      True)}
+            {_row("⚓ N° Escale",   escale,   False)}
+            {_row("🛳️ Type",        type_nav, True)}
+            {_row("🏢 Consignataire", cons,   False)}
+            {_row("🌍 Provenance",  prov,     True)}
         </table>
+
+        <!-- ── Footer ── -->
+        <div style="background:#f0f4f8;padding:10px 20px;border-top:1px solid #d0d7e1;
+                    font-size:11px;color:#95a5a6;text-align:center;">
+            ANP Vessel Monitor · Alerte automatique générée le {datetime.now().strftime('%d/%m/%Y à %H:%M')}
+        </div>
     </div>"""
 
 def send_monthly_report(history: list, specific_port: str):
