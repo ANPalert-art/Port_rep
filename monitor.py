@@ -172,6 +172,13 @@ def _ensure_aware(dt: datetime) -> datetime:
         return dt.replace(tzinfo=timezone.utc)
     return dt
 
+def _parse_last_seen(v: dict, fallback: datetime) -> datetime:
+    """Safely parse last_seen from a vessel dict; returns fallback on any error."""
+    try:
+        return _ensure_aware(datetime.fromisoformat(v.get("last_seen", fallback.isoformat())))
+    except (ValueError, TypeError):
+        return fallback
+
 # ==========================================
 # 📊 ANALYTICS ENGINE
 # ==========================================
@@ -181,7 +188,6 @@ def update_vessel_timers(active_vessel: Dict, new_status: str, now_utc: datetime
 
     if last_updated_str:
         try:
-            # Ensure both sides are timezone-aware before subtraction
             last_updated  = _ensure_aware(datetime.fromisoformat(last_updated_str))
             elapsed_hours = (now_utc - last_updated).total_seconds() / 3600.0
 
@@ -204,7 +210,7 @@ def calculate_performance_note(avg_anchorage: float, avg_berth: float) -> str:
     return "🐌 Lent - Longues périodes d'attente"
 
 # ==========================================
-# 📧 EMAIL TEMPLATE — Naval Command
+# 📧 EMAIL TEMPLATE — Compact Card Edition
 #
 # Built entirely with <table> layouts and
 # bgcolor attributes so it renders correctly
@@ -213,103 +219,117 @@ def calculate_performance_note(avg_anchorage: float, avg_berth: float) -> str:
 # gradients, no box-shadow.
 # ==========================================
 def format_vessel_details_premium(entry: dict) -> str:
-    nom      = entry.get("nOM_NAVIREField")    or "INCONNU"
-    imo      = entry.get("nUMERO_LLOYDField")  or "N/A"
-    cons     = entry.get("cONSIGNATAIREField") or "N/A"
-    escale   = entry.get("nUMERO_ESCALEField") or "N/A"
-    eta_date = fmt_dt(entry.get("dATE_SITUATIONField"))
-    eta_time = fmt_time_only(entry.get("hEURE_SITUATIONField"))
-    prov     = entry.get("pROVField")          or "Inconnue"
-    type_nav = entry.get("tYP_NAVIREField")    or "N/A"
+    nom       = entry.get("nOM_NAVIREField")    or "INCONNU"
+    imo       = entry.get("nUMERO_LLOYDField")  or "N/A"
+    cons      = entry.get("cONSIGNATAIREField") or "N/A"
+    escale    = entry.get("nUMERO_ESCALEField") or "N/A"
+    eta_date  = fmt_dt(entry.get("dATE_SITUATIONField"))
+    eta_time  = fmt_time_only(entry.get("hEURE_SITUATIONField"))
+    prov      = entry.get("pROVField")          or "Inconnue"
+    type_nav  = entry.get("tYP_NAVIREField")    or "N/A"
+    p_name    = port_name(str(entry.get("cODE_SOCIETEField", "")))
     generated = datetime.now().strftime("%d/%m/%Y à %H:%M")
 
-    def data_row(label: str, value: str, shade: bool) -> str:
-        bg = "#f4f7fa" if shade else "#ffffff"
-        return f"""
-        <tr>
-          <td width="38%" bgcolor="{bg}" style="background-color:{bg};padding:10px 18px;
-              font-family:Arial,sans-serif;font-size:13px;color:#5d6d7e;
-              border-bottom:1px solid #e8ecf0;">{label}</td>
-          <td bgcolor="{bg}" style="background-color:{bg};padding:10px 18px;
-              font-family:Arial,sans-serif;font-size:13px;color:#1a252f;font-weight:bold;
-              border-bottom:1px solid #e8ecf0;">{value}</td>
-        </tr>"""
+    def tile(label: str, value: str, bg: str, border: str) -> str:
+        return (
+            f'<div style="background:{bg};border-radius:5px;padding:8px 10px;'
+            f'border-left:3px solid {border};">'
+            f'<div style="font-family:Arial,sans-serif;font-size:8px;color:#7f8c8d;'
+            f'text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;">{label}</div>'
+            f'<div style="font-family:Arial,sans-serif;font-size:13px;'
+            f'font-weight:bold;color:#1a252f;">{value}</div>'
+            f'</div>'
+        )
 
     return f"""
     <table width="100%" cellpadding="0" cellspacing="0" border="0"
-           style="max-width:580px;margin:16px auto;border:1px solid #c8d6e5;
+           style="max-width:460px;margin:16px auto;border:1px solid #d0d9e5;
                   border-radius:8px;overflow:hidden;font-family:Arial,sans-serif;">
 
-      <!-- ═══ NAVY HEADER ═══ -->
+      <!-- HEADER -->
       <tr>
-        <td colspan="2" bgcolor="#0a3d62"
-            style="background-color:#0a3d62;padding:0;">
+        <td colspan="2" style="padding:0;background:#0a3d62;">
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
-              <!-- Ship icon cell -->
-              <td width="60" valign="middle" bgcolor="#0a3d62"
-                  style="background-color:#0a3d62;padding:16px 10px 16px 18px;
-                         font-size:28px;line-height:1;">
-                &#x1F6A2;
-              </td>
-              <!-- Title cell -->
-              <td valign="middle" bgcolor="#0a3d62"
-                  style="background-color:#0a3d62;padding:14px 18px 14px 0;">
-                <div style="font-family:Arial,sans-serif;font-size:10px;
-                            color:#7ec8e3;letter-spacing:2px;
-                            text-transform:uppercase;margin-bottom:5px;">
-                  Nouvelle Arriv&#233;e Pr&#233;vue
+              <td width="5" bgcolor="#2e86c1"
+                  style="background:#2e86c1;">&nbsp;</td>
+              <td style="padding:12px 14px;background:#0a3d62;">
+                <div style="font-family:Arial,sans-serif;font-size:8px;color:#7ec8e3;
+                            letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">
+                  Nouvelle arriv&#233;e pr&#233;vue &middot; {p_name}
                 </div>
-                <div style="font-family:Arial,sans-serif;font-size:20px;
-                            font-weight:bold;color:#ffffff;letter-spacing:0.5px;">
+                <div style="font-family:Arial,sans-serif;font-size:18px;
+                            font-weight:bold;color:#ffffff;letter-spacing:0.3px;">
                   {nom}
                 </div>
               </td>
-              <!-- Right accent bar -->
-              <td width="8" bgcolor="#1e5799"
-                  style="background-color:#1e5799;">&nbsp;</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- ═══ STATUS BAR ═══ -->
-      <tr>
-        <td colspan="2" bgcolor="#ddeef9"
-            style="background-color:#ddeef9;padding:9px 18px;
-                   border-bottom:1px solid #b8d4ec;">
-          <table cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td bgcolor="#1e5799" style="background-color:#1e5799;
-                  padding:3px 11px;border-radius:12px;">
-                <span style="font-family:Arial,sans-serif;font-size:10px;
-                             font-weight:bold;color:#ffffff;letter-spacing:1.5px;">
+              <td width="90" bgcolor="#0a3d62"
+                  style="background:#0a3d62;padding-right:14px;
+                         text-align:right;vertical-align:middle;">
+                <span style="display:inline-block;background:#1e8449;color:#ffffff;
+                             font-family:Arial,sans-serif;font-size:9px;font-weight:bold;
+                             letter-spacing:1px;padding:3px 9px;border-radius:10px;">
                   PR&#201;VU
                 </span>
               </td>
-              <td style="padding-left:12px;">
-                <span style="font-family:Arial,sans-serif;font-size:12px;color:#1a5276;">
-                  ETA :&nbsp;<strong>{eta_date} &middot; {eta_time}</strong>
-                </span>
-              </td>
             </tr>
           </table>
         </td>
       </tr>
 
-      <!-- ═══ DATA ROWS ═══ -->
-      {data_row("&#x1F194;&nbsp; Num&#233;ro IMO",    imo,      True)}
-      {data_row("&#x2693;&nbsp; N&#xB0; Escale",      escale,   False)}
-      {data_row("&#x1F6F3;&nbsp; Type",               type_nav, True)}
-      {data_row("&#x1F3E2;&nbsp; Consignataire",      cons,     False)}
-      {data_row("&#x1F30D;&nbsp; Provenance",         prov,     True)}
-
-      <!-- ═══ FOOTER ═══ -->
+      <!-- ETA ROW -->
       <tr>
-        <td colspan="2" bgcolor="#eaf0f6"
-            style="background-color:#eaf0f6;padding:9px 18px;
-                   border-top:1px solid #c8d6e5;text-align:center;">
-          <span style="font-family:Arial,sans-serif;font-size:11px;color:#8899aa;">
+        <td colspan="2" bgcolor="#eaf4fd"
+            style="background:#eaf4fd;padding:7px 14px;
+                   border-bottom:1px solid #cde0f0;">
+          <span style="font-family:Arial,sans-serif;font-size:12px;color:#1a5276;">
+            ETA&nbsp;: <strong>{eta_date} &middot; {eta_time}</strong>
+          </span>
+        </td>
+      </tr>
+
+      <!-- IMO + ESCALE -->
+      <tr>
+        <td width="50%" valign="top"
+            style="padding:10px 6px 5px 10px;background:#ffffff;
+                   border-bottom:1px solid #edf1f5;">
+          {tile("N&ordm;&nbsp;IMO", imo, "#f4f8fc", "#2e86c1")}
+        </td>
+        <td width="50%" valign="top"
+            style="padding:10px 10px 5px 6px;background:#ffffff;
+                   border-bottom:1px solid #edf1f5;">
+          {tile("N&ordm;&nbsp;Escale", escale, "#f4f8fc", "#2e86c1")}
+        </td>
+      </tr>
+
+      <!-- TYPE + CONSIGNATAIRE -->
+      <tr>
+        <td width="50%" valign="top"
+            style="padding:5px 6px 5px 10px;background:#ffffff;
+                   border-bottom:1px solid #edf1f5;">
+          {tile("Type", type_nav, "#fef9f0", "#e67e22")}
+        </td>
+        <td width="50%" valign="top"
+            style="padding:5px 10px 5px 6px;background:#ffffff;
+                   border-bottom:1px solid #edf1f5;">
+          {tile("Consignataire", cons, "#fef9f0", "#e67e22")}
+        </td>
+      </tr>
+
+      <!-- PROVENANCE (full width) -->
+      <tr>
+        <td colspan="2"
+            style="padding:5px 10px 10px;background:#ffffff;
+                   border-bottom:1px solid #edf1f5;">
+          {tile("Provenance", prov, "#f0f9f4", "#1e8449")}
+        </td>
+      </tr>
+
+      <!-- FOOTER -->
+      <tr>
+        <td colspan="2" bgcolor="#f7f9fb"
+            style="background:#f7f9fb;padding:8px 14px;text-align:center;">
+          <span style="font-family:Arial,sans-serif;font-size:10px;color:#95a5a6;">
             ANP Vessel Monitor &nbsp;&middot;&nbsp;
             Alerte automatique g&#233;n&#233;r&#233;e le {generated}
           </span>
@@ -325,7 +345,7 @@ def send_monthly_report(history: list, specific_port: str):
 
     total_calls = len(history)
     total_anch  = sum(h.get("anchorage_hours", 0) for h in history)
-    total_berth = sum(h.get("berth_hours", 0)     for h in history)
+    total_berth = sum(h.get("berth_hours",     0) for h in history)
     avg_anch    = round(total_anch  / total_calls, 1) if total_calls > 0 else 0
     avg_berth   = round(total_berth / total_calls, 1) if total_calls > 0 else 0
     avg_total   = round(avg_anch + avg_berth, 1)
@@ -426,7 +446,7 @@ def send_email(to: Optional[str], sub: str, body: str):
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=30) as server:
             server.starttls()
             server.login(EMAIL_USER, EMAIL_PASS)
-            server.sendmail(EMAIL_USER, [to], msg.as_string())
+            server.sendmail(EMAIL_USER, [to], msg.as_bytes())
         print(f"[SUCCESS] Email sent to {to}")
     except Exception as e:
         print(f"[ERROR] Email failed: {e}")
@@ -512,8 +532,10 @@ def main():
 
             stored["entry"] = live["e"]
         else:
-            # Ghost ship: vessel disappeared from API — freeze timers, keep in state briefly
-            stored["last_seen"] = now_utc.isoformat()
+            # Ghost ship: vessel disappeared from API — freeze timers, keep in state briefly.
+            # Do NOT update last_seen here; preserving the last API-seen timestamp is what
+            # allows the 3-day cutoff below to eventually expire this entry.
+            pass
 
     for vid in to_remove:
         active.pop(vid, None)
@@ -526,8 +548,8 @@ def main():
                 continue
 
             active[v_id] = {
-                "entry":          live["e"],
-                "current_status": live["status"],
+                "entry":           live["e"],
+                "current_status":  live["status"],
                 "anchorage_hours": 0.0,
                 "berth_hours":     0.0,
                 "first_seen":      now_utc.isoformat(),
@@ -542,7 +564,7 @@ def main():
     cutoff = now_utc - timedelta(days=3)
     state["active"] = {
         k: v for k, v in active.items()
-        if _ensure_aware(datetime.fromisoformat(v.get("last_seen", now_utc.isoformat()))) > cutoff
+        if _parse_last_seen(v, now_utc) > cutoff
     }
     state["history"] = history[-1000:]
     save_state(state)
