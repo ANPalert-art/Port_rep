@@ -29431,24 +29431,5 @@
       "last_seen": "2026-06-01T13:12:42.224915+00:00"
     }
   },
-  "history": [
-    {
-      "vessel": "FOREVER BRILLIANCY",
-      "agent": "M S S",
-      "port": "Jorf Lasfar",
-      "anchorage_hours": 128.3,
-      "berth_hours": 0.0,
-      "arrival": "2026-05-15T11:24:25.193728+00:00",
-      "departure": "2026-06-01T13:12:42.224915+00:00"
-    },
-    {
-      "vessel": "TRIPLE S",
-      "agent": "WORLDWIDE SERVICES AGENCY",
-      "port": "Jorf Lasfar",
-      "anchorage_hours": 37.8,
-      "berth_hours": 28.8,
-      "arrival": "2026-05-27T16:24:08.357461+00:00",
-      "departure": "2026-06-01T13:12:42.224915+00:00"
-    }
-  ]
+  "history": []
 }
