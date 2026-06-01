@@ -339,9 +339,22 @@ def format_vessel_details_premium(entry: dict) -> str:
     </table>"""
 
 
+def _normalise_history_entry(h: dict) -> dict:
+    """Handle both old schema (duration/anchorage_duration) and new
+    schema (berth_hours/anchorage_hours). Returns a normalised copy."""
+    if "berth_hours" in h:
+        return h
+    out = dict(h)
+    out["berth_hours"]     = h.get("duration",           0.0)
+    out["anchorage_hours"] = h.get("anchorage_duration", 0.0)
+    return out
+
+
 def send_monthly_report(history: list, specific_port: str):
     if not history:
         return
+
+    history = [_normalise_history_entry(h) for h in history]
 
     total_calls = len(history)
     total_anch  = sum(h.get("anchorage_hours", 0) for h in history)
@@ -427,9 +440,8 @@ def send_monthly_report(history: list, specific_port: str):
         </div>
     </div>"""
 
+    # Monthly report goes to primary recipient only — no colleague copy
     send_email(EMAIL_TO, subject, body)
-    if specific_port == "Nador" and EMAIL_TO_COLLEAGUE:
-        send_email(EMAIL_TO_COLLEAGUE, subject, body)
 
 
 def send_email(to: Optional[str], sub: str, body: str):
@@ -534,7 +546,7 @@ def main():
         else:
             # Ghost ship: vessel disappeared from API — freeze timers, keep in state briefly.
             # Do NOT update last_seen here; preserving the last API-seen timestamp is what
-            # allows the 3-day cutoff below to eventually expire this entry.
+            # allows the 24h cutoff below to eventually expire this entry.
             pass
 
     for vid in to_remove:
@@ -561,7 +573,7 @@ def main():
                 alerts.setdefault(p, []).append(live["e"])
 
     # ── CLEANUP & SAVE ───────────────────────────────────────
-    cutoff = now_utc - timedelta(days=3)
+    cutoff = now_utc - timedelta(hours=24)
     state["active"] = {
         k: v for k, v in active.items()
         if _parse_last_seen(v, now_utc) > cutoff
