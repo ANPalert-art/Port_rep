@@ -7,7 +7,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "SOCONAV",
         "dATE_SITUATIONField": "/Date(1785020400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(46800000+0100)/",
         "nOM_NAVIREField": "GRONA HAWK",
         "nUMERO_ESCALEField": 201471273,
@@ -19,10 +19,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 50.1198663125,
-      "berth_hours": 1547.5015659658338,
+      "berth_hours": 1554.0221960508338,
       "first_seen": "2026-07-21T03:17:43.111373+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9552991-201472352": {
       "entry": {
@@ -31,7 +31,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "GLOBAL CARGO LEADER",
         "dATE_SITUATIONField": "/Date(1789340400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(35700000+0100)/",
         "nOM_NAVIREField": "NORD KARAS",
         "nUMERO_ESCALEField": 201472352,
@@ -42,11 +42,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 347.8716097852777,
+      "anchorage_hours": 354.3922398702777,
       "berth_hours": 0.0,
       "first_seen": "2026-08-30T23:43:57.359192+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "1064235-201472456": {
       "entry": {
@@ -55,7 +55,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "TRADE NAV",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(4620000+0100)/",
         "nOM_NAVIREField": "KASTOS I",
         "nUMERO_ESCALEField": 201472456,
@@ -67,10 +67,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 457.728538097222,
-      "berth_hours": 90.23109672638888,
+      "berth_hours": 96.75172681138889,
       "first_seen": "2026-09-01T13:19:55.946287+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9719290-201472665": {
       "entry": {
@@ -78,23 +78,23 @@
         "cODE_PORTField": "",
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "M S S",
-        "dATE_SITUATIONField": "/Date(1789340400000+0100)/",
-        "date_SystemeField": "/Date(1790608561323+0100)/",
-        "hEURE_SITUATIONField": "/Date(62460000+0100)/",
+        "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
+        "hEURE_SITUATIONField": "/Date(81600000+0100)/",
         "nOM_NAVIREField": "KAPELLEN",
         "nUMERO_ESCALEField": 201472665,
         "nUMERO_LLOYDField": "9719290",
         "oPERATEURField": "HYDROCARB",
         "pROVField": "HOUSTON",
-        "sITUATIONField": "EN RADE",
+        "sITUATIONField": "A QUAI",
         "tYP_NAVIREField": "PETROLIER"
       },
-      "current_status": "EN RADE",
-      "anchorage_hours": 332.6815660530555,
+      "current_status": "A QUAI",
+      "anchorage_hours": 349.04484744138887,
       "berth_hours": 0.0,
       "first_seen": "2026-09-09T13:50:24.883696+00:00",
-      "last_updated": "2026-09-28T15:49:09.657333+00:00",
-      "last_seen": "2026-09-28T15:49:09.657333+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9978274-201472614": {
       "entry": {
@@ -103,7 +103,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(77100000+0100)/",
         "nOM_NAVIREField": "TRUONG MINH DREAM 01",
         "nUMERO_ESCALEField": 201472614,
@@ -115,10 +115,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 236.07826502750007,
-      "berth_hours": 220.2399202052777,
+      "berth_hours": 226.7605502902777,
       "first_seen": "2026-09-10T01:20:37.735187+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9709221-201472691": {
       "entry": {
@@ -127,7 +127,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "NAXCO SHIPPING",
         "dATE_SITUATIONField": "/Date(1789858800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(70980000+0100)/",
         "nOM_NAVIREField": "MAI TAI",
         "nUMERO_ESCALEField": 201472691,
@@ -138,11 +138,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 196.2013308163889,
+      "anchorage_hours": 202.72196090138888,
       "berth_hours": 0.0,
       "first_seen": "2026-09-10T12:07:56.176573+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9490715-201472701": {
       "entry": {
@@ -151,7 +151,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(41400000+0100)/",
         "nOM_NAVIREField": "ILIANA",
         "nUMERO_ESCALEField": 201472701,
@@ -163,10 +163,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 125.24094119694443,
-      "berth_hours": 250.7428685091667,
+      "berth_hours": 257.2634985941667,
       "first_seen": "2026-09-13T09:40:41.487083+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9432115-201472803": {
       "entry": {
@@ -175,7 +175,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "NOBLE SHIPPING",
         "dATE_SITUATIONField": "/Date(1790118000000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(49440000+0100)/",
         "nOM_NAVIREField": "ADAM ASNYK",
         "nUMERO_ESCALEField": 201472803,
@@ -186,35 +186,11 @@
         "tYP_NAVIREField": "CONVENTIONEL"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 127.1234318788889,
+      "anchorage_hours": 133.6440619638889,
       "berth_hours": 0.0,
       "first_seen": "2026-09-15T17:34:21.366039+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
-    },
-    "9648738-201472846": {
-      "entry": {
-        "cODE_CONSIGNATAIREField": "000083",
-        "cODE_PORTField": "",
-        "cODE_SOCIETEField": "06",
-        "cONSIGNATAIREField": "SFAA SHIPPING",
-        "dATE_SITUATIONField": "/Date(1790377200000+0100)/",
-        "date_SystemeField": "/Date(1790579938957+0100)/",
-        "hEURE_SITUATIONField": "/Date(33300000+0100)/",
-        "nOM_NAVIREField": "SIRUS SKY",
-        "nUMERO_ESCALEField": 201472846,
-        "nUMERO_LLOYDField": "9648738",
-        "oPERATEURField": "MARSA MAROC",
-        "pROVField": "EREGLI",
-        "sITUATIONField": "A QUAI",
-        "tYP_NAVIREField": "VRAQUIER"
-      },
-      "current_status": "A QUAI",
-      "anchorage_hours": 89.5816243686111,
-      "berth_hours": 40.779125833611104,
-      "first_seen": "2026-09-17T10:18:47.771218+00:00",
-      "last_updated": "2026-09-28T07:26:54.977069+00:00",
-      "last_seen": "2026-09-28T07:26:54.977069+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9810214-201472837": {
       "entry": {
@@ -223,7 +199,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "GLOBE MARINE",
         "dATE_SITUATIONField": "/Date(1789513200000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(79200000+0100)/",
         "nOM_NAVIREField": "HAFNIA ATLANTIC",
         "nUMERO_ESCALEField": 201472837,
@@ -234,11 +210,11 @@
         "tYP_NAVIREField": "TANKER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 279.3487307797223,
+      "anchorage_hours": 285.8693608647223,
       "berth_hours": 0.0,
       "first_seen": "2026-09-17T10:18:47.771218+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9607631-201472854": {
       "entry": {
@@ -247,7 +223,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(1440000+0100)/",
         "nOM_NAVIREField": "HISTRIA AMBRA",
         "nUMERO_ESCALEField": 201472854,
@@ -258,11 +234,11 @@
         "tYP_NAVIREField": "TANKER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 90.23109672638888,
+      "anchorage_hours": 96.75172681138889,
       "berth_hours": 0.0,
       "first_seen": "2026-09-17T15:13:15.762707+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9299915-201472882": {
       "entry": {
@@ -271,7 +247,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790204400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(71280000+0100)/",
         "nOM_NAVIREField": "SEA CHAMPION",
         "nUMERO_ESCALEField": 201472882,
@@ -282,11 +258,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 98.33401178916667,
+      "anchorage_hours": 104.85464187416667,
       "berth_hours": 0.0,
       "first_seen": "2026-09-18T18:12:32.156090+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9369291-201472879": {
       "entry": {
@@ -295,7 +271,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(44040000+0100)/",
         "nOM_NAVIREField": "ATALAYA TMA",
         "nUMERO_ESCALEField": 201472879,
@@ -307,10 +283,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 188.83071714750002,
-      "berth_hours": 9.842651303333334,
+      "berth_hours": 16.363281388333334,
       "first_seen": "2026-09-18T18:12:32.156090+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9699517-201472919": {
       "entry": {
@@ -319,7 +295,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(57600000+0100)/",
         "nOM_NAVIREField": "CLIPPER SATURN",
         "nUMERO_ESCALEField": 201472919,
@@ -331,34 +307,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 0.0,
-      "berth_hours": 30.469592164166663,
+      "berth_hours": 36.99022224916666,
       "first_seen": "2026-09-21T14:27:31.281911+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
-    },
-    "9518983-201472909": {
-      "entry": {
-        "cODE_CONSIGNATAIREField": "000743",
-        "cODE_PORTField": "",
-        "cODE_SOCIETEField": "06",
-        "cONSIGNATAIREField": "NAVIFRET MAROC SARL",
-        "dATE_SITUATIONField": "/Date(1790204400000+0100)/",
-        "date_SystemeField": "/Date(1790579938957+0100)/",
-        "hEURE_SITUATIONField": "/Date(54300000+0100)/",
-        "nOM_NAVIREField": "JADELAND",
-        "nUMERO_ESCALEField": 201472909,
-        "nUMERO_LLOYDField": "9518983",
-        "oPERATEURField": "MARSA MAROC",
-        "pROVField": "LEIXÕES ,  , BAYONNE",
-        "sITUATIONField": "A QUAI",
-        "tYP_NAVIREField": "CONVENTIONEL"
-      },
-      "current_status": "A QUAI",
-      "anchorage_hours": 0.0,
-      "berth_hours": 86.58023731666667,
-      "first_seen": "2026-09-21T14:27:31.281911+00:00",
-      "last_updated": "2026-09-28T07:26:54.977069+00:00",
-      "last_seen": "2026-09-28T07:26:54.977069+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9263928-201472902": {
       "entry": {
@@ -367,7 +319,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(84120000+0100)/",
         "nOM_NAVIREField": "TRANS ADRIATIC",
         "nUMERO_ESCALEField": 201472902,
@@ -379,10 +331,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 110.87413148888888,
-      "berth_hours": 68.3291796538889,
+      "berth_hours": 74.8498097388889,
       "first_seen": "2026-09-21T14:27:31.281911+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9474278-201472927": {
       "entry": {
@@ -391,7 +343,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "SOMASAF",
         "dATE_SITUATIONField": "/Date(1790204400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(40740000+0100)/",
         "nOM_NAVIREField": "KRITI ATLAS",
         "nUMERO_ESCALEField": 201472927,
@@ -403,10 +355,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 10.906024109166667,
-      "berth_hours": 104.79363313777779,
+      "berth_hours": 111.31426322277778,
       "first_seen": "2026-09-21T19:41:00.028369+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9524683-201472929": {
       "entry": {
@@ -415,7 +367,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "LASRY MAROC",
         "dATE_SITUATIONField": "/Date(1791068400000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(82245000+0100)/",
         "nOM_NAVIREField": "ILENAO",
         "nUMERO_ESCALEField": 201472929,
@@ -429,8 +381,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9354791-201472930": {
       "entry": {
@@ -439,7 +391,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "UNIVERSAL SHIPPING  SA",
         "dATE_SITUATIONField": "/Date(1791068400000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(40200000+0100)/",
         "nOM_NAVIREField": "KNIDOS-M",
         "nUMERO_ESCALEField": 201472930,
@@ -453,8 +405,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9285940-201472932": {
       "entry": {
@@ -487,7 +439,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(28800000+0100)/",
         "nOM_NAVIREField": "ROYAL TOPAZ",
         "nUMERO_ESCALEField": 201472943,
@@ -499,10 +451,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 0.0,
-      "berth_hours": 9.842651303333334,
+      "berth_hours": 16.363281388333334,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9561813-201472933": {
       "entry": {
@@ -511,7 +463,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(66300000+0100)/",
         "nOM_NAVIREField": "LUCILIA C",
         "nUMERO_ESCALEField": 201472933,
@@ -523,10 +475,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 35.29836255305556,
-      "berth_hours": 3.9299088041666668,
+      "berth_hours": 10.450538889166667,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9760134-201472594": {
       "entry": {
@@ -535,7 +487,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1788994800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(48780000+0100)/",
         "nOM_NAVIREField": "MEDI CAPALBIO",
         "nUMERO_ESCALEField": 201472594,
@@ -546,11 +498,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 156.38812993083332,
+      "anchorage_hours": 162.9087600158333,
       "berth_hours": 0.0,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9958339-201472941": {
       "entry": {
@@ -559,7 +511,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1790118000000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(68400000+0100)/",
         "nOM_NAVIREField": "UOT HOUSTON",
         "nUMERO_ESCALEField": 201472941,
@@ -570,11 +522,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 120.89603635777779,
+      "anchorage_hours": 127.4166664427778,
       "berth_hours": 0.0,
       "first_seen": "2026-09-22T13:16:25.934274+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9789532-201472958": {
       "entry": {
@@ -583,7 +535,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(54240000+0100)/",
         "nOM_NAVIREField": "ECO DOMINATOR",
         "nUMERO_ESCALEField": 201472958,
@@ -594,11 +546,11 @@
         "tYP_NAVIREField": "GAZIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 3.9299088041666668,
+      "anchorage_hours": 10.450538889166667,
       "berth_hours": 0.0,
       "first_seen": "2026-09-23T09:27:11.522076+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9621039-201472957": {
       "entry": {
@@ -607,7 +559,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "SOMASAF",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(43200000+0100)/",
         "nOM_NAVIREField": "LILA CASABLANCA",
         "nUMERO_ESCALEField": 201472957,
@@ -619,10 +571,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 4.8125541475,
-      "berth_hours": 34.415717209722224,
+      "berth_hours": 40.936347294722225,
       "first_seen": "2026-09-23T09:27:11.522076+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9352353-201472956": {
       "entry": {
@@ -631,7 +583,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "SOMASAF",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(40320000+0100)/",
         "nOM_NAVIREField": "TITLIS",
         "nUMERO_ESCALEField": 201472956,
@@ -642,11 +594,11 @@
         "tYP_NAVIREField": "CONVENTIONEL"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 59.402201393611115,
+      "anchorage_hours": 65.92283147861112,
       "berth_hours": 45.39143174416667,
       "first_seen": "2026-09-23T09:27:11.522076+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9142564-201472984": {
       "entry": {
@@ -655,7 +607,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "NAXCO SHIPPING",
         "dATE_SITUATIONField": "/Date(1791327600000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(68440000+0100)/",
         "nOM_NAVIREField": "ARNE",
         "nUMERO_ESCALEField": 201472984,
@@ -669,8 +621,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-23T18:32:18.847261+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9452323-201472985": {
       "entry": {
@@ -679,7 +631,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790204400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(85560000+0100)/",
         "nOM_NAVIREField": "SIFTERI",
         "nUMERO_ESCALEField": 201472985,
@@ -690,11 +642,11 @@
         "tYP_NAVIREField": "CONVENTIONEL"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 90.23109672638888,
+      "anchorage_hours": 96.75172681138889,
       "berth_hours": 0.0,
       "first_seen": "2026-09-23T18:32:18.847261+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9662382-201472982": {
       "entry": {
@@ -703,7 +655,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790204400000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(29640000+0100)/",
         "nOM_NAVIREField": "TRIPLE S",
         "nUMERO_ESCALEField": 201472982,
@@ -714,11 +666,11 @@
         "tYP_NAVIREField": "CONVENTIONEL"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 110.077984105,
+      "anchorage_hours": 116.59861419,
       "berth_hours": 0.0,
       "first_seen": "2026-09-23T18:32:18.847261+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9590773-201472996": {
       "entry": {
@@ -727,7 +679,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1790636400000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(47000+0100)/",
         "nOM_NAVIREField": "ALUNA",
         "nUMERO_ESCALEField": 201472996,
@@ -741,8 +693,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-24T11:35:02.459247+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "1121473-201473003": {
       "entry": {
@@ -751,7 +703,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(22140000+0100)/",
         "nOM_NAVIREField": "CC DALIAN",
         "nUMERO_ESCALEField": 201473003,
@@ -762,11 +714,11 @@
         "tYP_NAVIREField": "TANKER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 39.228271357222226,
+      "anchorage_hours": 45.74890144222223,
       "berth_hours": 0.0,
       "first_seen": "2026-09-24T16:52:06.122729+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9724697-201473001": {
       "entry": {
@@ -775,7 +727,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790377200000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(55080000+0100)/",
         "nOM_NAVIREField": "KOKOLIGHT",
         "nUMERO_ESCALEField": 201473001,
@@ -786,11 +738,11 @@
         "tYP_NAVIREField": "TANKER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 55.21918916361111,
+      "anchorage_hours": 61.73981924861111,
       "berth_hours": 0.0,
       "first_seen": "2026-09-24T16:52:06.122729+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9465980-201473000": {
       "entry": {
@@ -799,7 +751,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(38460000+0100)/",
         "nOM_NAVIREField": "TORM ALMENA",
         "nUMERO_ESCALEField": 201473000,
@@ -810,11 +762,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 84.75179359777779,
+      "anchorage_hours": 91.2724236827778,
       "berth_hours": 0.0,
       "first_seen": "2026-09-24T16:52:06.122729+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9216470-201473010": {
       "entry": {
@@ -847,7 +799,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "GLOBE MARINE",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(3612000+0100)/",
         "nOM_NAVIREField": "ELENA",
         "nUMERO_ESCALEField": 201473013,
@@ -861,8 +813,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-24T20:19:24.215591+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9541887-201472940": {
       "entry": {
@@ -871,7 +823,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1790290800000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(55800000+0100)/",
         "nOM_NAVIREField": "SIRIUS",
         "nUMERO_ESCALEField": 201472940,
@@ -883,10 +835,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 16.078088927777777,
-      "berth_hours": 79.8071489538889,
+      "berth_hours": 86.3277790388889,
       "first_seen": "2026-09-25T01:46:36.345651+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9938729-201473018": {
       "entry": {
@@ -895,7 +847,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "C O M A N A V",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(56000+0100)/",
         "nOM_NAVIREField": "VERTOM PATTY",
         "nUMERO_ESCALEField": 201473018,
@@ -909,8 +861,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T12:54:36.745073+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9370082-201473017": {
       "entry": {
@@ -919,7 +871,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "C O M A N A V",
         "dATE_SITUATIONField": "/Date(1790636400000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(64822000+0100)/",
         "nOM_NAVIREField": "FULMAR S",
         "nUMERO_ESCALEField": 201473017,
@@ -933,8 +885,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T12:54:36.745073+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9478298-201473029": {
       "entry": {
@@ -943,7 +895,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "SOCONAV",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(28800000+0100)/",
         "nOM_NAVIREField": "TINA THERESA",
         "nUMERO_ESCALEField": 201473029,
@@ -957,8 +909,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T12:54:36.745073+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9423853-201473027": {
       "entry": {
@@ -967,7 +919,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "NAVIFRET MAROC SARL",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(63120000+0100)/",
         "nOM_NAVIREField": "MORAIME",
         "nUMERO_ESCALEField": 201473027,
@@ -978,11 +930,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 3.9299088041666668,
+      "anchorage_hours": 10.450538889166667,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T12:54:36.745073+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9919333-201473016": {
       "entry": {
@@ -1015,7 +967,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "TRADE NAV",
         "dATE_SITUATIONField": "/Date(1790982000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(82478000+0100)/",
         "nOM_NAVIREField": "CL CENTURY",
         "nUMERO_ESCALEField": 201473053,
@@ -1029,8 +981,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T17:51:17.465791+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9518880-201473046": {
       "entry": {
@@ -1039,7 +991,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "SOCONAV",
         "dATE_SITUATIONField": "/Date(1790895600000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(54000000+0100)/",
         "nOM_NAVIREField": "ARGAN",
         "nUMERO_ESCALEField": 201473046,
@@ -1053,8 +1005,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T17:51:17.465791+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9392133-201473054": {
       "entry": {
@@ -1063,7 +1015,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "NAXCO SHIPPING",
         "dATE_SITUATIONField": "/Date(1790809200000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(64821000+0100)/",
         "nOM_NAVIREField": "AURELIA",
         "nUMERO_ESCALEField": 201473054,
@@ -1077,8 +1029,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-25T17:51:17.465791+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9414058-201473051": {
       "entry": {
@@ -1087,7 +1039,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(69300000+0100)/",
         "nOM_NAVIREField": "STOLT ISLAND",
         "nUMERO_ESCALEField": 201473051,
@@ -1099,10 +1051,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 0.0,
-      "berth_hours": 0.0,
+      "berth_hours": 6.5206300850000005,
       "first_seen": "2026-09-25T17:51:17.465791+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9554157-201473060": {
       "entry": {
@@ -1111,7 +1063,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(25000+0100)/",
         "nOM_NAVIREField": "MUZAFFER ANA",
         "nUMERO_ESCALEField": 201473060,
@@ -1125,8 +1077,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-26T14:40:10.124068+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9471991-201473059": {
       "entry": {
@@ -1135,7 +1087,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790463600000+0100)/",
-        "date_SystemeField": "/Date(1790644688377+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(57300000+0100)/",
         "nOM_NAVIREField": "SEA WIND",
         "nUMERO_ESCALEField": 201473059,
@@ -1146,11 +1098,11 @@
         "tYP_NAVIREField": "VRAQUIER"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 30.469592164166663,
+      "anchorage_hours": 36.99022224916666,
       "berth_hours": 0.0,
       "first_seen": "2026-09-26T14:40:10.124068+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9505546-201473058": {
       "entry": {
@@ -1159,7 +1111,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(31980000+0100)/",
         "nOM_NAVIREField": "WAALBORG",
         "nUMERO_ESCALEField": 201473058,
@@ -1171,10 +1123,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 0.0,
-      "berth_hours": 9.842651303333334,
+      "berth_hours": 16.363281388333334,
       "first_seen": "2026-09-26T14:40:10.124068+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9281334-201473063": {
       "entry": {
@@ -1183,7 +1135,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "INTERCONA SARL",
         "dATE_SITUATIONField": "/Date(1790809200000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(32449000+0100)/",
         "nOM_NAVIREField": "VOLCAN DE TIMANFAYA",
         "nUMERO_ESCALEField": 201473063,
@@ -1197,8 +1149,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-26T23:46:41.440014+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9281334-201473062": {
       "entry": {
@@ -1231,7 +1183,7 @@
         "cODE_SOCIETEField": "03",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(72900000+0100)/",
         "nOM_NAVIREField": "SCHELDEVLIET",
         "nUMERO_ESCALEField": 201473066,
@@ -1242,11 +1194,11 @@
         "tYP_NAVIREField": "CONVENTIONEL"
       },
       "current_status": "EN RADE",
-      "anchorage_hours": 0.0,
+      "anchorage_hours": 6.5206300850000005,
       "berth_hours": 0.0,
       "first_seen": "2026-09-27T22:29:30.678334+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9398890-201473067": {
       "entry": {
@@ -1255,7 +1207,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "INTERCONA SARL",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(32443000+0100)/",
         "nOM_NAVIREField": "CIUDAD DE MAHON",
         "nUMERO_ESCALEField": 201473067,
@@ -1269,8 +1221,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T01:06:59.778750+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9968152-201473078": {
       "entry": {
@@ -1279,7 +1231,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "GLOBAL SEA SERVICES",
         "dATE_SITUATIONField": "/Date(1791154800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(46837000+0100)/",
         "nOM_NAVIREField": "JSP FALSTER",
         "nUMERO_ESCALEField": 201473078,
@@ -1293,8 +1245,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9514913-201473074": {
       "entry": {
@@ -1303,7 +1255,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "C O M A N A V",
         "dATE_SITUATIONField": "/Date(1790982000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(82841000+0100)/",
         "nOM_NAVIREField": "CELTIC CHALLENGER ",
         "nUMERO_ESCALEField": 201473074,
@@ -1317,8 +1269,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9503287-201473077": {
       "entry": {
@@ -1327,7 +1279,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
         "dATE_SITUATIONField": "/Date(1790895600000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(50400000+0100)/",
         "nOM_NAVIREField": "KOTRAG",
         "nUMERO_ESCALEField": 201473077,
@@ -1341,8 +1293,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9143441-201473071": {
       "entry": {
@@ -1351,7 +1303,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "GRANDI NAVI VELOCI MAROC",
         "dATE_SITUATIONField": "/Date(1790895600000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(41403000+0100)/",
         "nOM_NAVIREField": "EXCELLENT",
         "nUMERO_ESCALEField": 201473071,
@@ -1365,8 +1317,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9866665-201473081": {
       "entry": {
@@ -1375,7 +1327,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "COMATAM",
         "dATE_SITUATIONField": "/Date(1790809200000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(25200000+0100)/",
         "nOM_NAVIREField": "OCEAN UNIVERSE",
         "nUMERO_ESCALEField": 201473081,
@@ -1389,8 +1341,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9419278-201473079": {
       "entry": {
@@ -1399,7 +1351,7 @@
         "cODE_SOCIETEField": "06",
         "cONSIGNATAIREField": "AGEMAFRIC",
         "dATE_SITUATIONField": "/Date(1790809200000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(23000+0100)/",
         "nOM_NAVIREField": "CATHY JO",
         "nUMERO_ESCALEField": 201473079,
@@ -1413,8 +1365,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9940992-201473083": {
       "entry": {
@@ -1423,7 +1375,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "SEATRADE",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(50406000+0100)/",
         "nOM_NAVIREField": "GAS JUSTESEN",
         "nUMERO_ESCALEField": 201473083,
@@ -1437,8 +1389,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9749685-201473072": {
       "entry": {
@@ -1447,7 +1399,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "UNIVERSAL SHIPPING",
         "dATE_SITUATIONField": "/Date(1790722800000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(39600000+0100)/",
         "nOM_NAVIREField": "KATANA GALAXY",
         "nUMERO_ESCALEField": 201473072,
@@ -1461,8 +1413,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9282510-201472671": {
       "entry": {
@@ -1471,7 +1423,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "TA TRANS",
         "dATE_SITUATIONField": "/Date(1790550000000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341747+0100)/",
         "hEURE_SITUATIONField": "/Date(60900000+0100)/",
         "nOM_NAVIREField": "ILAN",
         "nUMERO_ESCALEField": 201472671,
@@ -1483,10 +1435,10 @@
       },
       "current_status": "A QUAI",
       "anchorage_hours": 0.0,
-      "berth_hours": 3.9299088041666668,
+      "berth_hours": 10.450538889166667,
       "first_seen": "2026-09-28T15:49:09.657333+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "1040148-201473085": {
       "entry": {
@@ -1495,7 +1447,7 @@
         "cODE_SOCIETEField": "07",
         "cONSIGNATAIREField": "ATLANTIC TRADING AND SHIPPING",
         "dATE_SITUATIONField": "/Date(1791068400000+0100)/",
-        "date_SystemeField": "/Date(1790644688363+0100)/",
+        "date_SystemeField": "/Date(1790666341733+0100)/",
         "hEURE_SITUATIONField": "/Date(46843000+0100)/",
         "nOM_NAVIREField": "ULTRA LOUISIANA",
         "nUMERO_ESCALEField": 201473085,
@@ -1509,8 +1461,8 @@
       "anchorage_hours": 0.0,
       "berth_hours": 0.0,
       "first_seen": "2026-09-28T21:43:55.530330+00:00",
-      "last_updated": "2026-09-29T01:39:43.202025+00:00",
-      "last_seen": "2026-09-29T01:39:43.202025+00:00"
+      "last_updated": "2026-09-29T08:10:57.470331+00:00",
+      "last_seen": "2026-09-29T08:10:57.470331+00:00"
     },
     "9246566-201473087": {
       "entry": {
